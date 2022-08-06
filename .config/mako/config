@@ -1,0 +1,47 @@
+# GLOBAL CONFIGURATION OPTIONS
+max-history=100
+sort=-time
+
+# BINDING OPTIONS
+on-button-left=dismiss
+on-button-middle=none
+on-button-right=dismiss-all
+on-touch=dismiss
+# on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+on-notify=exec paplay /home/mura/.local/share/sounds/simple_notification(1).ogg
+
+# STYLING
+font=Product Sans 14
+width=500
+height=200
+margin=20
+padding=15
+border-size=2
+border-color=#c4a7e7
+border-radius=8
+icons=1
+max-icon-size=96
+icon-location=left
+default-timeout=5000
+ignore-timeout=0
+max-visible=5
+layer=overlay
+
+background-color=#191724
+text-color=#e0def4
+border-color=#c4a7e7
+progress-color=over #c4a7e7
+
+[urgency=low]
+border-color=#e0def4
+
+[urgency=normal]
+border-color=#5a8fa5
+
+[urgency=high]
+border-color=#eb6f92
+default-timeout=0
+
+[category=spotify]
+default-timeout=2000
+group-by=category

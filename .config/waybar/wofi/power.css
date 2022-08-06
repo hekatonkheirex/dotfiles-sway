@@ -1,0 +1,65 @@
+/* 
+ * Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+ * Everyone is permitted to copy and distribute copies of this file under GNU-GPL3
+*/
+
+/** ********** Fonts ********** **/
+* {
+    font-family: "Product Sans", "Iosevka Nerd Font";
+    font-size: 14px;
+}
+
+#window {
+	background-color: --wofi-color0;
+	color: --wofi-color2;
+	border: 2px solid --wofi-color1;
+	border-radius: 10px;
+}
+
+#outer-box {
+	padding: 10px;
+}
+
+#input {
+	background-color: --wofi-color1;
+	border: 0px solid --wofi-color3;
+	padding: 8px 10px;
+}
+
+#scroll {
+	margin-top: 5px;
+}
+
+#inner-box {
+}
+
+#img {
+	padding-right: 8px;
+}
+
+#text {
+	color: --wofi-color2;
+}
+
+#text:selected {
+	color: --wofi-color0;
+}
+
+#entry {
+	padding: 10px;
+}
+
+#entry:selected {
+	background-color: --wofi-color3;
+	color: --wofi-color0;
+}
+
+#unselected {
+}
+
+#selected {
+}
+
+#input, #entry:selected {
+	border-radius: 6px;
+}

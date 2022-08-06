@@ -1,0 +1,8 @@
+# Settings for Japanese input
+export GTK_IM_MODULE='ibus'
+export QT_IM_MODULE='ibus'
+export XMODIFIERS=@im='ibus'
+
+#Toolbar for anthy
+
+export QT_QPA_PLATFORMTHEME="qt5ct"
