@@ -14,6 +14,7 @@
   "margin-right": 0, 				// Space to the right of the bar
   "fixed-center": false, 			// Center modules position
   "ipc": true, 					// Control waybar with `swaymsg bar` commands
+  "bar_id": "bar-0",
   
   // Choose the order of the modules
   "modules-left": ["custom/menu", "sway/workspaces"],

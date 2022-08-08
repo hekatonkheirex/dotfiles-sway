@@ -49,11 +49,6 @@ window#waybar.hidden {
 	border-radius: 12px;
 }
 
-#mode {
-	background-color: #C778DD;
-    font-weight: bold;
-}
-
 window#waybar.empty #window {
 	background-color: transparent;
 }
@@ -152,6 +147,7 @@ window#waybar.empty #window {
 #pulseaudio.2.bluetooth {
 }
 #pulseaudio.2.muted {
+  border-bottom: 2px solid #eb6f92;
 }
 
 /** ********** Network ********** **/

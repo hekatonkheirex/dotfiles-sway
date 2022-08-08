@@ -381,7 +381,7 @@ for i, name in enumerate(group_names, 1):
 
 # Rose Pine
 layout_theme = {
-        "border_width": 4,
+        "border_width": 2,
         "margin": 15,
         "border_focus": "c4a7e7",
         "border_normal": "191724"
@@ -415,7 +415,7 @@ layouts = [
     layout.MonadTall(
         border_focus='c4a7e7',
         border_normal='191724',
-        border_width=4,
+        border_width=2,
         margin=15,
         ratio=0.52,
     ),
@@ -428,7 +428,7 @@ layouts = [
     layout.Floating(
         border_focus='ebbcba',
         border_normal='191724',
-        border_width=4,
+        border_width=2,
         fullscreen_border_width=0,
     ),
     # layout.Columns(**layout_theme),
@@ -898,7 +898,7 @@ cursor_warp = False
 floating_layout = layout.Floating(
     border_focus='ebbcba',
     border_normal='191724',
-    border_width=4,
+    border_width=2,
     fullscreen_border_width=0,
     float_rules=[
         # Run the utility `xprop` to see the wm class and name of an X client

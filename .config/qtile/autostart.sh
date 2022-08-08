@@ -11,14 +11,15 @@ fcitx5 &
 xinput --set-prop "ELAN1300:00 04F3:3087 Touchpad" "libinput Natural Scrolling Enabled" 1 &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore &
+dunst &
 # feh --bg-fill /mnt/windows/Walls/wallhaven-z8ewmo.jpg
 picom -f -b --config /home/mura/.config/picom/picom_not_rounded.conf
 $HOME/.config/scripts/thunar.sh &
 thunar --daemon &
 xss-lock -l $HOME/.config/scripts/lock.sh & 
 blueman-applet &
-xfce4-power-manager &
-nm-applet &
+xfce4-power-manager --daemon &
+nm-applet --no-agent &
 gnome-keyring-daemon --start --components=pkcs11,secrets,ssh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # $HOME/.config/scripts/welcome.sh
