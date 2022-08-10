@@ -54,6 +54,7 @@ fzf
 gcc
 gdm
 gdm-settings
+gimp
 git
 gnome-keyring
 google-chrome
@@ -142,7 +143,7 @@ sudo
 sway
 swaybg
 swayidle
-swaylock
+swaylock-effects-git
 tamsyn-font
 tex-gyre-fonts
 texinfo
@@ -174,6 +175,7 @@ ttf-opensans
 ttf-roboto
 ttf-ubuntu-font-family
 tumbler
+unimatrix-git
 usbutils
 vdhcoapp-bin
 viewnior
