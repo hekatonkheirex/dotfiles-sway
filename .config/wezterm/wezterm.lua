@@ -1,10 +1,3 @@
--- -------------------------------------------------------------------
--- rxyhn's aesthetic wezterm configuration
--- A GPU-accelerated cross-platform terminal emulator and multiplexer
---
--- https://github.com/rxyhn
--- -------------------------------------------------------------------
-
 local wezterm = require("wezterm")
 
 local xcursor_size = nil
@@ -280,4 +273,5 @@ return {
   warn_about_missing_glyphs = false,
   xcursor_theme = xcursor_theme,
   xcursor_size = xcursor_size,
+  check_for_updates = false,
 }
