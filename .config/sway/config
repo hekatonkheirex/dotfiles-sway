@@ -5,6 +5,7 @@ set $down j
 set $up k
 set $right l
 set $term "wezterm start --always-new-process"
+# set $term "alacritty"
 
 # Idle configuration
 exec swayidle -w \
@@ -12,7 +13,8 @@ exec swayidle -w \
         timeout 1800 'swaymsg "output * dpms off"' \
         timeout 15 'if pgrep -x swaylock; then swaymsg "output * dpms off"; fi' \
         resume 'swaymsg "output * dpms on"' \
-        before-sleep 'playerctl pause'; 'swaylock -f'
+        before-sleep 'playerctl pause' \
+        before-sleep 'swaylock -f'
 
 # Input configuration
 input "1267:12423:ELAN1300:00_04F3:3087_Touchpad" {
@@ -131,6 +133,7 @@ bindsym $mod+space focus mode_toggle
 # Move focus to the parent container
 bindsym $mod+a focus parent
 
+bindsym Mod1+tab workspace back_and_forth
 
 # Scratchpad
 # Move the currently focused window to the scratchpad
@@ -171,20 +174,61 @@ gaps top 1
 
 # GTK Theming
 # Rose Pine
+# set $gnome-schema org.gnome.desktop.interface
+# exec_always {
+#     gsettings set $gnome-schema gtk-theme 'Rosé Pine'
+#     gsettings set $gnome-schema icon-theme 'Rose-Pine'
+#     gsettings set $gnome-schema cursor-theme 'Colloid-dark-cursors'
+#     gsettings set $gnome-schema font-name 'Product Sans 14'
+# }
+
+# Everforest
+# set $gnome-schema org.gnome.desktop.interface
+# exec_always {
+#     gsettings set $gnome-schema gtk-theme 'everforest-gtk-main'
+#     gsettings set $gnome-schema icon-theme 'Everforest-Dark'
+#     gsettings set $gnome-schema cursor-theme 'Colloid-dark-cursors'
+#     gsettings set $gnome-schema font-name 'Product Sans 14'
+# }
+
+# Catppuccin Mocha
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Rosé Pine'
-    # gsettings set $gnome-schema gtk-theme 'Rosepine-BL'
-    gsettings set $gnome-schema icon-theme 'Rose-Pine'
+    gsettings set $gnome-schema gtk-theme 'Catppuccin-Mocha'
+    gsettings set $gnome-schema icon-theme 'Papirus-Dark'
     gsettings set $gnome-schema cursor-theme 'Colloid-dark-cursors'
     gsettings set $gnome-schema font-name 'Product Sans 14'
 }
 
+# Catppuccin Frappe
+# set $gnome-schema org.gnome.desktop.interface
+# exec_always {
+#     gsettings set $gnome-schema gtk-theme 'Catppuccin-Frappe-Purple'
+#     gsettings set $gnome-schema icon-theme 'Papirus-Dark'
+#     gsettings set $gnome-schema cursor-theme 'Colloid-dark-cursors'
+#     gsettings set $gnome-schema font-name 'Product Sans 14'
+# }
+
 # Sway Theming
 # Rose Pine
-client.focused          #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
-client.unfocused        #191724 #191724 #191724 #191724 #191724
-client.focused_inactive #26233a #26233a #26233a #26233a #26233a 
+# client.focused          #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
+# client.unfocused        #191724 #191724 #191724 #191724 #191724
+# client.focused_inactive #26233a #26233a #26233a #26233a #26233a 
+
+# Everforest
+# client.focused          #a7c080 #a7c080 #a7c080 #a7c080 #a7c080
+# client.unfocused        #2b3339 #2b3339 #2b3339 #2b3339 #2b3339
+# client.focused_inactive #40474c #40474c #40474c #40474c #40474c 
+
+# Catppuccin Mocha
+client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
+client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
+client.focused_inactive #313244 #313244 #313244 #313244 #313244
+
+# Catppuccin Frappe
+# client.focused          #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6
+# client.unfocused        #303446 #303446 #303446 #303446 #303446
+# client.focused_inactive #414559 #414559 #414559 #414559 #414559
 
 seat seat0 xcursor_theme Colloid-dark-cursors 24
 
@@ -206,7 +250,7 @@ for_window [class="firefox"] move to workspace 1, workspace 1
 for_window [class="Google-chrome"] move to workspace 1, workspace 1
 for_window [class="Microsoft-edge"] move to workspace 1, workspace 1
 for_window [app_id="Alacritty"] move to workspace 2, workspace 2
-for_window [class="org.wezfurlong.wezterm"] move to workspace 2, workspace 2
+for_window [app_id="org.wezfurlong.wezterm"] move to workspace 2, workspace 2
 for_window [app_id="thunar"] move to workspace 3, workspace 3
 for_window [app_id="libreoffice-writer"] move to workspace 3, workspace 3
 for_window [app_id="libreoffice-calc"] move to workspace 3, workspace 3
@@ -238,10 +282,11 @@ for_window [app_id="thunar" title="^File.*"] floating enable
 for_window [app_id= "nm-connection-editor"] floating enable
 
 # Autostart applications
-exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
 exec_always --no-startup-id $HOME/.config/waybar/waybar.sh
 exec_always blueman-applet &
+exec_always firewall-applet &
 exec 'eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)'
 exec export SSH_AUTH_SOCK
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

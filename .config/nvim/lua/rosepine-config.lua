@@ -1,4 +1,3 @@
-
 require('rose-pine').setup({
 	--- @usage 'main' | 'moon'
 	dark_variant = 'main',

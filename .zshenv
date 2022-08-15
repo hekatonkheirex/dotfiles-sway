@@ -1,8 +1,3 @@
-# if [ -n "$DESKTOP_SESSION" ];then
-#     eval $(gnome-keyring-daemon --start --components=okcs11,secrets,ssh)
-#     export SSH_AUTH_SOCK
-# fi
-
 ## LANGUAGE
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
@@ -29,7 +24,7 @@ export TDESKTOP_DISABLE_GTK_INTEGRATION=1
 # export BEMENU_BACKEND="wayland"
 
 ## QT environment
-export QT_QPA_PLATFORM="wayland-egl"
+export QT_QPA_PLATFORM="xcb;wayland-egl"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 # export QT_WAYLAND_FORCE_DPI="physical"
 # export QT_WAYLAND_DISABLE_WINDOWDECORATION=1

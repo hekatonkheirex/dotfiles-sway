@@ -115,6 +115,6 @@ format = "with [$env_value]($style) "
 [directory]
 truncation_length = 5
 format = "[$path]($style)[$lock_symbol]($lock_style) "
-style = "bold #f57800"
+style = "bold #ef9f76"
 read_only = "🔒"
 read_only_style= "bold white"

@@ -83,13 +83,11 @@ return require('packer').startup({
   use 'elkowar/yuck.vim'
 
   -- Themes
-  use 'Mofiqul/dracula.nvim'
-  use { 'ellisonleao/gruvbox.nvim' }
   use 'shaunsingh/nord.nvim'
   use 'navarasu/onedark.nvim'
   use 'sainnhe/everforest'
-  use 'sainnhe/sonokai'
-  use 'ntk148v/vim-horizon'
+  use 'sainnhe/gruvbox-material'
+  use 'LunarVim/horizon.nvim'
   use({ 'catppuccin/nvim', as = 'catppuccin' })
   use({
     'rose-pine/neovim',
@@ -99,9 +97,7 @@ return require('packer').startup({
   use 'folke/tokyonight.nvim'
   use 'audibleblink/hackthebox.vim'
   use {'decaycs/decay.nvim', as = 'decay'}
-  use { 'Everblush/everblush.nvim', as = 'everblush' }
-  use 'akai54/2077.nvim'
-  use 'Iron-E/nvim-soluarized'
+  use 'CantoroMC/ayu-nvim'
 end,
 config = {
   display = {

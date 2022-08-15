@@ -3,12 +3,19 @@
   border: none;
   font-family: "Product Sans", "Font Awesome 6 Free Regular", "Font Awesome 6 Free Solid", "Font Awesome 6 Pro Regular", "Font Awesome 6 Pro Thin", "Font Awesome 6 Pro Solid", "Font Awesome 6 Pro Light", "Font Awesome 6 Brands Regular";
   font-size: 16px;
+  font-weight: normal;
+}
+
+button {
+  min-height: 16px;
+  min-width: 16px;
 }
 
 window#waybar {
-  background-color: #191724;
+  background-color: #1e1e2e;
 	transition-property: background-color;
   transition-duration: .5s;
+  /* border-radius: 0px 12px 12px 0px; */
 }
 
 window#waybar.hidden {
@@ -17,8 +24,8 @@ window#waybar.hidden {
 
 /* Workspaces */
 #workspaces {
-  background-color: #26233a;
-	color: #e0def4;
+  background-color: #313244;
+	color: #cdd6f4;
 	border-radius: 12px;
   margin-left: 5px;
   margin-right: 5px;
@@ -30,22 +37,22 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
-  background: linear-gradient(180deg, rgba(235,111,146,1) 0%, rgba(196,167,231,1) 90%);
-	color: #191724;
+  background: linear-gradient(180deg, rgba(243,139,168,1) 0%, rgba(203,166,247,1) 90%);
+	color: #1e1e2e;
 	border-radius: 12px;
 }
 
 #workspaces button.focused {
-  background: linear-gradient(180deg, rgba(235,111,146,1) 0%, rgba(196,167,231,1) 90%);
-  color: #191724;
+  background: linear-gradient(180deg, rgba(243,139,168,1) 0%, rgba(203,166,247,1) 90%);
+  color: #1e1e2e;
 }
 
 #workspaces button.urgent {
-  color: #eb6f92;
+  color: #f38ba8;
 }
 
 #workspaces button.persistent {
-	color: #191724;
+	color: #1e1e2e;
 	border-radius: 12px;
 }
 
@@ -55,15 +62,15 @@ window#waybar.empty #window {
 
 /** ********** Backlight ********** **/
 #backlight {
-  background: linear-gradient(180deg, rgba(86,159,134,1) 0%, rgba(196,167,231,1) 100%);
+  background: linear-gradient(180deg, rgba(166,227,161,1) 0%, rgba(203,166,247,1) 100%);
 }
 #backlight.2 {
-  background: #26233a;
+  background: #313244;
 }
 
 /** ********** Battery ********** **/
 #battery {
-  background: linear-gradient(180deg, rgba(196,167,231,1) 0%, rgba(156,207,216,1) 100%);
+  background: linear-gradient(180deg, rgba(203,166,247,1) 0%, rgba(137,220,235,1) 100%);
 }
 #battery.charging {
 }
@@ -71,7 +78,7 @@ window#waybar.empty #window {
 }
 
 #battery.2 {
-  background: #26233a;
+  background: #313244;
 }
 #battery.2.charging {
 }
@@ -79,12 +86,12 @@ window#waybar.empty #window {
 }
 @keyframes blink {
     to {
-        color: #eb6f92;
+        color: #f38ba8;
     }
 }
 #battery.2.critical:not(.charging) {
-  color: #e0def4;
-  border-bottom: 2px solid #eb6f92;
+  color: #cdd6f4;
+  border-bottom: 2px solid #f38ba8;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -94,8 +101,8 @@ window#waybar.empty #window {
 
 /** ********** Clock ********** **/
 #clock {
-  background-color: #26233a;
-  color: #569f86;
+  background-color: #313244;
+  color: #a6e3a1;
   font-size: 24px;
   font-weight: bold;
   border-radius: 12px 12px 0px 0px;
@@ -104,13 +111,13 @@ window#waybar.empty #window {
   margin-right: 5px;
 }
 #clock.2 {
-  color: #f6c177;
+  color: #f9e2af;
   border-radius: 0px 0px 12px 12px;
   padding: 0px 0px 10px 0px;
   margin-bottom: 5px;
 }
 #clock.3 {
-  color: #5a8fa5;
+  color: #89dceb;
   font-size: 14px;
   border-radius: 12px;
   /* padding: 5px; */
@@ -132,35 +139,35 @@ window#waybar.empty #window {
 
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-  background: linear-gradient(180deg, rgba(246,193,119,1) 0%, rgba(86,159,134,1) 100%);
+  background: linear-gradient(180deg, rgba(249,226,175,1) 0%, rgba(166,227,161,1) 100%);
 }
 #pulseaudio.bluetooth {
-  background: linear-gradient(180deg, rgba(90,143,165,1) 0%, rgba(156,207,216,1) 100%);
+  background: linear-gradient(180deg, rgba(137,180,250,1) 0%, rgba(137,220,235,1) 100%);
 }
 #pulseaudio.muted {
-  background: linear-gradient(180deg, rgba(235,111,146,1) 0%, rgba(234,157,52,1) 100%);
+  background: linear-gradient(180deg, rgba(243,139,168,1) 0%, rgba(245,194,231,1) 100%);
 }
 
 #pulseaudio.2 {
-  background: #26233a;
+  background: #313244;
 }
 #pulseaudio.2.bluetooth {
 }
 #pulseaudio.2.muted {
-  border-bottom: 2px solid #eb6f92;
+  border-bottom: 2px solid #f38ba8;
 }
 
 /** ********** Network ********** **/
 #network {
-  background: linear-gradient(180deg, rgba(235,188,186,1) 0%, rgba(246,193,119,1) 100%);
+  background: linear-gradient(180deg, rgba(245,194,231,1) 0%, rgba(249,226,175,1) 100%);
   margin-bottom: 5px;
 }
 
 #network.disconnected {
-  color: #ea9d34;
+  color: #fab387;
 }
 #network.disabled {
-  color: #eb6f92;
+  color: #f38ba8;
 }
 #network.linked {
 }
@@ -169,43 +176,49 @@ window#waybar.empty #window {
 #network.wifi {
 }
 
+#language {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
 #idle_inhibitor {
-  color: #191724;
-  background: linear-gradient(180deg, rgba(196,167,231,1) 0%, rgba(235,188,186,1) 100%);
+  color: #1e1e2e;
+  background: linear-gradient(180deg, rgba(203,166,247,1) 0%, rgba(245,194,231,1) 100%);
   border-radius: 12px;
   padding: 5px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   margin-bottom: 10px;
 }
 #idle_inhibitor.activated {
-  color: #eb6f92
+  color: #f38ba8;
 }
 
 /** ********** Custom ********** **/
 
 #custom-menu {
-  background: linear-gradient(180deg, rgba(86,159,134,1) 0%, rgba(235,111,146,1) 100%);
+  background: linear-gradient(180deg, rgba(245,224,220,1) 0%, rgba(243,139,168,1) 100%);
   margin-top: 8px;
 }
 
 #custom-power {
-  background: linear-gradient(180deg, rgba(235,111,146,1) 0%, rgba(235,188,186,1) 100%);
+  background: linear-gradient(180deg, rgba(242,205,205,1) 0%, rgba(180,190,254,1) 100%);
   margin-bottom: 8px;
 }
 
 #custom-weather {
-  background: linear-gradient(180deg, rgba(156,207,216,1) 0%, rgba(235,111,146,1) 100%);
-  color: #191724;
+  background: linear-gradient(180deg, rgba(137,220,235,1) 0%, rgba(242,205,205,1) 100%);
+  color: #1e1e2e;
   border-radius: 12px 12px 0px 0px;
   padding: 5px 0px 5px 0px;
   margin-left: 5px;
   margin-right: 5px;
 }
 #custom-weather2 {
-  background-color: #26233a;
-  color: #e0def4;
+  background-color: #313244;
+  color: #cdd6f4;
   font-size: 12px;
   font-weight: bold;
   border-radius: 0px 0px 12px 12px;
@@ -219,7 +232,7 @@ window#waybar.empty #window {
 #backlight, 
 #battery,
 #pulseaudio {
-  color: #26233a;
+  color: #313244;
   border-radius: 12px 12px 0px 0px;
   padding: 5px 0px 5px 0px;
   margin-left: 5px;
@@ -229,8 +242,8 @@ window#waybar.empty #window {
 #backlight.2, 
 #battery.2,
 #pulseaudio.2 {
-  background-color: #26233a;
-  color: #e0def4;
+  background-color: #313244;
+  color: #cdd6f4;
   font-size: 12px;
   font-weight: bold;
   border-radius: 0px 0px 12px 12px;
@@ -238,16 +251,18 @@ window#waybar.empty #window {
 }
 
 #tray {
-  background-color: #26233a;
+  background-color: #313244;
   border-radius: 12px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 #network,
 #custom-menu,
 #custom-power {
-  color: #26233a;
+  color: #313244;
   border-radius: 12px;
   padding: 5px;
   margin-left: 5px;

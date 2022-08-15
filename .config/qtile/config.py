@@ -9,7 +9,7 @@ from typing import List  # noqa: F401
 
 # Defaults
 mod = "mod4"
-myTerm = "wezterm"
+myTerm = "alacritty"
 
 
 # Autostart programs
@@ -186,12 +186,12 @@ keys = [
     ),
     Key(
         [mod], "d",
-        lazy.spawn('rofi -show drun'),
+        lazy.spawn('sh /home/mura/.config/rofi/launchers/type-7/launcher.sh'),
         desc="Spawn rofi"
     ),
     Key(
         [mod], "p",
-        lazy.spawn('sh /home/mura/.config/rofi/scripts/powermenu.sh'),
+        lazy.spawn('sh /home/mura/.config/rofi/bak/scripts/powermenu.sh'),
         desc="Spawn powermenu"
     ),
 
@@ -323,22 +323,6 @@ for i, name in enumerate(group_names, 1):
 #   "border_normal": "2e3440"
 # }
 
-# Outrun Dark
-# layout_theme = {
-#    "border_width": 2,
-#    "margin": 15,
-#    "border_focus": "f10596",
-#    "border_normal": "00002a"
-# }
-
-# Dracula
-# layout_theme = {
-#    "border_width": 4,
-#    "margin": 15,
-#    "border_focus": "bd93f9",
-#    "border_normal": "282a36"
-# }
-
 # Everforest
 # layout_theme = {
 #    "border_width": 2,
@@ -371,21 +355,29 @@ for i, name in enumerate(group_names, 1):
 #        "border_normal": "282c34"
 #    }
 
-# Catppuccin
-# layout_theme = {
-#         "border_width": 2,
-#         "margin": 15,
-#         "border_focus": "cba6f7",
-#         "border_normal": "1e1e2e"
-#     }
-
-# Rose Pine
+# Catppuccin Mocha
 layout_theme = {
         "border_width": 2,
         "margin": 15,
-        "border_focus": "c4a7e7",
-        "border_normal": "191724"
+        "border_focus": "cba6f7",
+        "border_normal": "1e1e2e"
     }
+
+# Catppuccin Frappe
+# layout_theme = {
+#         "border_width": 2,
+#         "margin": 15,
+#         "border_focus": "ca9ee6",
+#         "border_normal": "303446"
+#     }
+
+# Rose Pine
+# layout_theme = {
+#         "border_width": 2,
+#         "margin": 15,
+#         "border_focus": "c4a7e7",
+#         "border_normal": "191724"
+#     }
 
 # Rose Pine Dawn
 # layout_theme = {
@@ -413,8 +405,8 @@ layout_theme = {
 
 layouts = [
     layout.MonadTall(
-        border_focus='c4a7e7',
-        border_normal='191724',
+        border_focus='cba6f7',
+        border_normal='1e1e2e',
         border_width=2,
         margin=15,
         ratio=0.52,
@@ -426,8 +418,8 @@ layouts = [
         **layout_theme
     ),
     layout.Floating(
-        border_focus='ebbcba',
-        border_normal='191724',
+        border_focus='f5c2e7',
+        border_normal='1e1e2e',
         border_width=2,
         fullscreen_border_width=0,
     ),
@@ -474,36 +466,6 @@ layouts = [
 #        ["#d08770", "#d08770"],  # 10 Orange
 #        ["#81a1c1", "#81a1c1"],  # 11 Violet
 #    ]
-
-# Outrun Dark
-# colors = [["#00002a", "#00002a"],  # 0 Background 0
-#           ["#19193f", "#19193f"],  # 1 Background 1
-#           ["#d0d0fa", "#d0d0fa"],  # 2 Foreground 0
-#           ["#bbbbe1", "#bbbbe1"],  # 3 Foreground 1
-#           ["#ff4242", "#ff4242"],  # 4 Red
-#           ["#59f176", "#59f176"],  # 5 Green
-#           ["#f3e877", "#f3e877"],  # 6 Yellow
-#           ["#66b0ff", "#66b0ff"],  # 7 Blue
-#           ["#f10596", "#f10596"],  # 8 Magenta
-#           ["#0ef0f0", "#0ef0f0"],  # 9 Cyan
-#           ["#faa613", "#faa613"],  # 10 Orange
-#           ["#aa7dce", "#aa7dce"],  # 11 Violet
-#         ]
-
-# Dracula
-# colors = [["#282a36", "#282a36"],  # 0 Background 0
-#           ["#44475a", "#44475a"],  # 1 Background 1
-#           ["#f8f8f2", "#f8f8f2"],  # 2 Foreground 0
-#           ["#bfbfbf", "#bfbfbf"],  # 3 Foreground 1
-#           ["#ff5555", "#ff5555"],  # 4 Red
-#           ["#50fa7b", "#50fa7b"],  # 5 Green
-#           ["#f1fa8c", "#f1fa8c"],  # 6 Yellow
-#           ["#1098f7", "#1098f7"],  # 7 Blue
-#           ["#ff79c6", "#ff79c6"],  # 8 Magenta
-#           ["#8be9fd", "#8be9fd"],  # 9 Cyan
-#           ["#ffb86c", "#ffb86c"],  # 10 Orange
-#           ["#bd93f9", "#bd93f9"],  # 11 Violet
-#         ]
 
 # Everforest
 # colors = [["#2b3339", "#2b3339"],  # 0 Background 0
@@ -567,37 +529,53 @@ layouts = [
 #         ["#ab87ff", "#ab87ff"],  # 11 Violet
 #     ]
 
-# Catppuccin
+# Catppuccin Mocha
+colors = [
+        ["#1e1e2e", "#1e1e2e"],  # 0 Background 0
+        ["#313244", "#313244"],  # 1 Background 1
+        ["#cdd6f4", "#cdd6f4"],  # 2 Foreground 0
+        ["#bac2de", "#bac2de"],  # 3 Foreground 1
+        ["#f38ba8", "#f38ba8"],  # 4 Red
+        ["#a6e3a1", "#a6e3a1"],  # 5 Green
+        ["#f9e2af", "#f9e2af"],  # 6 Yellow
+        ["#89b4fa", "#89b4fa"],  # 7 Blue
+        ["#f5c2e7", "#f5c2e7"],  # 8 Magenta
+        ["#89dceb", "#89dceb"],  # 9 Cyan
+        ["#fab387", "#fab387"],  # 10 Orange
+        ["#cba6f7", "#cba6f7"],  # 11 Violet
+    ]
+
+# Catppuccin Frappe
 # colors = [
-#         ["#1e1e2e", "#1e1e2e"],  # 0 Background 0
-#         ["#313244", "#313244"],  # 1 Background 1
-#         ["#cdd6f4", "#cdd6f4"],  # 2 Foreground 0
-#         ["#bac2de", "#bac2de"],  # 3 Foreground 1
-#         ["#f38ba8", "#f38ba8"],  # 4 Red
-#         ["#a6e3a1", "#a6e3a1"],  # 5 Green
-#         ["#f9e2af", "#f9e2af"],  # 6 Yellow
-#         ["#89b4fa", "#89b4fa"],  # 7 Blue
-#         ["#f5c2e7", "#f5c2e7"],  # 8 Magenta
-#         ["#89dceb", "#89dceb"],  # 9 Cyan
-#         ["#fab387", "#fab387"],  # 10 Orange
-#         ["#cba6f7", "#cba6f7"],  # 11 Violet
+#         ["#303446", "#303446"],  # 0 Background 0
+#         ["#414559", "#414559"],  # 1 Background 1
+#         ["#c6d0f5", "#c6d0f5"],  # 2 Foreground 0
+#         ["#b5bfe2", "#b5bfe2"],  # 3 Foreground 1
+#         ["#e78284", "#e78284"],  # 4 Red
+#         ["#a6d189", "#a6d189"],  # 5 Green
+#         ["#e5c890", "#e5c890"],  # 6 Yellow
+#         ["#8caaee", "#8caaee"],  # 7 Blue
+#         ["#f4b8e4", "#f4b8e4"],  # 8 Magenta
+#         ["#99d1db", "#99d1db"],  # 9 Cyan
+#         ["#ef9f76", "#ef9f76"],  # 10 Orange
+#         ["#ca9ee6", "#ca9ee6"],  # 11 Violet
 #     ]
 
 # Rose Pine
-colors = [
-         ["#191724", "#191724"],  # 0 Background 0
-         ["#26233a", "#26233a"],  # 1 Background 1
-         ["#e0def4", "#e0def4"],  # 2 Foreground 0
-         ["#908caa", "#908caa"],  # 3 Foreground 1
-         ["#eb6f92", "#eb6f92"],  # 4 Red
-         ["#569f86", "#569f86"],  # 5 Green
-         ["#f6c177", "#f6c177"],  # 6 Yellow
-         ["#5a8fa5", "#5a8fa5"],  # 7 Blue
-         ["#ebbcba", "#ebbcba"],  # 8 Magenta
-         ["#9ccfd8", "#9ccfd8"],  # 9 Cyan
-         ["#ea9d34", "#ea9d34"],  # 10 Orange
-         ["#c4a7e7", "#c4a7e7"],  # 11 Violet
-     ]
+# colors = [
+#          ["#191724", "#191724"],  # 0 Background 0
+#          ["#26233a", "#26233a"],  # 1 Background 1
+#          ["#e0def4", "#e0def4"],  # 2 Foreground 0
+#          ["#908caa", "#908caa"],  # 3 Foreground 1
+#          ["#eb6f92", "#eb6f92"],  # 4 Red
+#          ["#569f86", "#569f86"],  # 5 Green
+#          ["#f6c177", "#f6c177"],  # 6 Yellow
+#          ["#5a8fa5", "#5a8fa5"],  # 7 Blue
+#          ["#ebbcba", "#ebbcba"],  # 8 Magenta
+#          ["#9ccfd8", "#9ccfd8"],  # 9 Cyan
+#          ["#ea9d34", "#ea9d34"],  # 10 Orange
+#          ["#c4a7e7", "#c4a7e7"],  # 11 Violet
+#      ]
 
 # Rose Pine Moon
 # colors = [
@@ -654,8 +632,8 @@ widget_defaults = dict(
     font='Product Sans',
     fontsize=18,
     padding=4,
-    background='#191724',
-    foreground='#e0def4',
+    background='#1e1e2e',
+    foreground='#cdd6f4',
 )
 
 extension_defaults = widget_defaults.copy()
@@ -675,7 +653,7 @@ screens = [
                     foreground=colors[0],
                     background=colors[5],
                     mouse_callbacks={
-                        "Button1": lazy.spawn("rofi -show drun"),
+                        "Button1": lazy.spawn("sh /home/mura/.config/rofi/launchers/type-7/launcher.sh"),
                         },
                     text=' 󰣇',
                     padding=-1,
@@ -896,8 +874,8 @@ follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(
-    border_focus='ebbcba',
-    border_normal='191724',
+    border_focus='f5c2e7',
+    border_normal='1e1e2e',
     border_width=2,
     fullscreen_border_width=0,
     float_rules=[

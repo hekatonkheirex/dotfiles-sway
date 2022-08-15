@@ -65,6 +65,8 @@ ZSH_THEME="robbyrussell"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+source ~/.zsh
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -142,10 +144,9 @@ rxfetch
 
 export TERM=xterm-256color
 
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS"
- --color=fg:#e0def4,bg:#1f1d2e,hl:#6e6a86
- --color=fg+:#908caa,bg+:#191724,hl+:#908caa
- --color=info:#9ccfd8,prompt:#f6c177,pointer:#c4a7e7
- --color=marker:#ebbcba,spinner:#eb6f92,header:#ebbcba"
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5c2e7,hl:#f38ba8 \
+--color=fg:#b4befe,header:#f38ba8,info:#cba6f7,pointer:#f5c2e7 \
+--color=marker:#f5c2e7,fg+:#b4befe,prompt:#cba6f7,hl+:#f38ba8"
 
 eval "$(starship init zsh)"

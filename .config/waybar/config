@@ -19,7 +19,7 @@
   // Choose the order of the modules
   "modules-left": ["custom/menu", "sway/workspaces"],
   "modules-center": [],
-  "modules-right": ["tray", "sway/language", "idle_inhibitor", "network", "pulseaudio", "pulseaudio#2", "backlight", "backlight#2", "battery", "battery#2", "custom/weather", "custom/weather2", "clock", "clock#2", "custom/power"],
+  "modules-right": ["sway/language", "tray", "idle_inhibitor", "network", "pulseaudio", "pulseaudio#2", "backlight", "backlight#2", "battery", "battery#2", "custom/weather", "custom/weather2", "clock", "clock#2", "custom/power"],
 
   "backlight": {
     "interval": 2,
