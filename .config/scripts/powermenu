@@ -21,11 +21,11 @@ wofi_command="wofi --show dmenu \
 uptime=$(uptime -p | sed -e 's/up //g')
 
 ## Entries
-shutdown=" Shutdown"
-reboot=" Restart"
-lock=" Lock"
-suspend=" Sleep"
-logout=" Logout"
+shutdown="  Shutdown"
+reboot="  Restart"
+lock="  Lock"
+suspend="  Sleep"
+logout="  Logout"
 
 # Ask for confirmation
 cdialog () {

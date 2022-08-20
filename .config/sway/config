@@ -60,8 +60,14 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
 
+# Screenshot monitor
 bindsym Print exec /home/mura/.config/scripts/screenshot.sh
+
+# Screenshot area
 bindsym Print+Shift exec /home/mura/.config/scripts/screenshot_slurp.sh
+
+# Screenshot area to clipboard
+bindsym Print+Shift+Ctrl exec grim -g "$(slurp)" - | wl-copy
 
 # Drag floating windows by holding down $mod and left mouse button.
 floating_modifier $mod normal
@@ -142,6 +148,8 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the next scratchpad window or hide the focused scratchpad window.
 bindsym $mod+minus scratchpad show
 
+# clipman
+bindsym Mod1+h exec clipman pick -t wofi
 
 # Resizing containers:
 mode "resize" {
@@ -240,7 +248,9 @@ for_window [app_id=".*"] opacity $opacity
 for_window [app_id="firefox"] opacity 1.0
 for_window [class="firefox"] opacity 1.0
 for_window [class="Google-chrome"] opacity 1.0
+for_window [app_id="google-chrome"] opacity 1.0
 for_window [class="Microsoft-edge"] opacity 1.0
+for_window [app_id="microsoft-edge"] opacity 1.0
 for_window [class="mpv"] opacity 1.0
 for_window [class="Gimp-2.10"] opacity 1.0
 
@@ -248,9 +258,12 @@ for_window [class="Gimp-2.10"] opacity 1.0
 for_window [app_id="firefox"] move to workspace 1, workspace 1
 for_window [class="firefox"] move to workspace 1, workspace 1
 for_window [class="Google-chrome"] move to workspace 1, workspace 1
+for_window [app_id="google-chrome"] move to workspace 1, workspace 1
 for_window [class="Microsoft-edge"] move to workspace 1, workspace 1
+for_window [app_id="microsoft-edge"] move to workspace 1, workspace 1
 for_window [app_id="Alacritty"] move to workspace 2, workspace 2
 for_window [app_id="org.wezfurlong.wezterm"] move to workspace 2, workspace 2
+for_window [class="org.wezfurlong.wezterm"] move to workspace 2, workspace 2
 for_window [app_id="thunar"] move to workspace 3, workspace 3
 for_window [app_id="libreoffice-writer"] move to workspace 3, workspace 3
 for_window [app_id="libreoffice-calc"] move to workspace 3, workspace 3
@@ -283,10 +296,11 @@ for_window [app_id= "nm-connection-editor"] floating enable
 
 # Autostart applications
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec_always $HOME/.config/scripts/ff.sh
+exec systemctl --user set-environment MOZ_ENABLE_WAYLAND=1 MOZ_DBUS_REMOTE=1
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
 exec_always --no-startup-id $HOME/.config/waybar/waybar.sh
 exec_always blueman-applet &
-exec_always firewall-applet &
 exec 'eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)'
 exec export SSH_AUTH_SOCK
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -294,8 +308,10 @@ exec_always --no-startup-id autotiling
 exec_always thunar --daemon &
 exec_always $HOME/.config/scripts/thunar.sh &
 exec mako &
-exec wl-paste -t text --watch clipman store --no-persist
+exec wl-paste -t text --watch clipman store
+exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
 exec ~/.azotebg
 # exec wlsunset -l 25.27 -L -57.64 &
+exec "sleep 8; firewall-applet"
 
 include /etc/sway/config.d/*

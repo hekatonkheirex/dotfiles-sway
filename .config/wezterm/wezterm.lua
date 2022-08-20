@@ -1,4 +1,4 @@
-local wezterm = require('wezterm')
+local wezterm = require("wezterm")
 
 local xcursor_size = nil
 local xcursor_theme = nil
@@ -12,65 +12,89 @@ local success, stdout, stderr = wezterm.run_child_process({"gsettings", "get", "
 if success then
   xcursor_size = tonumber(stdout)
 end
-
 local function font_with_fallback(name, params)
-  local names = { name, "Apple Color Emoji", "azuki_font" }
-  return wezterm.font_with_fallback(names, params)
+	local names = { name, "Apple Color Emoji", "azuki_font" }
+	return wezterm.font_with_fallback(names, params)
 end
 
 local font_name = "JetBrains Mono"
 
+local colors = {
+	-- special
+	foreground = "#cdd6f4",
+	darker_background = "#181825",
+	background = "#1e1e2e",
+	lighter_background = "#313244",
+	one_background = "#11111b",
+
+	-- black
+	color0 = "#313244",
+	color8 = "#45475a",
+
+	-- red
+	color1 = "#f38ba8",
+	color9 = "#f38ba8",
+
+	-- green
+	color2 = "#a6e3a1",
+	color10 = "#a6e3a1",
+
+	-- yellow
+	color3 = "#f9e2af",
+	color11 = "#f9e2af",
+
+	-- blue
+	color4 = "#89b4fa",
+	color12 = "#89b4fa",
+
+	-- magenta
+	color5 = "#f5c2e7",
+	color13 = "#f5c2e7",
+
+	-- cyan
+	color6 = "#89dceb",
+	color14 = "#89dceb",
+
+	-- white
+	color7 = "#bac2de",
+	color15 = "#cdd6f4",
+}
+
 return {
-  -- colors = theme,
-  color_scheme_dirs = {"/home/mura/.config/wezterm/colors"},
-  color_scheme = 'Catppuccin Mocha',  -- Catppuccin Mocha, Catppuccin Frappe, Decay, Horizon
-  front_end = "OpenGL",
+	-- OpenGL for GPU acceleration, Software for CPU
+	front_end = "OpenGL",
 
-  -- font config
-  font = font_with_fallback(font_name),
-  font_rules = {
-    {
-      italic = true,
-      font = font_with_fallback(font_name, { italic = true }),
-    },
-    {
-      italic = true,
-      intensity = "Bold",
-      font = font_with_fallback(font_name, { bold = true, italic = true }),
-    },
-    {
-      intensity = "Bold",
-      font = font_with_fallback(font_name, { bold = true }),
-    },
-    {
-      intensity = "Half",
-      font = font_with_fallback(font_name, { weight = "Light" }),
-    }
-  },
-  font_size = 13,
-  line_height = 1.0,
+	-- Font config
+	font = font_with_fallback(font_name),
+	font_rules = {
+		{
+			italic = true,
+			font = font_with_fallback(font_name, { italic = true }),
+		},
+		{
+			italic = true,
+			intensity = "Bold",
+			font = font_with_fallback(font_name, { bold = true, italic = true }),
+		},
+		{
+			intensity = "Bold",
+			font = font_with_fallback(font_name, { bold = true }),
+		},
+		{
+			intensity = "Half",
+			font = font_with_fallback(font_name, { weight = "Light" }),
+		},
+	},
+	font_size = 13,
+	line_height = 1.0,
 
-  -- cursor style
-  default_cursor_style = "BlinkingUnderline",
-  cursor_blink_rate = 1000,
-  cursor_blink_ease_in = "Constant",
-  cursor_blink_ease_out = "Constant",
+	-- Cursor style
+	default_cursor_style = "BlinkingUnderline",
 
-  -- padding
-  window_padding = {
-    left = 15,
-    right = 15,
-    top = 15,
-    bottom = 15,
-  },
+	-- X11
+	enable_wayland = false,
 
-  -- tab bar
-  enable_tab_bar = true,
-  hide_tab_bar_if_only_one_tab = true,
-  show_tab_index_in_tab_bar = false,
-  tab_bar_at_bottom = true,
-  
-  -- Keybinds
+	-- Keybinds
 	disable_default_key_bindings = true,
 	keys = {
 		{
@@ -169,19 +193,85 @@ return {
 		},
 	},
 
-  -- general
-  bold_brightens_ansi_colors = true,
+	bold_brightens_ansi_colors = false,
+	colors = {
+		background = colors.background,
+		foreground = colors.foreground,
+
+		cursor_bg = colors.foreground,
+		cursor_fg = colors.foreground,
+		cursor_border = colors.foreground,
+
+		selection_fg = colors.background,
+		selection_bg = colors.color4,
+
+		scrollbar_thumb = colors.foreground,
+
+		split = colors.lighter_background,
+
+		ansi = {
+			colors.color0,
+			colors.color1,
+			colors.color2,
+			colors.color3,
+			colors.color4,
+			colors.color5,
+			colors.color6,
+			colors.color7,
+		},
+
+		brights = {
+			colors.color8,
+			colors.color9,
+			colors.color10,
+			colors.color11,
+			colors.color12,
+			colors.color13,
+			colors.color14,
+			colors.color15,
+		},
+
+		tab_bar = {
+			active_tab = {
+				bg_color = colors.background,
+				fg_color = colors.foreground,
+				italic = true,
+			},
+			inactive_tab = { bg_color = colors.darker_background, fg_color = colors.background },
+			inactive_tab_hover = { bg_color = colors.one_background, fg_color = colors.darker_background },
+			new_tab = { bg_color = colors.one_background, fg_color = colors.darker_background },
+			new_tab_hover = { bg_color = colors.color4, fg_color = colors.darker_background },
+		},
+	},
+
+	-- Padding
+	window_padding = {
+		left = 15,
+		right = 15,
+		top = 15,
+		bottom = 15,
+	},
+
+	-- Tab Bar
+	enable_tab_bar = true,
+	hide_tab_bar_if_only_one_tab = true,
+	show_tab_index_in_tab_bar = false,
+	tab_bar_at_bottom = true,
+
+	-- General
   animation_fps = 1,
+  cursor_blink_rate = 1000,
+  cursor_blink_ease_in = "Constant",
+  cursor_blink_ease_out = "Constant",
   enable_kitty_graphics = true,
-  automatically_reload_config = true,
-  inactive_pane_hsb = {
-    saturation = 1.0,
-    brightness = 1.0,
-  },
-  exit_behavior = "CloseOnCleanExit",
-  selection_word_boundary = " \t\n{}[]()\"'`,;:",
+	automatically_reload_config = true,
+	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
+	window_frame = { active_titlebar_bg = colors.darker_background },
+	exit_behavior = "CloseOnCleanExit",
+	window_decorations = "RESIZE",
+	selection_word_boundary = " \t\n{}[]()\"'`,;:",
   warn_about_missing_glyphs = false,
-  check_for_updates = false,
   xcursor_theme = xcursor_theme,
   xcursor_size = xcursor_size,
+  check_for_updates = false,
 }

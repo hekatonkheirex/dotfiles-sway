@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-filename="/home/mura/Pictures/Screenshots/$(date +'%Y.%m.%d-%H:%m:%S').png"
+filename="/home/mura/Pictures/Screenshots/screenshot_$(date +'%Y%m%d_%H%m%S').png"
 touch $filename
-grim $filename -g "$(slurp)"
+grim -g "$(slurp)" $filename | wl-copy

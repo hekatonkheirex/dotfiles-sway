@@ -22,6 +22,7 @@ export MOZ_ENABLE_WAYLAND=1
 export TDESKTOP_DISABLE_GTK_INTEGRATION=1
 # export CLUTTER_BACKEND="wayland"
 # export BEMENU_BACKEND="wayland"
+export GDK_BACKEND=wayland,x11
 
 ## QT environment
 export QT_QPA_PLATFORM="xcb;wayland-egl"
