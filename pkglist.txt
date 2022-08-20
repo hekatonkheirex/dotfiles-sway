@@ -23,11 +23,11 @@ betterlockscreen-git
 bind
 bison
 blueman
-blueprint-compiler-git
 bluez
 bluez-utils
 brightnessctl
 catimg
+cava
 chafa
 clipman
 cups
@@ -36,6 +36,7 @@ dina-font
 discord
 dosfstools
 dunst
+dupeguru
 efibootmgr
 ethtool
 exa
@@ -50,6 +51,7 @@ ffmpegthumbnailer
 firefox
 firewalld
 flex
+freerdp
 fzf
 gcc
 gdm
@@ -71,7 +73,7 @@ inter-font
 iw
 jp2a
 jpegexiforient
-laptop-mode-tools-git
+laptop-mode-tools
 leafpad
 libcaca
 libgepub
@@ -120,7 +122,9 @@ polkit-gnome
 poppler-glib
 python-pycryptodome
 python-pyqt5
+python-pyqt6
 python-pyquery
+python-pyxdg
 qbittorrent
 qt5-wayland
 qt5ct
@@ -129,6 +133,7 @@ qt6ct
 qtile
 raw-thumbnailer
 reflector
+remmina
 rofi
 rsync
 rtkit
@@ -141,10 +146,10 @@ spicetify-cli
 spotify
 sudo
 sway
-swaybg
 swayidle
 swaylock-effects-git
 tamsyn-font
+teams
 tex-gyre-fonts
 texinfo
 themix-full-git
@@ -166,6 +171,7 @@ ttf-fira-sans
 ttf-hack
 ttf-ibm-plex
 ttf-inconsolata
+ttf-iosevka
 ttf-jetbrains-mono
 ttf-junicode
 ttf-liberation
@@ -175,6 +181,7 @@ ttf-opensans
 ttf-roboto
 ttf-ubuntu-font-family
 tumbler
+ueberzug
 unimatrix-git
 usbutils
 vdhcoapp-bin
@@ -189,11 +196,16 @@ wlsunset
 wofi
 wpa_supplicant
 xarchiver
+xdg-desktop-portal
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
+xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xdotool
 xf86-video-amdgpu
 xfce4-power-manager
+xorg-xlsclients
 xorg-xwayland
 xorg-xwininfo
 xss-lock
