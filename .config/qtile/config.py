@@ -9,7 +9,7 @@ from typing import List  # noqa: F401
 
 # Defaults
 mod = "mod4"
-myTerm = "alacritty"
+myTerm = "wezterm"
 
 
 # Autostart programs
@@ -237,11 +237,10 @@ keys = [
 
 groups = []
 
-group_names = 'www term file doc bit chat share vid mus'.split()
-group_labels = ["一", "二", "三", "四", "五", "六", "七", "八", "九"]
+group_names = 'www term file doc mus'.split()
+group_labels = ["", "", "", "", ""]
 group_layouts = [
-        "monadtall", "tile", "max", "max", "max", "max", "floating",
-        "floating", "max"
+        "monadtall", "tile", "max", "max", "max"
     ]
 
 for i in range(len(group_names)):
@@ -267,29 +266,18 @@ def assign_app_group(client):
         "Alacritty",
         "kitty",
         "org.wezfurlong.wezterm",
+        "wezterm",
         ]
     d[group_names[2]] = [
         "thunar",
         ]
     d[group_names[3]] = [
-        "Soffice",
-        "libreoffice",
-        ]
-    d[group_names[4]] = [
         "qBittorrent",
-        ]
-    d[group_names[5]] = [
         "discord",
         ]
-    d[group_names[6]] = [
-        "TeamViewer",
-        "Anydesk",
-        ]
-    d[group_names[7]] = [
-        "mpv",
-        ]
-    d[group_names[8]] = [
+    d[group_names[4]] = [
         "Spotify",
+        "mpv",
         ]
 
     wm_class = client.window.get_wm_class()[0]
@@ -357,8 +345,8 @@ for i, name in enumerate(group_names, 1):
 
 # Catppuccin Mocha
 layout_theme = {
-        "border_width": 2,
-        "margin": 15,
+        "border_width": 4,
+        "margin": 10,
         "border_focus": "cba6f7",
         "border_normal": "1e1e2e"
     }
@@ -407,8 +395,8 @@ layouts = [
     layout.MonadTall(
         border_focus='cba6f7',
         border_normal='1e1e2e',
-        border_width=2,
-        margin=15,
+        border_width=4,
+        margin=10,
         ratio=0.52,
     ),
     layout.Tile(
@@ -420,7 +408,7 @@ layouts = [
     layout.Floating(
         border_focus='f5c2e7',
         border_normal='1e1e2e',
-        border_width=2,
+        border_width=4,
         fullscreen_border_width=0,
     ),
     # layout.Columns(**layout_theme),
@@ -667,23 +655,23 @@ screens = [
                     background=colors[5],
                 ),
                 widget.GroupBox(
-                    active=colors[2],
+                    active=colors[6],
                     block_highlight_text_color=colors[0],
                     borderwidth=2,
                     disable_drag=True,
-                    font='Stick',
-                    fontsize=18,
-                    hide_unused=True,
+                    font='Font Awesome 6 Pro Solid',
+                    fontsize=16,
+                    hide_unused=False,
                     highlight_color='00000000',
                     # highlight_color=colors[11],
-                    # highlight_method='text',
-                    highlight_method='block',
+                    highlight_method='text',
+                    # highlight_method='block',
                     inactive=colors[1],
                     padding=2,
                     rounded=True,
-                    spacing=4,
-                    this_current_screen_border=colors[11],
-                    urgent_alert_method='block',
+                    spacing=6,
+                    this_current_screen_border=colors[7],
+                    urgent_alert_method='text',
                     urgent_border=colors[4],
                     urgent_text=colors[0],
                 ),
@@ -840,9 +828,9 @@ screens = [
                     background=colors[6],
                 ),
             ],
-            34,
-            margin=[5, 5, 0, 5],
-            # border_width=[2, 2, 2, 2],
+            30,
+            margin=[10, 10, 0, 10],
+            # border_width=[1, 1, 1, 1],
             # border_color=["1e1e2e", "1e1e2e", "1e1e2e", "1e1e2e"],
         ),
     ),
@@ -876,7 +864,7 @@ cursor_warp = False
 floating_layout = layout.Floating(
     border_focus='f5c2e7',
     border_normal='1e1e2e',
-    border_width=2,
+    border_width=4,
     fullscreen_border_width=0,
     float_rules=[
         # Run the utility `xprop` to see the wm class and name of an X client

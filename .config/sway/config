@@ -312,6 +312,7 @@ exec wl-paste -t text --watch clipman store
 exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
 exec ~/.azotebg
 # exec wlsunset -l 25.27 -L -57.64 &
+exec_always --no-startup-id flashfocus &
 exec "sleep 8; firewall-applet"
 
 include /etc/sway/config.d/*

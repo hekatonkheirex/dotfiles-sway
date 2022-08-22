@@ -14,6 +14,7 @@ autoconf
 automake
 autotiling
 avahi
+awesome-git
 azote
 baobab
 base
@@ -50,6 +51,7 @@ feh
 ffmpegthumbnailer
 firefox
 firewalld
+flashfocus
 flex
 freerdp
 fzf
@@ -60,6 +62,7 @@ gimp
 git
 gnome-keyring
 google-chrome
+gpick
 grim
 groff
 grub
@@ -69,10 +72,13 @@ hdparm
 hplip
 htop
 inetutils
+inotify-tools
 inter-font
 iw
 jp2a
 jpegexiforient
+jq
+lain-git
 laptop-mode-tools
 leafpad
 libcaca
@@ -87,6 +93,7 @@ linux-firmware
 linux-headers
 lxappearance-gtk3
 m4
+maim
 make
 mako
 microsoft-edge-stable-bin
@@ -132,6 +139,7 @@ qt6-wayland
 qt6ct
 qtile
 raw-thumbnailer
+redshift
 reflector
 remmina
 rofi
@@ -185,6 +193,7 @@ ueberzug
 unimatrix-git
 usbutils
 vdhcoapp-bin
+vicious
 viewnior
 w3m
 waybar
@@ -196,6 +205,7 @@ wlsunset
 wofi
 wpa_supplicant
 xarchiver
+xclip
 xdg-desktop-portal
 xdg-desktop-portal-gnome
 xdg-desktop-portal-gtk
