@@ -13,6 +13,7 @@ xsetroot --cursor_name left_ptr &
 nitrogen --restore &
 dunst &
 picom -f -b
+flashfocus &
 $HOME/.config/scripts/thunar.sh &
 thunar --daemon &
 xss-lock -l $HOME/.config/scripts/lock.sh & 
