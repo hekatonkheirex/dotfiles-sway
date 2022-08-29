@@ -202,7 +202,7 @@ gaps top 1
 # Catppuccin Mocha
 set $gnome-schema org.gnome.desktop.interface
 exec_always {
-    gsettings set $gnome-schema gtk-theme 'Catppuccin-Mocha'
+    gsettings set $gnome-schema gtk-theme 'Catppuccin-Mocha-Mauve'
     gsettings set $gnome-schema icon-theme 'Papirus-Dark'
     gsettings set $gnome-schema cursor-theme 'Colloid-dark-cursors'
     gsettings set $gnome-schema font-name 'Product Sans 14'
@@ -296,9 +296,8 @@ for_window [app_id= "nm-connection-editor"] floating enable
 
 # Autostart applications
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec_always $HOME/.config/scripts/ff.sh
 exec systemctl --user set-environment MOZ_ENABLE_WAYLAND=1 MOZ_DBUS_REMOTE=1
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec_always --no-startup-id $HOME/.config/waybar/waybar.sh
 exec_always blueman-applet &
 exec 'eval $(gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)'
@@ -306,10 +305,9 @@ exec export SSH_AUTH_SOCK
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id autotiling
 exec_always thunar --daemon &
+exec_always udiskie -2 &
 exec_always $HOME/.config/scripts/thunar.sh &
 exec mako &
-exec wl-paste -t text --watch clipman store
-exec wl-paste -p -t text --watch clipman store -P --histpath="~/.local/share/clipman-primary.json"
 exec ~/.azotebg
 # exec wlsunset -l 25.27 -L -57.64 &
 exec_always --no-startup-id flashfocus &
