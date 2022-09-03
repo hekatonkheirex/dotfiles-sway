@@ -1,0 +1,15 @@
+# Input configuration
+input "1267:12423:ELAN1300:00_04F3:3087_Touchpad" {
+  dwt enabled
+  tap enabled
+  natural_scroll enabled
+  middle_emulation enabled
+}
+
+input "type:keyboard" {
+  repeat_delay 300
+  repeat_rate 50
+  xkb_layout us,es
+  #xkb_variant ,nodeadkeys
+  xkb_options grp:alt_shift_toggle
+}
