@@ -96,13 +96,13 @@
   "custom/menu": {
     "format": "",
     "tooltip": false,
-    "on-click": "$HOME/.config/scripts/menu",
+    "on-click": "$HOME/.config/waybar/scripts/menu",
   },
 
   "custom/power": {
     "format": "",
     "tooltip": false,
-    "on-click": "$HOME/.config/scripts/powermenu",
+    "on-click": "$HOME/.config/waybar/scripts/powermenu",
   },
 
   "idle_inhibitor": {
@@ -194,13 +194,13 @@
   },
 
   "custom/weather": {
-    "exec": "python /home/mura/.config/scripts/weather-vertical1.py",
+    "exec": "python /home/mura/.config/waybar/scripts/weather-vertical1.py",
     "restart-interval": 300,
     "return-type": "json",
     "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"
   },
   "custom/weather2": {
-    "exec": "python /home/mura/.config/scripts/weather-vertical2.py",
+    "exec": "python /home/mura/.config/waybar/scripts/weather-vertical2.py",
     "restart-interval": 300,
     "return-type": "json",
     "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"

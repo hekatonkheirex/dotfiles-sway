@@ -13,6 +13,10 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
 # Bar
 exec_always --no-startup-id $HOME/.config/waybar/waybar.sh
 
+# Cheatsheet
+# exec_always --no-startup-id $HOME/.config/sway/scripts/cheatsheet
+exec_always --no-startup-id nwg-wrapper &
+
 # Applets
 exec_always blueman-applet &
 exec "sleep 8; firewall-applet"

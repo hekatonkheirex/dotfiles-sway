@@ -134,9 +134,6 @@ alias mirrors="sudo reflector --latest 20 --age 12 --country US --sort rate --sa
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select
 
-export VDPAU_DRIVER=radeonsi
-export LIBVA_DRIVER_NAME=radeonsi
-
 # pfetch
 # .config/scripts/blks
 rxfetch

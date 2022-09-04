@@ -8,6 +8,9 @@ set $right l
 set $term "wezterm start --always-new-process"
 # set $term "alacritty"
 
+# Application launcher
+set $menu wofi --show drun
+
 # Idle configuration
 exec swayidle -w \
         timeout 600 'swaylock -f' \
@@ -24,7 +27,12 @@ bindsym $mod+Return exec $term
 # Kill focused window
 bindsym $mod+w kill
 
+# Hide/Show waybar
 bindsym $mod+c exec pkill -SIGUSR1 '^waybar$'
+
+# Cheatsheet
+bindsym $mod+x exec 'nwg-wrapper -t bindings.pango -c bindings.css -p left -ml 1400'
+bindsym $mod+Shift+x exec killall "nwg-wrapper"
 
 # Start your launcher
 bindsym $mod+d exec $menu
@@ -32,11 +40,11 @@ bindsym $mod+d exec $menu
 # Firefox
 bindsym $mod+b exec brave
 
-# Application launcher
-set $menu wofi --show drun
+# File manager
+bindsym $mod+i exec thunar
 
 # Power menu
-bindsym $mod+p exec $HOME/.config/scripts/wlogout
+bindsym $mod+p exec $HOME/.config/sway/scripts/wlogout
 
 # Multimedia keys
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
@@ -46,10 +54,10 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
 
 # Screenshot monitor
-bindsym Print exec /home/mura/.config/scripts/screenshot.sh
+bindsym Print exec /home/mura/.config/sway/scripts/screenshot.sh
 
 # Screenshot area
-bindsym Print+Shift exec /home/mura/.config/scripts/screenshot_slurp.sh
+bindsym Print+Shift exec /home/mura/.config/sway/scripts/screenshot_slurp.sh
 
 # Screenshot area to clipboard
 bindsym Print+Shift+Ctrl exec grim -g "$(slurp)" - | wl-copy
@@ -63,7 +71,6 @@ bindsym $mod+Shift+r reload
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 bindsym $mod+Shift+q exec swaymsg exit
-
 
 # Moving around
 # Move your focus around
@@ -124,6 +131,7 @@ bindsym $mod+space focus mode_toggle
 # Move focus to the parent container
 bindsym $mod+a focus parent
 
+# Change windows like windows alt+tab
 bindsym Mod1+tab workspace back_and_forth
 
 # Scratchpad
@@ -153,6 +161,5 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+r mode "resize"
-
-
