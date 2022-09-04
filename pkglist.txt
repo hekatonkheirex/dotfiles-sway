@@ -26,6 +26,7 @@ brave-bin
 brightnessctl
 catppuccin-gtk-theme-mocha
 cava
+clipman
 cups
 dhclient
 dialog
@@ -89,6 +90,7 @@ libgsf
 libopenraw
 libreoffice-fresh
 libtool
+libva-mesa-driver
 light
 linux
 linux-firmware
@@ -97,6 +99,7 @@ lxappearance
 m4
 make
 mako
+man-db
 mlocate
 mpv
 mtools
@@ -116,6 +119,8 @@ noto-fonts-emoji
 nss-mdns
 ntfs-3g
 ntp
+nwg-wrapper
+obs-studio
 openconnect
 openssh
 openvpn
