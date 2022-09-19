@@ -11,7 +11,7 @@ define variables for them in _colors.scss */
 /* Catppuccin Mocha Borderless Theme */
 
 /* The main accent color and the matching text value */
-@define-color accent_bg_color #cba6f7;
+@define-color accent_bg_color #F5E0DC;
 @define-color accent_fg_color #1E1E2E;
 @define-color accent_color @accent_bg_color;
 
@@ -112,23 +112,23 @@ windowcontrols {
   border-spacing: 6px;
 }
 
-windowcontrols:not(.empty).start:dir(ltr),
-windowcontrols:not(.empty).end:dir(rtl) {
-  margin-right: 6px;
-  margin-left: 3px;
+windowcontrols.start:not(.empty):dir(ltr),
+windowcontrols.end:not(.empty):dir(rtl) {
+  margin-left: 12px;
+  margin-right: 3px;
 }
 
-windowcontrols:not(.empty).start:dir(rtl),
-windowcontrols:not(.empty).end:dir(ltr) {
-  margin-left: 6px;
+windowcontrols.start:not(.empty):dir(rtl),
+windowcontrols.end:not(.empty):dir(ltr) {
+  margin-left: 12px;
   margin-right: 3px;
 }
 
 windowcontrols button:not(.suggested-action):not(.destructive-action) {
-  min-height: 14px;
-  min-width: 14px;
+  min-height: 12px;
+  min-width: 12px;
   padding: 0;
-  margin: 0 3px;
+  margin: 0 2px;
   border-radius: 9999px;
 }
 
@@ -246,7 +246,7 @@ calendar > grid > label.today,
 filechooser stack.view scrolledwindow treeview.view:selected,
 stacksidebar row:selected,
 .navigation-sidebar > row:selected {
-  color: #cba6f7;
+  color: #f5e0dc;
   background-color: rgba(245, 224, 220, 0.2);
 }
 
@@ -256,7 +256,7 @@ label > selection,
 entry > text > selection,
 calendar > grid > label.today:selected {
   color: rgba(0, 0, 0, 0.87);
-  background-color: #cba6f7;
+  background-color: #f5e0dc;
 }
 
 .monospace {
@@ -444,8 +444,8 @@ switch {
 }
 
 switch:checked {
-  background-color: #cba6f7;
-  border-color: #cba6f7;
+  background-color: #f5e0dc;
+  border-color: #f5e0dc;
 }
 
 switch:disabled {
@@ -484,3 +484,5 @@ switch:checked > slider {
   background-color: #1e1e2e;
   color: #1e1e2e;
 }
+
+

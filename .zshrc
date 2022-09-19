@@ -98,6 +98,7 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 source $ZSH/oh-my-zsh.sh
 source /home/mura/git/tty/mocha.sh
 source /home/mura/.zsh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -142,7 +143,7 @@ export TERM=xterm-256color
 
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5c2e7,hl:#f38ba8 \
---color=fg:#b4befe,header:#f38ba8,info:#cba6f7,pointer:#f5c2e7 \
---color=marker:#f5c2e7,fg+:#b4befe,prompt:#cba6f7,hl+:#f38ba8"
+--color=fg:#a6e3a1,header:#f38ba8,info:#89b4fa,pointer:#f5c2e7 \
+--color=marker:#f5c2e7,fg+:#a6e3a1,prompt:#89b4fa,hl+:#f38ba8"
 
 eval "$(starship init zsh)"

@@ -1,16 +1,16 @@
 format = """
-[](#a6e3a1)\
+[](#89b4fa)\
 $username\
-[](bg:#fab387 fg:#a6e3a1)\
+[](bg:#fab387 fg:#89b4fa)\
 $directory\
 [](fg:#fab387 bg:#89dceb)\
 $nodejs\
 $rust\
 $lua\
 $python\
-[](fg:#89dceb bg:#89b4fa)\
+[](fg:#9ccfd8 bg:#a6e3a1)\
 $time\
-[](fg:#89b4fa bg:#f38ba8)\
+[](fg:#a6e3a1 bg:#f38ba8)\
 $status\
 [ ](fg:#f38ba8)\
 """
@@ -21,8 +21,8 @@ $status\
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "fg:#1e1e2e bg:#a6e3a1"
-style_root = "fg:#1e1e2e bg:#a6e3a1"
+style_user = "fg:#1e1e2e bg:#89b4fa"
+style_root = "fg:#1e1e2e bg:#89b4fa"
 format = '[$user ]($style)'
 
 [directory]
@@ -76,5 +76,5 @@ format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "fg:#1e1e2e bg:#89b4fa"
-format = '[[   $time ](fg:#1e1e2e bg:#89b4fa)]($style)'
+style = "fg:#1e1e2e bg:#a6e3a1"
+format = '[[   $time ](fg:#1e1e2e bg:#a6e3a1)]($style)'

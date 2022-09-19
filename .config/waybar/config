@@ -8,9 +8,9 @@
   "width": "", 					// Waybar width (empty for auto width)
   "spacing": 0, 					// Gaps between modules
   "margin": 0, 					// Space around the bar
-  "margin-top": 0, 				// Space above the bar
-  "margin-bottom": 0, 			// Space below the bar
-  "margin-left": 0, 				// Space to the left of the bar
+  "margin-top": 15, 				// Space above the bar
+  "margin-bottom": 15, 			// Space below the bar
+  "margin-left": 15, 				// Space to the left of the bar
   "margin-right": 0, 				// Space to the right of the bar
   "fixed-center": false, 			// Center modules position
   "ipc": true, 					// Control waybar with `swaymsg bar` commands
@@ -25,7 +25,7 @@
     "interval": 2,
     //"device": "amdgpu_bl0",
     "format": "{icon}",
-    "format-icons": [""],
+    "format-icons": [""],
     "on-scroll-up": "light -A 5%",
     "on-scroll-down": "light -U 5%",
     "smooth-scrolling-threshold": 1,
@@ -94,7 +94,7 @@
   },
 
   "custom/menu": {
-    "format": "",
+    "format": "",
     "tooltip": false,
     "on-click": "$HOME/.config/waybar/scripts/menu",
   },
@@ -180,7 +180,7 @@
     },
     "format": "{icon}",
     "format-icons": {
-      "1": "",
+      "1": "",
       "2": "",
       "3": "",
       "4": "",

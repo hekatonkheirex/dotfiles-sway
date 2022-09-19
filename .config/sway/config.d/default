@@ -31,14 +31,14 @@ bindsym $mod+w kill
 bindsym $mod+c exec pkill -SIGUSR1 '^waybar$'
 
 # Cheatsheet
-bindsym $mod+x exec 'nwg-wrapper -t bindings.pango -c bindings.css -p left -ml 1400'
+bindsym $mod+x exec 'nwg-wrapper -t bindings.pango -c bindings.css -p left -ml 1350'
 bindsym $mod+Shift+x exec killall "nwg-wrapper"
 
 # Start your launcher
 bindsym $mod+d exec $menu
 
 # Firefox
-bindsym $mod+b exec brave
+bindsym $mod+b exec firefox
 
 # File manager
 bindsym $mod+i exec thunar

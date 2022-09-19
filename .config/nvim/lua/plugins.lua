@@ -97,7 +97,7 @@ return require('packer').startup({
   use 'folke/tokyonight.nvim'
   use 'audibleblink/hackthebox.vim'
   use {'decaycs/decay.nvim', as = 'decay'}
-  use 'CantoroMC/ayu-nvim'
+  use 'Shatur/neovim-ayu'
 end,
 config = {
   display = {

@@ -56,8 +56,8 @@ local colors = {
 	color14 = "#89dceb",
 
 	-- white
-	color7 = "#bac2de",
-	color15 = "#cdd6f4",
+	color7 = "#a6adc8",
+	color15 = "#bac2de",
 }
 
 return {

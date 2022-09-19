@@ -36,7 +36,7 @@ progress-color=over #cba6f7
 border-color=#cdd6f4
 
 [urgency=normal]
-border-color=#a6e3a1
+border-color=#cdd6f4
 
 [urgency=high]
 border-color=#f38ba8
