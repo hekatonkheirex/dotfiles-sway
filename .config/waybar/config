@@ -54,7 +54,7 @@
     "format-charging": "",
     "format-plugged": "",
     "format-full": "",
-    "format-icons": ["", "", "", "", "", ""],
+    "format-icons": ["", "", "", "", ""],
     "format-time": "{H}h {M}min",
     "tooltip": true,
   },
@@ -94,7 +94,7 @@
   },
 
   "custom/menu": {
-    "format": "",
+    "format": "",
     "tooltip": false,
     "on-click": "$HOME/.config/waybar/scripts/menu",
   },
@@ -180,7 +180,7 @@
     },
     "format": "{icon}",
     "format-icons": {
-      "1": "",
+      "1": "",
       "2": "",
       "3": "",
       "4": "",

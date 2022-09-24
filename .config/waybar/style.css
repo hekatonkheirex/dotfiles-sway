@@ -1,14 +1,14 @@
 /* General configuration */
 * {
   border: none;
-  font-family: "Product Sans", "Font Awesome 6 Free Regular", "Font Awesome 6 Pro Regular", "Font Awesome 6 Brands Regular", FontAwesome, sans-serif;
+  font-family: "JetBrains Mono", "Font Awesome 6 Free Regular", "Font Awesome 6 Pro Regular", "Font Awesome 6 Brands Regular";
   font-size: 16px;
   font-weight: normal;
 }
 
 button {
-  min-height: 16px;
-  min-width: 16px;
+  min-height: 24px;
+  min-width: 24px;
 }
 
 window#waybar {
@@ -25,34 +25,39 @@ window#waybar.hidden {
 /* Workspaces */
 #workspaces {
   background-color: #313244;
-	color: #cdd6f4;
 	border-radius: 12px;
   margin-left: 5px;
   margin-right: 5px;
 }
 
 #workspaces button {
+  border: 1px solid #313244;
   border-radius: 12px;
-  padding: 15px;
+  padding: 5px;
+  margin: 2px 2px;
 }
 
 #workspaces button:hover {
-  background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.2) 90%);
+  background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 90%);
 	color: #1e1e2e;
+  border: 1px solid #1e1e2e;
 	border-radius: 12px;
 }
 
 #workspaces button.focused {
   background: linear-gradient(180deg, rgba(242,205,205,1) 0%, rgba(245,194,231,1) 90%);
   color: #1e1e2e;
+  border: 1px solid #1e1e2e;
 }
 
 #workspaces button.urgent {
   color: #f38ba8;
+  border: 1px solid #f38ba8;
 }
 
 #workspaces button.persistent {
 	color: #1e1e2e;
+  border: 1px solid #313244;
 	border-radius: 12px;
 }
 
@@ -103,7 +108,7 @@ window#waybar.empty #window {
 #clock {
   background-color: #313244;
   color: #89dceb;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   border-radius: 12px 12px 0px 0px;
   padding: 10px 0px 0px 0px;
@@ -177,6 +182,7 @@ window#waybar.empty #window {
 }
 
 #language {
+  font-size: 14px;
   margin-left: 5px;
   margin-right: 5px;
   padding: 5px;

@@ -44,14 +44,11 @@ ethtool
 exa
 fakeroot
 ffmpegthumbnailer
-figlet
 file-roller
 firefox
 firewalld
 flashfocus
 flex
-foot
-foot-terminfo
 freetype2
 fzf
 gcc
@@ -92,7 +89,6 @@ libdvdcss
 libgnome-keyring
 libgsf
 libopenraw
-libreoffice-fresh
 libtool
 libva-mesa-driver
 light
@@ -114,7 +110,6 @@ netctl
 network-manager-applet
 networkmanager
 networkmanager-openvpn
-newm-git
 nfs-utils
 nilfs-utils
 nmap
@@ -137,6 +132,7 @@ papirus-linux-universe
 paru
 patch
 pavucontrol
+pfetch
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -157,11 +153,11 @@ qt6-wayland
 qt6ct
 raw-thumbnailer
 reflector
-river
 rsync
 rustup
 rxfetch
 sdparm
+seahorse
 sg3_utils
 slurp
 smartmontools
@@ -171,7 +167,6 @@ spotify
 sshfs
 sudo
 sway
-swaybg
 swayidle
 swaylock-effects-git
 tamsyn-font
@@ -247,7 +242,6 @@ xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xf86-video-amdgpu
-xfce-polkit
 xorg-xwayland
 yad
 yadm
