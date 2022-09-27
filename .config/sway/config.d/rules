@@ -7,8 +7,8 @@ for_window [app_id="firefox"] opacity 1.0
 for_window [class="firefox"] opacity 1.0
 for_window [class="Google-chrome"] opacity 1.0
 for_window [app_id="google-chrome"] opacity 1.0
-for_window [class="Brave-browser"] opacity 1.0
-for_window [app_id="brave-browser"] opacity 1.0
+for_window [class="Vivaldi-stable"] opacity 1.0
+for_window [app_id="vivaldi-stable"] opacity 1.0
 for_window [class="mpv"] opacity 1.0
 for_window [class="Gimp-2.10"] opacity 1.0
 
