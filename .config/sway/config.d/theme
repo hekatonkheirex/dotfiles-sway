@@ -13,7 +13,7 @@ gaps top 1
 
 # Sway Theming
 # Catppuccin Mocha
-client.focused          #a6e3a1 #a6e3a1 #a6e3a1 #a6e3a1 #a6e3a1
+client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
 client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
 client.focused_inactive #313244 #313244 #313244 #313244 #313244
 
