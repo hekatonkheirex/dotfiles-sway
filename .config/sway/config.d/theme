@@ -32,6 +32,11 @@ client.focused_inactive #313244 #313244 #313244 #313244 #313244
 # client.unfocused        #282828 #282828 #282828 #282828 #282828
 # client.focused_inactive #3c3836 #3c3836 #3c3836 #3c3836 #3c3836
 
+# Onedark
+# client.focused          #98c379 #98c379 #98c379 #98c379 #98c379
+# client.unfocused        #232c34 #232c34 #232c34 #232c34 #232c34
+# client.focused_inactive #3d4148 #3d4148 #3d4148 #3d4148 #3d4148
+
 # Title format for windows
 for_window [shell="xdg_shell"] title_format "%title (%app_id)"
 for_window [shell="x_wayland"] title_format "%class - %title"

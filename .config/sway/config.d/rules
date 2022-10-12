@@ -51,6 +51,7 @@ for_window [title="(?:Open|Save) (?:File|Folder|As)"] floating enable, resize se
 for_window [app_id="thunar" title="^Copying.*"] floating enable
 for_window [app_id="thunar" title="^File.*"] floating enable
 for_window [app_id= "nm-connection-editor"] floating enable
+for_window [app_id= "file-roller"] floating enable
 
 # Inhibit idle
 for_window [app_id="firefox"] inhibit_idle
