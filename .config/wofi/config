@@ -1,9 +1,9 @@
-style=/home/mura/.config/wofi/catppuccin-mocha.css
+style=/home/mura/.config/wofi/ayu-dark.css
 xoffset=760
 yoffset=290
 show=drun
-width=400
-height=400
+width=450
+height=500
 always_parse_args=true
 show_all=true
 print_command=true
