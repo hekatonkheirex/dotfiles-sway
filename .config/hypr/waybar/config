@@ -19,7 +19,7 @@
   // Choose the order of the modules
   "modules-left": ["custom/menu", "wlr/workspaces"],
   "modules-center": [],
-  "modules-right": ["hyprland/language", "tray", "idle_inhibitor", "network", "pulseaudio", "pulseaudio#2", "backlight", "backlight#2", "battery", "battery#2", "custom/weather", "custom/weather2", "clock", "clock#2", "custom/power"],
+  "modules-right": ["tray", "idle_inhibitor", "network", "pulseaudio", "pulseaudio#2", "backlight", "backlight#2", "battery", "battery#2", "custom/weather", "custom/weather2", "clock", "clock#2", "custom/power"],
 
   "backlight": {
     "interval": 2,
