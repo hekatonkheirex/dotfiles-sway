@@ -31,7 +31,7 @@ exec ~/.azotebg
 
 # Bling
 exec_always --no-startup-id autotiling
-exec_always --no-startup-id flashfocus &
+# exec_always --no-startup-id flashfocus &
 
 # Night light
 # exec wlsunset -l 25.27 -L -57.64 &

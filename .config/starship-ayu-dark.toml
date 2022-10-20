@@ -1,18 +1,18 @@
 format = """
-[](#89b4fa)\
+[](#59c2ff)\
 $username\
-[](bg:#fab387 fg:#89b4fa)\
+[](bg:#ff8f40 fg:#59c2ff)\
 $directory\
-[](fg:#fab387 bg:#89dceb)\
+[](fg:#ff8f40 bg:#95e6cb)\
 $nodejs\
 $rust\
 $lua\
 $python\
-[](fg:#89dceb bg:#a6e3a1)\
+[](fg:#95e6cb bg:#aad94c)\
 $time\
-[](fg:#a6e3a1 bg:#f38ba8)\
+[](fg:#aad94c bg:#f07178)\
 $status\
-[ ](fg:#f38ba8)\
+[ ](fg:#f07178)\
 """
 
 # Disable the blank line at the start of the prompt
@@ -21,12 +21,12 @@ $status\
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "fg:#1e1e2e bg:#89b4fa"
-style_root = "fg:#1e1e2e bg:#89b4fa"
+style_user = "fg:#0d1017 bg:#59c2ff"
+style_root = "fg:#0d1017 bg:#59c2ff"
 format = '[$user ]($style)'
 
 [directory]
-style = "fg:#1e1e2e bg:#fab387"
+style = "fg:#0d1017 bg:#ff8f40"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -49,32 +49,32 @@ truncation_symbol = "…/"
 symbol = "ﮏ "
 not_executable_symbol = ""
 not_found_symbol = ""
-style = "fg:#1e1e2e bg:#f38ba8"
-format = '[[ $symbol ](fg:#1e1e2e bg:#f38ba8)]($style)'
+style = "fg:#0d1017 bg:#f07178"
+format = '[[ $symbol ](fg:#0d1017 bg:#f07178)]($style)'
 disabled = false
 
 [nodejs]
 symbol = " "
-style = "fg:#1e1e2e bg:#89dceb"
-format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+style = "fg:#0d1017 bg:#95e6cb"
+format = '[[ $symbol ($version) ](fg:#0d1017 bg:#95e6cb)]($style)'
 
 [rust]
 symbol = " "
-style = "fg:#1e1e2e bg:#89dceb"
-format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+style = "fg:#0d1017 bg:#95e6cb"
+format = '[[ $symbol ($version) ](fg:#0d1017 bg:#95e6cb)]($style)'
 
 [python]
 symbol = "  "
-style = "fg:#1e1e2e bg:#89dceb"
-format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+style = "fg:#0d1017 bg:#95e6cb"
+format = '[[ $symbol ($version) ](fg:#0d1017 bg:#95e6cb)]($style)'
 
 [lua]
 symbol = " "
-style = "fg:#1e1e2e bg:#89dceb"
-format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+style = "fg:#0d1017 bg:#95e6cb"
+format = '[[ $symbol ($version) ](fg:#0d1017 bg:#95e6cb)]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "fg:#1e1e2e bg:#a6e3a1"
-format = '[[   $time ](fg:#1e1e2e bg:#a6e3a1)]($style)'
+style = "fg:#0d1017 bg:#aad94c"
+format = '[[   $time ](fg:#0d1017 bg:#aad94c)]($style)'
