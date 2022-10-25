@@ -21,43 +21,43 @@ local font_name = "JetBrains Mono"
 
 local colors = {
 	-- special
-	foreground = "#cdd6f4",
-	darker_background = "#181825",
-	background = "#1e1e2e",
-	lighter_background = "#313244",
-	one_background = "#11111b",
+	foreground = "#bfbdb6",
+	darker_background = "#0b0e14",
+	background = "#0d1017",
+	lighter_background = "#25272e",
+	one_background = "#0a0c12",
 
 	-- black
-	color0 = "#313244",
-	color8 = "#45475a",
+	color0 = "#25272e",
+	color8 = "#3d3f45",
 
 	-- red
-	color1 = "#f38ba8",
-	color9 = "#f38ba8",
+	color1 = "#f07178",
+	color9 = "#f07178",
 
 	-- green
-	color2 = "#a6e3a1",
-	color10 = "#a6e3a1",
+	color2 = "#aad94c",
+	color10 = "#aad94c",
 
 	-- yellow
-	color3 = "#f9e2af",
-	color11 = "#f9e2af",
+	color3 = "#e6b673",
+	color11 = "#e6b673",
 
 	-- blue
-	color4 = "#89b4fa",
-	color12 = "#89b4fa",
+	color4 = "#59c2ff",
+	color12 = "#59c2ff",
 
 	-- magenta
-	color5 = "#f5c2e7",
-	color13 = "#f5c2e7",
+	color5 = "#d2a6ff",
+	color13 = "#d2a6ff",
 
 	-- cyan
-	color6 = "#89dceb",
-	color14 = "#89dceb",
+	color6 = "#95e6cb",
+	color14 = "#95e6cb",
 
 	-- white
-	color7 = "#a6adc8",
-	color15 = "#bac2de",
+	color7 = "#c5c3bd",
+	color15 = "#cbcac4",
 }
 
 return {
