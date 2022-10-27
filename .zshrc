@@ -130,7 +130,7 @@ alias la="exa -la --icons"
 alias laa="exa -a --icons"
 alias update="paru"
 alias n="nvim"
-alias mirrors="sudo reflector --latest 20 --age 12 --country US --sort rate --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 10 --age 6 --country US,Paraguay --sort rate --save /etc/pacman.d/mirrorlist"
 
 autoload -U compinit && compinit
 zstyle ':completion:*' menu select

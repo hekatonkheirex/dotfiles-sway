@@ -4,7 +4,6 @@ acpid
 adobe-source-han-sans-otc-fonts
 adobe-source-han-serif-otc-fonts
 adobe-source-sans-fonts
-alacritty
 alsa-utils
 amd-ucode
 apparmor
@@ -92,7 +91,6 @@ light
 linux
 linux-firmware
 linux-headers
-lua-posix
 lxappearance
 m4
 make
@@ -107,10 +105,10 @@ net-tools
 netctl
 network-manager-applet
 networkmanager
-networkmanager-openvpn
 nfs-utils
 nilfs-utils
 nitch
+nm-connection-editor
 nmap
 noto-fonts
 noto-fonts-cjk
@@ -121,7 +119,6 @@ ntfs-3g
 ntp
 nwg-wrapper
 obs-studio
-openconnect
 openssh
 openvpn
 otf-font-awesome
@@ -129,7 +126,6 @@ pacman-contrib
 pacutils
 pamixer
 papirus-icon-theme
-papirus-linux-universe
 parsec-bin
 paru
 patch
@@ -143,7 +139,6 @@ playerctl
 polkit-gnome
 poppler-glib
 ppp
-pptpclient
 python-pyqt5
 python-pyqt6
 python-pyquery
@@ -158,10 +153,8 @@ reflector
 rsync
 rustup
 rxfetch
-seahorse
 sg3_utils
 slurp
-smartmontools
 sof-firmware
 spicetify-cli
 spotify
@@ -241,7 +234,6 @@ xdg-desktop-portal
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
-xed
 xf86-video-amdgpu
 xorg-xwayland
 yad

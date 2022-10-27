@@ -1,4 +1,7 @@
 ## LANGUAGE
+if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+fi
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
