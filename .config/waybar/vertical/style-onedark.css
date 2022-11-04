@@ -1,0 +1,285 @@
+/* General configuration */
+* {
+  border: none;
+  font-family: "JetBrains Mono", "Font Awesome 6 Free Regular", "Font Awesome 6 Pro Regular", "Font Awesome 6 Brands Regular";
+  font-size: 16px;
+  font-weight: normal;
+}
+
+button {
+  min-height: 24px;
+  min-width: 24px;
+}
+
+window#waybar {
+  background-color: #282c34;
+	transition-property: background-color;
+  transition-duration: .5s;
+  /* border-radius: 12px 12px 12px 12px; */
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/* Workspaces */
+#workspaces {
+  background-color: #3d4148;
+	border-radius: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#workspaces button {
+  border: 1px solid #3d4148;
+  border-radius: 12px;
+  padding: 5px;
+  margin: 2px 2px;
+}
+
+#workspaces button:hover {
+  background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 90%);
+	color: #282c34;
+  border: 1px solid #282c34;
+	border-radius: 12px;
+}
+
+#workspaces button.focused {
+  background: linear-gradient(180deg, rgba(152,195,117,1) 0%, rgba(229,192,123,1) 90%);
+  color: #282c34;
+  border: 1px solid #282c34;
+}
+
+#workspaces button.urgent {
+  color: #e06c75;
+  border: 1px solid #e06c75;
+}
+
+#workspaces button.persistent {
+	color: #282c34;
+  border: 1px solid #3d4148;
+	border-radius: 12px;
+}
+
+window#waybar.empty #window {
+	background-color: transparent;
+}
+
+/** ********** Backlight ********** **/
+#backlight {
+  background: linear-gradient(180deg, rgba(86,182,194,1) 0%, rgba(224,108,117,1) 100%);
+}
+#backlight.2 {
+  background: #3d4148;
+}
+
+/** ********** Battery ********** **/
+#battery {
+  background: linear-gradient(180deg, rgba(224,108,117,1) 0%, rgba(152,195,121,1) 100%);
+}
+#battery.charging {
+}
+#battery.plugged {
+}
+
+#battery.2 {
+  background: #3d4148;
+}
+#battery.2.charging {
+}
+#battery.2.plugged {
+}
+@keyframes blink {
+    to {
+        color: #e06c75;
+    }
+}
+#battery.2.critical:not(.charging) {
+  color: #abb2bf;
+  border-bottom: 2px solid #e06c75;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/** ********** Clock ********** **/
+#clock {
+  background-color: #3d4148;
+  color: #56b6c2;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 12px 12px 0px 0px;
+  padding: 10px 0px 0px 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#clock.2 {
+  color: #61afef;
+  border-radius: 0px 0px 12px 12px;
+  padding: 0px 0px 10px 0px;
+  margin-bottom: 5px;
+}
+#clock.3 {
+  color: #98c379;
+  font-size: 14px;
+  border-radius: 12px;
+  /* padding: 5px; */
+  margin-bottom: 5px;
+}
+
+/** ********** Tray ********** **/
+#tray {
+  padding: 5px 5px 5px 5px;
+}
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+}
+#tray > .active {
+}
+
+/** ********** Pulseaudio ********** **/
+#pulseaudio {
+  background: linear-gradient(180deg, rgba(198,120,221,1) 0%, rgba(86,182,194,1) 100%);
+}
+/* #pulseaudio.bluetooth { */
+/*   background: linear-gradient(180deg, rgba(235,160,172,1) 0%, rgba(250,179,135,1) 100%); */
+/* } */
+/* #pulseaudio.muted { */
+/*   background: linear-gradient(180deg, rgba(250,179,135,1) 0%, rgba(249,226,175,1) 100%); */
+/* } */
+
+#pulseaudio.2 {
+  background: #3d4148;
+}
+#pulseaudio.2.bluetooth {
+}
+#pulseaudio.2.muted {
+  border-bottom: 2px solid #e06c75;
+}
+
+/** ********** Network ********** **/
+#network {
+  background: linear-gradient(180deg, rgba(97,175,239,1) 0%, rgba(198,120,221,1) 100%);
+  margin-bottom: 5px;
+}
+
+#network.disconnected {
+  color: #fab387;
+}
+#network.disabled {
+  color: #e06c75;
+}
+#network.linked {
+}
+#network.ethernet {
+}
+#network.wifi {
+}
+
+#language {
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+#idle_inhibitor {
+  color: #282c34;
+  background: linear-gradient(180deg, rgba(229,192,123,1) 0%, rgba(97,175,239,1) 100%);
+  border-radius: 12px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+}
+#idle_inhibitor.activated {
+  color: #e06c75;
+}
+
+/** ********** Custom ********** **/
+
+#custom-menu {
+  background: linear-gradient(180deg, rgba(224,108,117,1) 0%, rgba(152,195,117,1) 100%);
+  margin-top: 8px;
+}
+
+#custom-power {
+  background: linear-gradient(180deg, rgba(229,192,123,1) 0%, rgba(97,175,239,1) 100%);
+  margin-bottom: 8px;
+}
+
+#custom-weather {
+  background: linear-gradient(180deg, rgba(152,195,121,1) 0%, rgba(229,192,123,1) 100%);
+  color: #282c34;
+  border-radius: 12px 12px 0px 0px;
+  padding: 5px 0px 5px 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#custom-weather2 {
+  background-color: #3d4148;
+  color: #abb2bf;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 0px 0px 12px 12px;
+  padding: 5px 0px 5px 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+/** Common style **/
+#backlight, 
+#battery,
+#pulseaudio {
+  color: #3d4148;
+  border-radius: 12px 12px 0px 0px;
+  padding: 5px 0px 5px 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#backlight.2, 
+#battery.2,
+#pulseaudio.2 {
+  background-color: #3d4148;
+  color: #abb2bf;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 0px 0px 12px 12px;
+  padding: 5px 0px 5px 0px;
+}
+
+#tray {
+  background-color: #3d4148;
+  border-radius: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#network,
+#custom-menu,
+#custom-power {
+  color: #3d4148;
+  border-radius: 12px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#backlight.2, 
+#battery.2,
+#pulseaudio.2,
+#network,
+#clock.2,
+#custom-menu {
+  margin-bottom: 8px;
+}

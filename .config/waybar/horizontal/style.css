@@ -1,0 +1,207 @@
+/* General configuration */
+* {
+  border: none;
+  font-family: "Product Sans","Font Awesome 6 Free Regular","Font Awesome 6 Free Solid","Font Awesome 6 Pro Regular","Font Awesome 6 Pro Thin","Font Awesome 6 Pro Solid","Font Awesome 6 Pro Light","Font Awesome 6 Brands Regular";
+  font-size: 14px;
+  font-weight: normal;
+}
+
+window#waybar {
+  background-color: #191724;
+  /* background-color: transparent; */
+  /* background-color: rgba(25,23,26,0.01); */
+  border-bottom: 2px solid rgba(196, 167, 231, 0.7);
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+tooltip {
+  background: rgba(25, 23, 26, 0.7);
+  border: 1px solid rgba(38, 35, 58, 0.7);
+}
+tooltip label {
+  color: #c4a7e7;
+}
+
+/* window > box { */
+/* 	margin-left: 5px; */
+/* 	margin-right: 5px; */
+/* 	margin-top: 5px; */
+/*   border-radius: 15px; */
+/* 	background-color: rgb(30, 30, 46); */
+	/* border-style: solid; */
+	/* border-width: 2px; */
+	/* border-color: rgb(171, 233, 179); */
+/* } */
+
+#workspaces,
+#mode,
+#custom-media,
+#custom-spotify,
+#custom-weather,
+#clock,
+#idle_inhibitor,
+#language,
+#pulseaudio,
+#backlight,
+#battery,
+#network,
+#temperature,
+#window,
+#cpu,
+#memory,
+#disk,
+#tray {
+  /* background: linear-gradient(90deg, rgba(34,35,53,1) 15%, rgba(37,39,52,1) 90%); */
+  background-color: rgba(38,35,58,0.6);
+  padding: 0px 12px;
+  margin: 4px 4px 4px 4px;
+  border-radius: 90px;
+  background-clip: padding-box;
+}
+
+/* Workspaces */
+#workspaces button {
+  padding: 0 12px;
+  min-width: 25px;
+  border-radius: 90px;
+  color: #e0def4;
+}
+#workspaces button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 90px;
+  padding: 0 12px;
+}
+#workspaces button.focused {
+  background: linear-gradient(90deg, rgba(235,111,146,1) 0%, rgba(196,167,231,1) 90%);
+  border-radius: 90px;
+  color: #191724;
+  padding: 0 12px;
+}
+#workspaces button.urgent {
+  color: #eb6f92;
+}
+
+/* CPU */
+#cpu {
+  color: #191724;
+}
+
+/* Memory */
+#memory {
+  color: #191724;
+}
+
+/* Temperature */
+#temperature {
+  background: linear-gradient(90deg, rgba(174,89,180,1) 45%, rgba(195,79,152,1) 90%);
+  color: #191724;
+}
+#temperature.critical {
+  background-color: #eb6f92;
+  color: #191724;
+}
+
+/* Spotify */
+#custom-spotify {
+  color: #569f86;
+}
+
+/* Clock */
+#clock {
+  color: #191724;
+  background: linear-gradient(90deg, rgba(235,111,146,1) 0%, rgba(90,143,165,1) 100%);
+}
+
+/* Window title */
+#window {
+  color: #c4a7e7;
+}
+
+/* Idle inhibitor */
+#idle_inhibitor {
+  color: #191724;
+  background: linear-gradient(90deg, rgba(234,157,52,1) 15%, rgba(235,188,186,1) 90%);
+}
+#idle_inhibitor.activated {
+  background-color: #eb6f92;
+  color: #eb6f92;
+}
+
+/* Volume */
+#pulseaudio {
+  background: linear-gradient(90deg, rgba(246,193,119,1) 0%, rgba(86,159,134,1) 100%);
+  color: #191724;
+}
+#pulseaudio.muted {
+  color: #191724;
+}
+
+/* Backlight */
+#backlight {
+  background: linear-gradient(90deg, rgba(86,159,134,1) 0%, rgba(196,167,231,1) 100%);
+  color: #191724;
+}
+
+/* Battery */
+#battery {
+  background: linear-gradient(90deg, rgba(196,167,231,1) 0%, rgba(156,207,216,1) 100%);
+  color: #191724;
+}
+#battery.charging, #battery.plugged {
+  color: #56949f;
+}
+@keyframes blink {
+  to {
+    background-color: #eb6f92;
+    color: #191724;
+  }
+}
+#battery.critical:not(.charging) {
+  background-color: #eb6f92;
+  color: #eb6f92;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Network */
+#network {
+  background: linear-gradient(90deg, rgba(235,188,186,1) 0%, rgba(246,193,119,1) 100%);
+  color: #191724;
+}
+#network.disconnected {
+  color: #191724;
+}
+
+/* Weather */
+#custom-weather {
+  background: linear-gradient(90deg, rgba(156,207,216,1) 0%, rgba(235,111,146,1) 100%);
+}
+#custom-weather.severe {
+    color: #eb6f92;
+}
+#custom-weather.sunnyDay {
+    color: #f6c177;
+}
+#custom-weather.clearNight {
+    color: #e0def4;
+}
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: #908caa;
+}
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: #c4a7e7;
+}
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: #9ccfd8;
+}
+#custom-weather.default {
+    color: #191724;
+}
