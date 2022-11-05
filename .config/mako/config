@@ -11,13 +11,13 @@ on-touch=dismiss
 # on-notify=exec paplay /home/mura/.local/share/sounds/simple_notification.ogg
 
 # STYLING
-font=Inter 11
+font=SF Pro Display 11
 width=350
 height=175
 margin=20
 padding=15
 border-size=2
-border-color=#cba6f7
+border-color=#89b4fa
 border-radius=8
 icons=1
 max-icon-size=96
@@ -27,16 +27,16 @@ ignore-timeout=0
 max-visible=5
 layer=overlay
 
-background-color=#191724
-text-color=#e0def4
-border-color=#cba6f7
-progress-color=over=#cba6f7
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
+progress-color=#89b4fa
 
 [urgency=low]
 border-color=#cdd6f4
 
 [urgency=normal]
-border-color=#cba6f7
+border-color=#89dceb
 
 [urgency=high]
 border-color=#f38ba8

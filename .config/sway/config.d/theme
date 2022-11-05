@@ -4,8 +4,8 @@ exec_always ~/.config/sway/scripts/gsettings
 default_border pixel 2
 for_window [class=".*"] border pixel 2
 default_floating_border none 
-smart_gaps on
-hide_edge_borders smart
+# smart_gaps on
+# hide_edge_borders smart
 gaps inner 15
 gaps outer 0
 gaps bottom 1
@@ -13,7 +13,8 @@ gaps top 1
 
 # Sway Theming
 # Catppuccin Mocha
-client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
+# client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
+client.focused          #89b4fa #89b4fa #89b4fa #89b4fa #89b4fa
 client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
 client.focused_inactive #313244 #313244 #313244 #313244 #313244
 

@@ -12,7 +12,7 @@
   "margin-bottom": 0,
   "margin-left": 5,
   "margin-right": 5,
-  "fixed-center": false,
+  "fixed-center": true,
   "ipc": true,
   "bar_id": "bar-0",
 
@@ -131,7 +131,8 @@
     "format": "{icon} {volume}%",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
-    "format-muted": " {format_source}",
+    /* "format-muted": " {format_source}", */
+    "format-muted": " ",
     "format-source": " {volume}% ",
     "format-source-muted": "",
     "format-icons": {

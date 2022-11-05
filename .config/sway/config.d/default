@@ -6,10 +6,9 @@ set $up k
 set $right l
 
 set $term "wezterm start --always-new-process"
-# set $term "alacritty"
 
 # Application launcher
-set $menu wofi --show drun
+set $menu rofi -show drun
 
 # Idle configuration
 exec swayidle -w \
@@ -44,7 +43,10 @@ bindsym $mod+b exec firefox
 bindsym $mod+i exec thunar
 
 # Power menu
-bindsym $mod+p exec $HOME/.config/sway/scripts/wlogout
+bindsym $mod+p exec rofi -show power
+
+# Emoji
+bindsym $mod+Shift+e exec rofi -show emoji
 
 # Multimedia keys
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
@@ -69,7 +71,7 @@ floating_modifier $mod normal
 bindsym $mod+Shift+r reload
 
 # Exit sway (logs you out of your Wayland session)
-bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Shift+c exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 bindsym $mod+Shift+q exec swaymsg exit
 
 # Moving around
