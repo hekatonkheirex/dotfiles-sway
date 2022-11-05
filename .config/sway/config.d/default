@@ -43,7 +43,7 @@ bindsym $mod+b exec firefox
 bindsym $mod+i exec thunar
 
 # Power menu
-bindsym $mod+p exec rofi -show power
+bindsym $mod+p exec $HOME/.config/sway/scripts/wlogout
 
 # Emoji
 bindsym $mod+Shift+e exec rofi -show emoji
