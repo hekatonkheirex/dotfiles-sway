@@ -21,6 +21,7 @@ blueman
 bluez
 bluez-utils
 brightnessctl
+catch2
 catppuccin-gtk-theme-mocha
 cava
 clipman
@@ -94,6 +95,7 @@ make
 mako
 man-db
 man-pages
+meson
 mlocate
 mpv
 mtools
@@ -150,11 +152,11 @@ raw-thumbnailer
 reflector
 rofi
 rofi-emoji
-rofi-power-menu
 rofimoji
 rsync
 rust
 rxfetch
+scdoc
 scrot
 sg3_utils
 slurp
@@ -226,8 +228,10 @@ which
 whois
 wireless_tools
 wl-clipboard
+wlogout-git
 wlr-randr
 wlsunset
+wofi
 wpa_supplicant
 wtype
 xdg-desktop-portal
