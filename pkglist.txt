@@ -67,6 +67,7 @@ gvfs
 gvfs-mtp
 gvfs-smb
 haveged
+hdparm
 hplip
 htop
 hwdetect
@@ -76,6 +77,7 @@ inetutils
 inter-font
 iwd
 jq
+kitty
 kvantum
 kvantum-theme-catppuccin-git
 laptop-mode-tools
@@ -83,6 +85,7 @@ leafpad
 libgnome-keyring
 libgsf
 libopenraw
+libsixel
 libtool
 libva-mesa-driver
 light
@@ -125,7 +128,7 @@ pacutils
 pamixer
 papirus-icon-theme
 parsec-bin
-paru
+paru-bin
 patch
 pavucontrol
 pfetch
@@ -154,7 +157,7 @@ rofi
 rofi-emoji
 rofimoji
 rsync
-rust
+rustup
 rxfetch
 scdoc
 scrot

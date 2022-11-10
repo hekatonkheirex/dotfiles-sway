@@ -1,0 +1,80 @@
+format = """
+[](#89b4fa)\
+$username\
+[](bg:#fab387 fg:#89b4fa)\
+$directory\
+[](fg:#fab387 bg:#89dceb)\
+$nodejs\
+$rust\
+$lua\
+$python\
+[](fg:#89dceb bg:#a6e3a1)\
+$time\
+[](fg:#a6e3a1 bg:#f38ba8)\
+$status\
+[ ](fg:#f38ba8)\
+"""
+
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+# You can also replace your username with a neat symbol like  to save some space
+[username]
+show_always = true
+style_user = "fg:#1e1e2e bg:#89b4fa"
+style_root = "fg:#1e1e2e bg:#89b4fa"
+format = '[$user ]($style)'
+
+[directory]
+style = "fg:#1e1e2e bg:#fab387"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Videos" = " "
+# Keep in mind that the order matters. For example:
+# "Important Documents" = "  "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important  " = "  "
+
+[status]
+symbol = "ﮏ "
+not_executable_symbol = ""
+not_found_symbol = ""
+style = "fg:#1e1e2e bg:#f38ba8"
+format = '[[ $symbol ](fg:#1e1e2e bg:#f38ba8)]($style)'
+disabled = false
+
+[nodejs]
+symbol = " "
+style = "fg:#1e1e2e bg:#89dceb"
+format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+
+[rust]
+symbol = " "
+style = "fg:#1e1e2e bg:#89dceb"
+format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+
+[python]
+symbol = "  "
+style = "fg:#1e1e2e bg:#89dceb"
+format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+
+[lua]
+symbol = " "
+style = "fg:#1e1e2e bg:#89dceb"
+format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "fg:#1e1e2e bg:#a6e3a1"
+format = '[[   $time ](fg:#1e1e2e bg:#a6e3a1)]($style)'

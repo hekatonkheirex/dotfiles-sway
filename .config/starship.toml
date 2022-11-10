@@ -1,80 +1,121 @@
-format = """
-[](#89b4fa)\
-$username\
-[](bg:#fab387 fg:#89b4fa)\
-$directory\
-[](fg:#fab387 bg:#89dceb)\
-$nodejs\
-$rust\
-$lua\
-$python\
-[](fg:#89dceb bg:#a6e3a1)\
-$time\
-[](fg:#a6e3a1 bg:#f38ba8)\
-$status\
-[ ](fg:#f38ba8)\
-"""
+# Don't print a new line at the start of the prompt
+add_newline = false
 
-# Disable the blank line at the start of the prompt
-# add_newline = false
+# Make prompt a single line instead of two lines
+[line_break]
+disabled = true
 
-# You can also replace your username with a neat symbol like  to save some space
-[username]
-show_always = true
-style_user = "fg:#1e1e2e bg:#89b4fa"
-style_root = "fg:#1e1e2e bg:#89b4fa"
-format = '[$user ]($style)'
+# Replace the "❯" symbol in the prompt with "➜"
+[character]                         # The name of the module we are configuring is "character"
+#success_symbol = "[➜](bold green)"  # The "success_symbol" is set to "➜" with color "bold green"
+#success_symbol = "[](bold green)[](yellow)[](red)[](purple)"
+success_symbol = "[❯](cyan)[❯](blue)[❯](green)"
+error_symbol = "[✗](bold red) "
 
-[directory]
-style = "fg:#1e1e2e bg:#fab387"
-format = "[ $path ]($style)"
-truncation_length = 3
-truncation_symbol = "…/"
+# Use custom format
+#format = """
+#[┌───────────────────>](bold green)
+#[│](bold green)$directory$rust$package
+#[└─>](bold green) """
 
-# Here is how you can shorten some long paths by text replacement
-# similar to mapped_locations in Oh My Posh:
-[directory.substitutions]
-"Documents" = " "
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-"Videos" = " "
-# Keep in mind that the order matters. For example:
-# "Important Documents" = "  "
-# will not be replaced, because "Documents" was already substituted before.
-# So either put "Important Documents" before "Documents" or use the substituted version:
-# "Important  " = "  "
+[cmd_duration]
+min_time = 10_000  # Show command duration over 10,000 milliseconds (= 10 sec)
+format = 'took [$duration]($style)'
 
+[battery]
+full_symbol = ""
+charging_symbol = ""
+discharging_symbol = ""
+
+# Clear visibility for exit codes
 [status]
-symbol = "ﮏ "
-not_executable_symbol = ""
-not_found_symbol = ""
-style = "fg:#1e1e2e bg:#f38ba8"
-format = '[[ $symbol ](fg:#1e1e2e bg:#f38ba8)]($style)'
+style = "bg:red"
+symbol = "💣 "
+format = '[\[$symbol$status\]]($style) '
 disabled = false
 
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[git_branch]
+symbol = "🌱 "
+truncation_length = 4
+truncation_symbol = ""
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "🔖 "
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+cherry_pick = "[🍒 PICKING](bold red)"
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "👅"
+deleted = "🗑"
+
+#[hostname]
+#ssh_only = false
+#format =  "on [$hostname](bold red) "
+#trim_at = ".companyname.com"
+#disabled = false
+
+#[memory_usage]
+#disabled = false
+#threshold = -1
+#symbol = " "
+#style = "bold dimmed green"
+
+#[time]
+#disabled = false
+#format = ' 🕙 [\[ $time \]]($style) '
+#time_format = "%T"
+
+#[username]
+#style_user = "white bold"
+#style_root = "red bold"
+#format = "[$user]($style) "
+#disabled = false
+#show_always = true
+
 [nodejs]
-symbol = " "
-style = "fg:#1e1e2e bg:#89dceb"
-format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+format = "via [$symbol$version]($style) "
+symbol = "⬢ "
+style = "bold green"
+disabled = false
+not_capable_style = "bold red"
+
+[perl]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
 
 [rust]
 symbol = " "
-style = "fg:#1e1e2e bg:#89dceb"
-format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
 
-[python]
-symbol = "  "
-style = "fg:#1e1e2e bg:#89dceb"
-format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+[env_var]
+format = "with [$env_value]($style) "
 
-[lua]
-symbol = " "
-style = "fg:#1e1e2e bg:#89dceb"
-format = '[[ $symbol ($version) ](fg:#1e1e2e bg:#89dceb)]($style)'
+[directory]
+truncation_length = 5
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+style = "bold #f57800"
+read_only = "🔒"
+read_only_style= "bold white"
 
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "fg:#1e1e2e bg:#a6e3a1"
-format = '[[   $time ](fg:#1e1e2e bg:#a6e3a1)]($style)'
