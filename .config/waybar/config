@@ -148,7 +148,7 @@
     },
 
   "custom/spotify": {
-    "exec": "/usr/bin/python3 /home/mura/.local/bin/spotsway.py --player spotify",
+    "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/spotsway.py --player spotify",
     "format": " {}",
     "return-type": "json",
     "on-click": "playerctl play-pause",
@@ -157,9 +157,16 @@
     },
 
   "custom/weather": {
-      "exec": "/usr/bin/python3 /home/mura/.local/bin/weather.py",
+      "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/weather.py",
       "restart-interval": 300,
       "return-type": "json",
       "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"
     },
+  "custom/wttr": {
+    "format": "{}",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/wttr.py",
+    "return-type": "json"
+    }
   }

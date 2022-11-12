@@ -21,7 +21,6 @@ blueman
 bluez
 bluez-utils
 brightnessctl
-catch2
 catppuccin-gtk-theme-mocha
 cava
 clipman
@@ -48,6 +47,7 @@ flex
 fzf
 gcc
 gdm
+gdm-settings
 gentium-plus-font
 git
 gnome-epub-thumbnailer
@@ -100,6 +100,7 @@ man-db
 man-pages
 meson
 mlocate
+most
 mpv
 mtools
 neofetch
@@ -146,6 +147,7 @@ python-pyqt6
 python-pyquery
 python-pytest
 python-pyxdg
+python-requests
 qbittorrent
 qt5-wayland
 qt5ct
@@ -222,7 +224,7 @@ viewnior
 vpnc
 w3m
 warpinator
-waybar
+waybar-hyprland-git
 wev
 wezterm
 wf-recorder

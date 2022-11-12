@@ -141,6 +141,7 @@ zstyle ':completion:*' menu select
 nitch
 
 export TERM=xterm-256color
+export PAGER="most"
 
 # export FZF_DEFAULT_OPTS=" \
 # --color=bg+:#313244,bg:#1e1e2e,spinner:#f5c2e7,hl:#f38ba8 \
