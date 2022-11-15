@@ -9,6 +9,8 @@ for_window [class="Google-chrome"] opacity 1.0
 for_window [app_id="google-chrome"] opacity 1.0
 for_window [class="Vivaldi-stable"] opacity 1.0
 for_window [app_id="vivaldi-stable"] opacity 1.0
+for_window [class="Microsoft-edge"] opacity 1.0
+for_window [app_id="microsoft-edge"] opacity 1.0
 for_window [class="mpv"] opacity 1.0
 for_window [class="Gimp-2.10"] opacity 1.0
 

@@ -99,6 +99,7 @@ mako
 man-db
 man-pages
 meson
+microsoft-edge-stable-bin
 mlocate
 most
 mpv
@@ -170,8 +171,8 @@ spicetify-cli
 spotify
 sshfs
 sudo
-sway
 swaybg
+swayfx
 swayidle
 swaylock-effects-git
 system-config-printer
