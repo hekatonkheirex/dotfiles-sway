@@ -22,42 +22,42 @@ local font_name = "Cartograph CF"
 local colors = {
 	-- special
 	foreground = "#fbf1c7",
-	darker_background = "#292e39",
-	background = "#2e3440",
-	lighter_background = "#3b4252",
-	one_background = "#242933",
+	darker_background = "#1d2021",
+	background = "#282828",
+	lighter_background = "#3c3836",
+	one_background = "#32302f",
 
 	-- black
-	color0 = "#3b4252",
-	color8 = "#434c5e",
+	color0 = "#3c3836",
+	color8 = "#504945",
 
 	-- red
-	color1 = "#bf616a",
-	color9 = "#bf616a",
+	color1 = "#cc241d",
+	color9 = "#fb4934",
 
 	-- green
-	color2 = "#a3be8c",
-	color10 = "#a3be8c",
+	color2 = "#98971a",
+	color10 = "#b8bb26",
 
 	-- yellow
-	color3 = "#ebcb8b",
-	color11 = "#ebcb8b",
+	color3 = "#d79921",
+	color11 = "#fabd2f",
 
 	-- blue
-	color4 = "#5e81ac",
-	color12 = "#5e81ac",
+	color4 = "#458588",
+	color12 = "#83a598",
 
 	-- magenta
-	color5 = "#b48ead",
-	color13 = "#b48ead",
+	color5 = "#b16286",
+	color13 = "#d3869b",
 
 	-- cyan
-	color6 = "#88c0d0",
-	color14 = "#88c0d0",
+	color6 = "#689d6a",
+	color14 = "#8ec07c",
 
 	-- white
-	color7 = "#d8dee9",
-	color15 = "#e5e9f0",
+	color7 = "#a89984",
+	color15 = "#ebdbb2",
 }
 
 return {

@@ -15,13 +15,13 @@ vim.g.tokyonight_colors = { hint = 'orange', error = '#ff0000' }
 vim.g.catppuccin_flavour = 'mocha' -- latte, frappe, macchiato, mocha
 
 -- Themes color loading
--- vim.cmd('colorscheme nord')
+vim.cmd('colorscheme nord')
 -- vim.cmd('colorscheme gruvbox-material')
 -- require('onedark').load()
 -- vim.cmd('colorscheme everforest')
 -- vim.cmd('colorscheme tokyonight')
 -- vim.cmd('colorscheme horizon')
-vim.cmd('colorscheme catppuccin')
+-- vim.cmd('colorscheme catppuccin')
 -- vim.cmd('colorscheme rose-pine')
 -- vim.cmd('colorscheme hackthebox')
 -- vim.cmd('colorscheme decay')
