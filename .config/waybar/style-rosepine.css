@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: #303446;
+  background-color: #191724;
   transition-property: background-color;
   transition-duration: .5s;
   border-radius: 12px 12px 12px 12px;
@@ -18,11 +18,11 @@ window#waybar.hidden {
 }
 
 tooltip {
-  background: rgba(48, 52, 70, 0.7);
-  border: 1px solid rgba(65, 69, 89, 0.7);
+  background: rgba(25, 23, 26, 0.7);
+  border: 1px solid rgba(196, 167, 231, 0.7);
 }
 tooltip label {
-  color: #8caaee;
+  color: #e0def4;
 }
 
 /* Workspaces */
@@ -30,21 +30,21 @@ tooltip label {
 
 #workspaces button {
   min-width: 10px;
-  color: #e5c890;
-  padding: 0 12px;
+  color: #f6c177;
+  margin-left: 5px;
 }
 #workspaces button:hover {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
 #workspaces button.focused {
-  color: #8caaee;
+  color: #9ccfd8;
 }
 #workspaces button.urgent {
-  color: #e78284;
+  color: #eb6f92;
 }
 #workspaces button.persistent {
-  color: #a6d189;
+  color: #6e6a86;
 }
 
 window#waybar.empty #window {
@@ -53,50 +53,51 @@ window#waybar.empty #window {
 
 /* Language */
 #language {
-  color: #51576d;
+  color: #6e6a86;
   padding: 0 12px;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-  color: #51576d;
+  color: #6e6a86;
   padding: 0 12px;
 }
 #idle_inhibitor.activated {
-  color: #e78284;
+  color: #eb6f92;
 }
 
 /* Backlight */
 #backlight {
-  color: #e5c890;
+  background-color: #191724;
+  color: #f6c177;
   padding: 0 12px;
 }
 
 /* Volume */
 #pulseaudio {
-  color: #8caaee;
+  color: #9ccfd8;
   padding: 0 12px;
 }
 #pulseaudio.muted {
-  color: #414559;
+  color: #6e6a86;
 }
 
 /* Battery */
 #battery {
-  color: #e78284;
+  color: #eb6f92;
   padding: 0 12px;
 }
 #battery.charging, #battery.plugged {
-  color: #a6d189;
+  color: #31748f;
 }
 @keyframes blink {
   to {
-    background-color: #e5c890;
+    background-color: #f6c177;
   }
 }
 #battery.critical:not(.charging) {
-  background-color: #e78284;
-  color: #303446;
+  background-color: #eb6f92;
+  color: #191724;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -106,20 +107,20 @@ window#waybar.empty #window {
 
 /* Tray */
 #tray {
-  background: #414559;
+  background: #26233a;
   padding: 0 12px;
 }
 
 /* Clock */
 #clock {
-  color: #c6d0f5;
+  color: #e0def4;
   margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Spotify */
 #custom-spotify {
-  color: #a6d189;
+  color: #31748f;
 }
 
 #custom-media,
@@ -135,23 +136,23 @@ window#waybar.empty #window {
   padding: 0 12px;
 }
 #custom-weather.severe {
-    color: #e78284;
+    color: #eb6f92;
 }
 #custom-weather.sunnyDay {
-    color: #e5c890;
+    color: #f6c177;
 }
 #custom-weather.clearNight {
-    color: #c6d0f5;
+    color: #ebbcba;
 }
 #custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
-    color: #51576d;
+    color: #908caa;
 }
 #custom-weather.rainyDay, #custom-weather.rainyNight {
-    color: #ca9ee6;
+    color: #c4a7e7;
 }
 #custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
-    color: #99d1db;
+    color: #9ccfd8;
 }
 #custom-weather.default {
-    color: #babbf1;
+    color: #e0def4;
 }

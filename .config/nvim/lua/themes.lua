@@ -12,10 +12,9 @@ vim.g.tokyonight_style = 'night'
 vim.g.tokyonight_italic_functions = true
 vim.g.tokyonight_sidebars = { 'qf', 'vista_kind', 'terminal', 'packer' }
 vim.g.tokyonight_colors = { hint = 'orange', error = '#ff0000' }
-vim.g.catppuccin_flavour = 'mocha' -- latte, frappe, macchiato, mocha
 
 -- Themes color loading
-vim.cmd('colorscheme nord')
+-- vim.cmd('colorscheme nord')
 -- vim.cmd('colorscheme gruvbox-material')
 -- require('onedark').load()
 -- vim.cmd('colorscheme everforest')

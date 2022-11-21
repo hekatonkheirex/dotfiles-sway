@@ -19,30 +19,20 @@ corner_radius 12
 # client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
 # client.focused_inactive #313244 #313244 #313244 #313244 #313244
 
+# Catppuccin Frappe
+client.focused          #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6
+client.unfocused        #303446 #303446 #303446 #303446 #303446
+client.focused_inactive #414559 #414559 #414559 #414559 #414559
+
 # Rose Pine
 # client.focused          #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
 # client.unfocused        #191724 #191724 #191724 #191724 #191724
 # client.focused_inactive #1f1d2e #1f1d2e #1f1d2e #1f1d2e #1f1d2e
 
 # Nord
-client.focused          #88c0d0 #88c0d0 #88c0d0 #88c0d0 #88c0d0
-client.unfocused        #2e3440 #2e3440 #2e3440 #2e3440 #2e3440
-client.focused_inactive #3b4252 #3b4252 #3b4252 #3b4252 #3b4252
-
-# Gruvbox
-# client.focused          #98971a #98971a #98971a #98971a #98971a
-# client.unfocused        #282828 #282828 #282828 #282828 #282828
-# client.focused_inactive #3c3836 #3c3836 #3c3836 #3c3836 #3c3836
-
-# Onedark
-# client.focused          #98c379 #98c379 #98c379 #98c379 #98c379
-# client.unfocused        #232c34 #232c34 #232c34 #232c34 #232c34
-# client.focused_inactive #3d4148 #3d4148 #3d4148 #3d4148 #3d4148
-
-# Ayu-Dark
-# client.focused          #ff8f40 #ff8f40 #ff8f40 #ff8f40 #ff8f40
-# client.unfocused        #0d1017 #0d1017 #0d1017 #0d1017 #0d1017
-# client.focused_inactive #25272e #25272e #25272e #25272e #25272e
+# client.focused          #88c0d0 #88c0d0 #88c0d0 #88c0d0 #88c0d0
+# client.unfocused        #2e3440 #2e3440 #2e3440 #2e3440 #2e3440
+# client.focused_inactive #3b4252 #3b4252 #3b4252 #3b4252 #3b4252
 
 # Title format for windows
 for_window [shell="xdg_shell"] title_format "%title (%app_id)"

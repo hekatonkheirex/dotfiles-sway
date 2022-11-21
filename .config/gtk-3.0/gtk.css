@@ -1,31 +1,78 @@
-/* uncomment the code below to enable steppers in gtk3 apps */
-/* (see ~/.gtkrc-2.0.mine for gtk2) */
-
-/*
-.scrollbar, .scrollbar.vertical {
--GtkRange-stepper-size: 13;
--GtkScrollbar-has-backward-stepper: 1;
--GtkScrollbar-has-forward-stepper: 1;
-}
-*/
-
-/* end of stepper code */
-VteTerminal, vte-terminal {
-    padding: 5px;
- }
-
- /* remove window title from Client-Side Decorations */
-.solid-csd headerbar .title {
-    font-size: 0;
-}
-
-/* hide extra window decorations/double border */
-window decoration {
-    margin: 0;
-    border: none;
-    padding: 0;
-}
-
-* {
-  text-shadow: none;
-}
+@define-color accent_color rgb(30, 30, 46);
+@define-color accent_bg_color rgb(49, 50, 68);
+@define-color accent_fg_color rgb(205, 214, 244);
+@define-color destructive_color rgb(243, 139, 168);
+@define-color destructive_bg_color rgb(235, 160, 172);
+@define-color destructive_fg_color rgb(205, 214, 244);
+@define-color success_color rgb(166, 227, 161);
+@define-color success_bg_color rgb(148, 226, 213);
+@define-color success_fg_color rgb(148, 226, 213);
+@define-color warning_color rgb(250, 179, 135);
+@define-color warning_bg_color rgb(249, 226, 175);
+@define-color warning_fg_color rgb(30, 30, 46);
+@define-color error_color rgb(243, 139, 168);
+@define-color error_bg_color rgb(235, 160, 172);
+@define-color error_fg_color rgb(205, 214, 244);
+@define-color window_bg_color rgb(30, 30, 46);
+@define-color window_fg_color rgb(205, 214, 244);
+@define-color view_bg_color rgb(30, 30, 46);
+@define-color view_fg_color rgb(205, 214, 244);
+@define-color headerbar_bg_color rgb(30, 30, 46);
+@define-color headerbar_fg_color rgb(205, 214, 244);
+@define-color headerbar_border_color rgb(30, 30, 46);
+@define-color headerbar_backdrop_color @window_bg_color;
+@define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
+@define-color card_bg_color rgb(30, 30, 46);
+@define-color card_fg_color rgb(205, 214, 244);
+@define-color card_shade_color rgba(0, 0, 0, 0.36);
+@define-color dialog_bg_color rgb(30, 30, 46);
+@define-color dialog_fg_color rgb(205, 214, 244);
+@define-color popover_bg_color rgb(30, 30, 46);
+@define-color popover_fg_color rgb(205, 214, 244);
+@define-color shade_color rgba(0,0,0,0.36);
+@define-color scrollbar_outline_color rgba(0,0,0,0.5);
+@define-color blue_1 rgb(184,210,252);
+@define-color blue_2 rgb(172,202,251);
+@define-color blue_3 rgb(160,195,251);
+@define-color blue_4 rgb(148,187,250);
+@define-color blue_5 rgb(137,180,250);
+@define-color green_1 rgb(201,238,198);
+@define-color green_2 rgb(192,235,189);
+@define-color green_3 rgb(183,232,179);
+@define-color green_4 rgb(174,229,170);
+@define-color green_5 rgb(166,227,161);
+@define-color yellow_1 rgb(251,237,207);
+@define-color yellow_2 rgb(250,234,199);
+@define-color yellow_3 rgb(250,231,191);
+@define-color yellow_4 rgb(249,228,183);
+@define-color yellow_5 rgb(249,226,175);
+@define-color orange_1 rgb(252,209,183);
+@define-color orange_2 rgb(251,201,171);
+@define-color orange_3 rgb(251,194,159);
+@define-color orange_4 rgb(250,186,147);
+@define-color orange_5 rgb(250,179,135);
+@define-color red_1 rgb(247,185,202);
+@define-color red_2 rgb(246,173,194);
+@define-color red_3 rgb(245,162,185);
+@define-color red_4 rgb(244,150,176);
+@define-color red_5 rgb(243,139,168);
+@define-color purple_1 rgb(223,201,250);
+@define-color purple_2 rgb(218,192,249);
+@define-color purple_3 rgb(213,183,248);
+@define-color purple_4 rgb(208,174,247);
+@define-color purple_5 rgb(203,166,247);
+@define-color brown_1 rgb(247,225,225);
+@define-color brown_2 rgb(245,220,220);
+@define-color brown_3 rgb(244,215,215);
+@define-color brown_4 rgb(243,210,210);
+@define-color brown_5 rgb(242,205,205);
+@define-color light_1 rgb(205,214,244);
+@define-color light_2 rgb(186,194,222);
+@define-color light_3 rgb(166,173,200);
+@define-color light_4 rgb(147,153,178);
+@define-color light_5 rgb(127,132,156);
+@define-color dark_1 rgb(108,112,134);
+@define-color dark_2 rgb(88,91,112);
+@define-color dark_3 rgb(69,71,90);
+@define-color dark_4 rgb(49,50,68);
+@define-color dark_5 rgb(30,30,46);

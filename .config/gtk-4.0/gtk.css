@@ -8,52 +8,52 @@ warning, it's innocuous and can be defeated by using #{$var}.
 These are the colors apps are can override. We define the defaults here and
 define variables for them in _colors.scss */
 
-/* Gruvbox Dark Hard Borderless Theme */
+/* Catppuccin Mocha Borderless Theme */
 
 /* The main accent color and the matching text value */
-@define-color accent_color #266b79;
-@define-color accent_bg_color shade(#266b79, 0.5);
-@define-color accent_fg_color #f9f5d7;
+@define-color accent_bg_color #F5E0DC;
+@define-color accent_fg_color #1E1E2E;
+@define-color accent_color @accent_bg_color;
 
 /* Destructive-action buttons */
-@define-color destructive_color #f2594b;
-@define-color destructive_bg_color shade(#f2594b, 0.5);
-@define-color destructive_fg_color #f9f5d7;
+@define-color destructive_bg_color #F28FAD;
+@define-color destructive_fg_color #d9e0ee;
+@define-color destructive_color #E8A2AF;
 
 /* Levelbars, entries, labels and infobars. These don't need text colors */
-@define-color success_color #b0b846;
-@define-color success_bg_color shade(#b0b846, 0.5);
-@define-color success_fg_color #f9f5d7;
-@define-color warning_color #f28534;
-@define-color warning_bg_color shade(#f28534, 0.5);
-@define-color warning_fg_color #f9f5d7;
-@define-color error_color #f2594b;
-@define-color error_bg_color shade(#f2594b, 0.5);
-@define-color error_fg_color #f9f5d7;
+@define-color success_bg_color #ABE9B3;
+@define-color success_fg_color #d9e0ee;
+@define-color success_color #B5E8E0;
+@define-color warning_bg_color #F8BD96;
+@define-color warning_fg_color #302D41;
+@define-color warning_color #FAE3B0;
+@define-color error_bg_color #F28FAD;
+@define-color error_fg_color #d9e0ee;
+@define-color error_color #E8A2AF;
 
 /* Window */
-@define-color window_bg_color #1d2021;
-@define-color window_fg_color #f9f5d7;
+@define-color window_bg_color #1e1e2e;
+@define-color window_fg_color #d9e0ee;
 
 /* Views - e.g. text view or tree view */
-@define-color view_bg_color #1d2021;
-@define-color view_fg_color #f9f5d7;
+@define-color view_bg_color #1e1e2e;
+@define-color view_fg_color #d9e0ee;
 
 /* Header bar, search bar, tab bar */
-@define-color headerbar_bg_color #1d2021;
-@define-color headerbar_fg_color #f9f5d7;
-@define-color headerbar_border_color #f9f5d7;
+@define-color headerbar_bg_color #1e1e2e;
+@define-color headerbar_fg_color #d9e0ee;
+@define-color headerbar_border_color #d9e0ee;
 @define-color headerbar_backdrop_color @window_bg_color;
 @define-color headerbar_shade_color rgba(0, 0, 0, 0.36);
 
 /* Cards, boxed lists */
-@define-color card_bg_color rgba(249, 245, 215, 0.05);
-@define-color card_fg_color #f9f5d7;
+@define-color card_bg_color rgba(217, 224, 238, 0.05);
+@define-color card_fg_color #d9e0ee;
 @define-color card_shade_color rgba(0, 0, 0, 0.36);
 
 /* Popovers */
-@define-color popover_bg_color #3c3836;
-@define-color popover_fg_color #f9f5d7;
+@define-color popover_bg_color #302D41;
+@define-color popover_fg_color #d9e0ee;
 
 /* Miscellaneous */
 @define-color shade_color rgba(0, 0, 0, 0.36);
@@ -62,20 +62,19 @@ define variables for them in _colors.scss */
 window.csd {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 12px;
-  outline-color: rgba(220, 215, 186, 0.3);
+  outline-color: rgba(205, 214, 244, 0.2);
   outline-offset: -1px;
   outline-style: solid;
   outline-width: 1px;
-  box-shadow: 0 8px 6px -5px rgba(22, 22, 29, 0.2),
-    0 16px 15px 2px rgba(22, 22, 29, 0.14),
-    0 6px 18px 5px rgba(22, 22, 29, 0.12), 0 0 0 1px rgba(22, 22, 29, 0.75),
-    0 0 36px transparent;
+  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.2),
+    0 16px 15px 2px rgba(0, 0, 0, 0.14), 0 6px 18px 5px rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(0, 0, 0, 0.75), 0 0 36px transparent;
 }
 
 window.csd:backdrop {
-  box-shadow: 0 2px 3px -1px rgba(22, 22, 29, 0.15),
-    0 4px 3px 0 rgba(22, 22, 29, 0.18), 0 1px 6px 0 rgba(22, 22, 29, 0.12),
-    0 0 0 1px rgba(22, 22, 29, 0.75), 0 0 36px transparent;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.15),
+    0 4px 3px 0 rgba(0, 0, 0, 0.18), 0 1px 6px 0 rgba(0, 0, 0, 0.12),
+    0 0 0 1px rgba(0, 0, 0, 0.75), 0 0 36px transparent;
 }
 
 window.csd.popup {
@@ -90,12 +89,12 @@ window.csd.dialog.message {
   margin: 0;
   padding: 2px;
   border-radius: 0;
-  background-color: #1f1f28;
-  border: 2px solid #c8c093;
+  background-color: #1e1e2e;
+  border: 1px solid #45475a;
 }
 
 .solid-csd window.csd:backdrop {
-  background-color: #1f1f28;
+  background-color: #1e1e2e;
 }
 
 window.csd.maximized,
@@ -113,79 +112,123 @@ windowcontrols {
   border-spacing: 6px;
 }
 
-windowcontrols.start:not(.empty):dir(ltr),
-windowcontrols.end:not(.empty):dir(rtl) {
-  margin-left: 12px;
-  margin-right: 3px;
+windowcontrols:not(.empty).start:dir(ltr),
+windowcontrols:not(.empty).end:dir(rtl) {
+  margin-right: 6px;
+  margin-left: 3px;
 }
 
-windowcontrols.start:not(.empty):dir(rtl),
-windowcontrols.end:not(.empty):dir(ltr) {
-  margin-left: 12px;
+windowcontrols:not(.empty).start:dir(rtl),
+windowcontrols:not(.empty).end:dir(ltr) {
+  margin-left: 6px;
   margin-right: 3px;
 }
 
 windowcontrols button:not(.suggested-action):not(.destructive-action) {
-  min-height: 12px;
-  min-width: 12px;
+  min-height: 14px;
+  min-width: 14px;
   padding: 0;
-  margin: 0 2px;
+  margin: 0 3px;
   border-radius: 9999px;
 }
 
-button.titlebutton.minimize,
-button.titlebutton.maximize,
-button.titlebutton.close,
-windowcontrols button.minimize image,
-windowcontrols button.maximize image,
-windowcontrols button.close image {
-  padding: 0;
+windowcontrols button:not(.suggested-action):not(.destructive-action).minimize,
+windowcontrols button:not(.suggested-action):not(.destructive-action).maximize,
+windowcontrols button:not(.suggested-action):not(.destructive-action).close {
   color: transparent;
 }
 
-button.titlebutton.close,
-button.titlebutton.close:hover:backdrop,
-windowcontrols > button.close,
-windowcontrols > button.close:hover:backdrop {
-  background-color: #f2594b;
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).minimize
+  image,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).maximize
+  image,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close
+  image {
+  padding: 0;
 }
 
-button.titlebutton.close:hover,
-windowcontrols > button.close:hover {
-  background-color: shade(#f2594b, 0.5);
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).minimize:hover,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).minimize:active {
+  background-color: #f9e2af;
+  color: transparent;
+}
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).maximize:hover,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).maximize:active {
+  background-color: #94e2d5;
+  color: transparent;
+}
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close:hover,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close:active {
+  background-color: #eba0ac;
+  color: transparent;
 }
 
-button.titlebutton.maximize,
-button.titlebutton.maximize:hover:backdrop,
-windowcontrols > button.maximize,
-windowcontrols > button.maximize:hover:backdrop {
-  background-color: #b0b846;
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).minimize:backdrop,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).maximize:backdrop,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close:backdrop {
+  background-color: #45475a;
+  color: transparent;
 }
 
-button.titlebutton.maximize:hover,
-windowcontrols > button.maximize:hover {
-  background-color: shade(#b0b846, 0.5);
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).minimize:backdrop:hover,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).minimize:backdrop:active {
+  background-color: #fab387;
+  color: transparent;
+}
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).maximize:backdrop:hover,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).maximize:backdrop:active {
+  background-color: #a6e3a1;
+  color: transparent;
+}
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close:backdrop:hover,
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close:backdrop:active {
+  background-color: #f38ba8;
+  color: transparent;
 }
 
-button.titlebutton.minimize,
-button.titlebutton.minimize:hover:backdrop,
-windowcontrols > button.minimize,
-windowcontrols > button.minimize:hover:backdrop {
-  background-color: #e9b143;
+windowcontrols button:not(.suggested-action):not(.destructive-action).minimize {
+  background-color: #fab387;
 }
 
-button.titlebutton.minimize:hover,
-windowcontrols > button.minimize:hover {
-  background-color: shade(#e9b143, 0.5);
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).minimize:active {
+  background-color: #fab387;
 }
 
-button.titlebutton.close:backdrop,
-button.titlebutton.maximize:backdrop,
-button.titlebutton.minimize:backdrop,
-windowcontrols > button.close:backdrop,
-windowcontrols > button.maximize:backdrop,
-windowcontrols > button.minimize:backdrop {
-  background-color: #504945;
+windowcontrols button:not(.suggested-action):not(.destructive-action).maximize {
+  background-color: #a6e3a1;
+}
+
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).maximize:active {
+  background-color: #a6e3a1;
+}
+
+windowcontrols button:not(.suggested-action):not(.destructive-action).close {
+  background-color: #f38ba8;
+}
+
+windowcontrols
+  button:not(.suggested-action):not(.destructive-action).close:active {
+  background-color: #f38ba8;
 }
 
 gridview > child:selected,
@@ -203,9 +246,8 @@ calendar > grid > label.today,
 filechooser stack.view scrolledwindow treeview.view:selected,
 stacksidebar row:selected,
 .navigation-sidebar > row:selected {
-  color: #e9b143;
-  font-weight: 500;
-  background-color: rgba(224, 224, 224, 0.2);
+  color: #f5e0dc;
+  background-color: rgba(245, 224, 220, 0.2);
 }
 
 textview text selection:focus,
@@ -213,12 +255,8 @@ textview text selection,
 label > selection,
 entry > text > selection,
 calendar > grid > label.today:selected {
-  color: rgba(22, 22, 29, 0.87);
-  background-color: #c8c093;
-}
-
-list.frame {
-  border-radius: 12px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f5e0dc;
 }
 
 .monospace {
@@ -232,8 +270,8 @@ separator {
 
 window contents leaflet separator.sidebar,
 headerbar.vertical {
-  color: rgba(224, 222, 244, 0.1);
-  box-shadow: 1px 1px rgba(224, 222, 244, 0.1);
+  color: rgba(205, 214, 244, 0.1);
+  box-shadow: 1px 1px rgba(205, 214, 244, 0.1);
 }
 
 popover.menu box.inline-buttons {
@@ -288,7 +326,7 @@ popover.menu modelbutton {
   min-height: 22px;
   min-width: 56px;
   padding: 3px 9px;
-  color: #f9f5d7;
+  color: #cdd6f4;
   font: initial;
   text-shadow: none;
   box-shadow: none;
@@ -297,12 +335,11 @@ popover.menu modelbutton {
 
 popover.menu modelbutton:hover {
   transition: none;
-  background-color: #eee0b7;
-  color: rgba(0, 0, 0, 0.87);
+  background-color: alpha(currentColor, 0.08);
 }
 
 popover.menu modelbutton:disabled {
-  color: rgba(249, 245, 215, 0.5);
+  color: rgba(205, 214, 244, 0.5);
 }
 
 popover.menu label.title {
@@ -319,13 +356,13 @@ popover.background:backdrop {
   background-color: transparent;
 }
 
-popover.background>arrow,
-popover.background>contents {
+popover.background > arrow,
+popover.background > contents {
   transition: box-shadow 75ms cubic-bezier(0, 0, 0.2, 1);
   padding: 6px;
-  background-color: #3c3836;
+  background-color: #313244;
   border-radius: 12px;
-  border: 1px solid rgba(249, 245, 215, 0.2);
+  border: 1px solid rgba(205, 214, 244, 0.2);
   background-clip: border-box;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75), 0 2px 3px -1px rgba(0, 0, 0, 0.05),
     0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.05);
@@ -338,43 +375,43 @@ popover.background > contents:backdrop {
     0 0 0 1px rgba(0, 0, 0, 0.75);
 }
 
-popover.background>contents>list,
-popover.background>contents>.view,
-popover.background>contents>toolbar {
+popover.background > contents > list,
+popover.background > contents > .view,
+popover.background > contents > toolbar {
   border-style: none;
   box-shadow: none;
   background-color: transparent;
 }
 
-popover.background>contents separator {
-  background-color: rgba(249, 245, 215, 0.12);
+popover.background > contents separator {
+  background-color: rgba(205, 214, 244, 0.12);
   margin: 3px 0;
 }
 
-popover.background>contents list separator {
+popover.background > contents list separator {
   margin: 0;
 }
 
 popover.background .view:not(:selected),
 popover.background toolbar {
-  background-color: #3c3836;
+  background-color: #313244;
 }
 
-popover.background .linked>button:not(.radio) {
+popover.background .linked > button:not(.radio) {
   background-color: transparent;
   box-shadow: none;
   border-radius: 6px;
 }
 
-popover.background .linked>button:not(.radio):first-child {
+s popover.background .linked > button:not(.radio):first-child {
   border-radius: 6px;
 }
 
-popover.background .linked>button:not(.radio):last-child {
+popover.background .linked > button:not(.radio):last-child {
   border-radius: 6px;
 }
 
-popover.background .linked>button:not(.radio):only-child {
+popover.background .linked > button:not(.radio):only-child {
   border-radius: 6px;
 }
 
@@ -392,14 +429,13 @@ popover.background.magnifier {
 }
 
 magnifier {
-  background-color: #1d2021;
+  background-color: #1e1e2e;
 }
-
 switch {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1);
-  margin: 12px 0;
+  margin: 6px 0;
   padding: 0;
-  border: 2px solid rgba(220, 215, 186, 0.7);
+  border: 1px solid rgba(205, 214, 244, 0.7);
   border-radius: 9999px;
   background-color: transparent;
   background-clip: border-box;
@@ -408,8 +444,8 @@ switch {
 }
 
 switch:checked {
-  background-color: #c8c093;
-  border-color: #c8c093;
+  background-color: #f5e0dc;
+  border-color: #f5e0dc;
 }
 
 switch:disabled {
@@ -428,23 +464,25 @@ switch > slider {
   border-radius: 9999px;
   outline: none;
   box-shadow: none;
-  background-color: rgba(220, 215, 186, 0.7);
+  background-color: rgba(205, 214, 244, 0.7);
   border: none;
 }
 
 switch:focus > slider {
-  box-shadow: 0 0 0 10px rgba(220, 215, 186, 0.04);
+  box-shadow: 0 0 0 10px rgba(205, 214, 244, 0.04);
 }
 
 switch:hover > slider {
-  box-shadow: 0 0 0 10px rgba(220, 215, 186, 0.12);
+  box-shadow: 0 0 0 10px rgba(205, 214, 244, 0.12);
 }
 
 switch:focus:hover > slider {
-  box-shadow: 0 0 0 10px rgba(220, 215, 186, 0.12);
+  box-shadow: 0 0 0 10px rgba(205, 214, 244, 0.12);
 }
 
 switch:checked > slider {
-  background-color: #1f1f28;
-  color: #1f1f28;
+  background-color: #1e1e2e;
+  color: #1e1e2e;
 }
+
+

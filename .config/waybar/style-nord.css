@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: #303446;
+  background-color: #2e3440;
   transition-property: background-color;
   transition-duration: .5s;
   border-radius: 12px 12px 12px 12px;
@@ -18,11 +18,11 @@ window#waybar.hidden {
 }
 
 tooltip {
-  background: rgba(48, 52, 70, 0.7);
-  border: 1px solid rgba(65, 69, 89, 0.7);
+  background: rgba(30, 30, 46, 0.7);
+  border: 1px solid rgba(49, 50, 68, 0.7);
 }
 tooltip label {
-  color: #8caaee;
+  color: #5e81ac;
 }
 
 /* Workspaces */
@@ -30,21 +30,21 @@ tooltip label {
 
 #workspaces button {
   min-width: 10px;
-  color: #e5c890;
-  padding: 0 12px;
+  color: #ebcb8b;
+  margin-left: 5px;
 }
 #workspaces button:hover {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
 #workspaces button.focused {
-  color: #8caaee;
+  color: #5e81ac;
 }
 #workspaces button.urgent {
-  color: #e78284;
+  color: #bf616a;
 }
 #workspaces button.persistent {
-  color: #a6d189;
+  color: #a3be8c;
 }
 
 window#waybar.empty #window {
@@ -53,50 +53,50 @@ window#waybar.empty #window {
 
 /* Language */
 #language {
-  color: #51576d;
+  color: #3b4252;
   padding: 0 12px;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-  color: #51576d;
+  color: #3b4252;
   padding: 0 12px;
 }
 #idle_inhibitor.activated {
-  color: #e78284;
+  color: #bf616a;
 }
 
 /* Backlight */
 #backlight {
-  color: #e5c890;
+  color: #ebcb8b;
   padding: 0 12px;
 }
 
 /* Volume */
 #pulseaudio {
-  color: #8caaee;
+  color: #5e81ac;
   padding: 0 12px;
 }
 #pulseaudio.muted {
-  color: #414559;
+  color: #3b4252;
 }
 
 /* Battery */
 #battery {
-  color: #e78284;
+  color: #bf616a;
   padding: 0 12px;
 }
 #battery.charging, #battery.plugged {
-  color: #a6d189;
+  color: #a3be8c;
 }
 @keyframes blink {
   to {
-    background-color: #e5c890;
+    background-color: #ebcb8b;
   }
 }
 #battery.critical:not(.charging) {
-  background-color: #e78284;
-  color: #303446;
+  background-color: #bf616a;
+  color: #2e3440;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -106,20 +106,20 @@ window#waybar.empty #window {
 
 /* Tray */
 #tray {
-  background: #414559;
+  background: #4c566a;
   padding: 0 12px;
 }
 
 /* Clock */
 #clock {
-  color: #c6d0f5;
+  color: #eceff4;
   margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Spotify */
 #custom-spotify {
-  color: #a6d189;
+  color: #a3be8c;
 }
 
 #custom-media,
@@ -135,23 +135,23 @@ window#waybar.empty #window {
   padding: 0 12px;
 }
 #custom-weather.severe {
-    color: #e78284;
+    color: #bf616a;
 }
 #custom-weather.sunnyDay {
-    color: #e5c890;
+    color: #ebcb8b;
 }
 #custom-weather.clearNight {
-    color: #c6d0f5;
+    color: #eceff4;
 }
 #custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
-    color: #51576d;
+    color: #3b4252;
 }
 #custom-weather.rainyDay, #custom-weather.rainyNight {
-    color: #ca9ee6;
+    color: #81a1c1;
 }
 #custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
-    color: #99d1db;
+    color: #88c0d0;
 }
 #custom-weather.default {
-    color: #babbf1;
+    color: #d8dee9;
 }
