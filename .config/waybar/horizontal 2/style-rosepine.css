@@ -1,0 +1,158 @@
+/* General configuration */
+* {
+  border: none;
+  font-family: "SF Pro Display","Font Awesome 6 Free Regular","Font Awesome 6 Free Solid","Font Awesome 6 Pro Regular","Font Awesome 6 Pro Thin","Font Awesome 6 Pro Solid","Font Awesome 6 Pro Light","Font Awesome 6 Brands Regular";
+  font-size: 14px;
+  font-weight: normal;
+}
+
+window#waybar {
+  background-color: #191724;
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 12px 12px 12px 12px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+tooltip {
+  background: rgba(25, 23, 26, 0.7);
+  border: 1px solid rgba(196, 167, 231, 0.7);
+}
+tooltip label {
+  color: #e0def4;
+}
+
+/* Workspaces */
+#workspaces,
+
+#workspaces button {
+  min-width: 10px;
+  color: #f6c177;
+  margin-left: 5px;
+}
+#workspaces button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+#workspaces button.focused {
+  color: #9ccfd8;
+}
+#workspaces button.urgent {
+  color: #eb6f92;
+}
+#workspaces button.persistent {
+  color: #6e6a86;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+/* Language */
+#language {
+  color: #6e6a86;
+  padding: 0 12px;
+}
+
+/* Idle inhibitor */
+#idle_inhibitor {
+  color: #6e6a86;
+  padding: 0 12px;
+}
+#idle_inhibitor.activated {
+  color: #eb6f92;
+}
+
+/* Backlight */
+#backlight {
+  background-color: #191724;
+  color: #f6c177;
+  padding: 0 12px;
+}
+
+/* Volume */
+#pulseaudio {
+  color: #9ccfd8;
+  padding: 0 12px;
+}
+#pulseaudio.muted {
+  color: #6e6a86;
+}
+
+/* Battery */
+#battery {
+  color: #eb6f92;
+  padding: 0 12px;
+}
+#battery.charging, #battery.plugged {
+  color: #31748f;
+}
+@keyframes blink {
+  to {
+    background-color: #f6c177;
+  }
+}
+#battery.critical:not(.charging) {
+  background-color: #eb6f92;
+  color: #191724;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Tray */
+#tray {
+  background: #26233a;
+  padding: 0 12px;
+}
+
+/* Clock */
+#clock {
+  color: #e0def4;
+  margin-right: 5px;
+  padding: 0 12px;
+}
+
+/* Spotify */
+#custom-spotify {
+  color: #31748f;
+}
+
+#custom-media,
+#network,
+#temperature,
+#window,
+#cpu,
+#memory,
+#disk,
+
+/* Weather */
+#custom-weather {
+  padding: 0 12px;
+}
+#custom-weather.severe {
+    color: #eb6f92;
+}
+#custom-weather.sunnyDay {
+    color: #f6c177;
+}
+#custom-weather.clearNight {
+    color: #ebbcba;
+}
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: #908caa;
+}
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: #c4a7e7;
+}
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: #9ccfd8;
+}
+#custom-weather.default {
+    color: #e0def4;
+}
