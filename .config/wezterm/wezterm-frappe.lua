@@ -23,7 +23,7 @@ local colors = {
 	-- special
 	foreground = "#c6d0f5",
 	darker_background = "#292c3c",
-	background = "#303446",
+	background = "303446",
 	lighter_background = "#313244",
 	one_background = "#232634",
 

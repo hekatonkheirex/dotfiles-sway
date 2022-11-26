@@ -149,7 +149,7 @@ window#waybar.empty #window {
 #custom-weather.rainyDay, #custom-weather.rainyNight {
     color: #ca9ee6;
 }
-#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+#custom-weather.snowyIcyDay, #custom-weather.snowyIcyNight {
     color: #99d1db;
 }
 #custom-weather.default {

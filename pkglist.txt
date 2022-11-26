@@ -7,7 +7,6 @@ adobe-source-sans-fonts
 alsa-utils
 amd-ucode
 apparmor
-apple-fonts
 autoconf
 automake
 autotiling
@@ -21,6 +20,9 @@ blueman
 bluez
 bluez-utils
 brightnessctl
+catppuccin-gtk-theme-frappe
+catppuccin-gtk-theme-latte
+catppuccin-gtk-theme-macchiato
 catppuccin-gtk-theme-mocha
 cava
 clipman
@@ -29,6 +31,7 @@ debugedit
 dhclient
 dialog
 dina-font
+discord
 dnsmasq
 dosfstools
 duf
@@ -50,7 +53,6 @@ gdm
 gdm-settings
 gentium-plus-font
 git
-gnome-epub-thumbnailer
 gnome-keyring
 gnome-mahjongg
 gnome-tweaks
@@ -59,20 +61,19 @@ google-chrome
 grim
 groff
 grub
+gruvbox-dark-gtk
+gruvbox-dark-icons-gtk
 gst-plugin-pipewire
 gst-plugins-bad
-gst-plugins-ugly
 gtk-layer-shell
 gvfs
 gvfs-mtp
 gvfs-smb
 haveged
 hdparm
-hplip
 htop
 hwdetect
 hwinfo
-hyprland-bin
 inetutils
 inter-font
 iwd
@@ -129,7 +130,6 @@ pacman-contrib
 pacutils
 pamixer
 papirus-icon-theme
-parsec-bin
 paru-bin
 patch
 pavucontrol
@@ -162,7 +162,6 @@ rofimoji
 rsync
 rustup
 rxfetch
-scdoc
 scrot
 sg3_utils
 slurp
@@ -185,7 +184,6 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-shares-plugin
 thunar-volman
-tldr
 ttf-anonymous-pro
 ttf-bitstream-vera
 ttf-cascadia-code
@@ -222,10 +220,9 @@ usb_modeswitch
 usbutils
 vdhcoapp-bin
 viewnior
-vpnc
 w3m
 warpinator
-waybar-hyprland-git
+waybar
 wev
 wezterm
 wf-recorder
@@ -233,9 +230,9 @@ wget
 which
 whois
 wireless_tools
+wireplumber
 wl-clipboard
 wlogout-git
-wlr-randr
 wlsunset
 wofi
 wpa_supplicant
