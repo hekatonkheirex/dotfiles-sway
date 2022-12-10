@@ -23,24 +23,24 @@ window#waybar.hidden {
 
 /* Tooltips */
 tooltip {
-  background: rgba(30, 30, 46, 0.7);
-  border: 1px solid rgba(49, 50, 68, 0.7);
+  background: rgba(48, 52, 70, 0.7);
+  border: 1px solid rgba(65, 69, 89, 0.7);
 }
 tooltip label {
-  color: #89b4fa;
+  color: #8caaee;
 }
 
 /* Workspaces */
 #workspaces {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 12px;
-  border-bottom: 2px solid #b4befe;
-  border-left: 2px solid #b4befe;
+  border-bottom: 2px solid #ca9ee6;
+  border-left: 2px solid #ca9ee6;
 }
 
 #workspaces button {
   min-width: 10px;
-  color: #f9e2af;
+  color: #e5c890;
   border-radius: 12px;
   padding: 10px;
 }
@@ -50,15 +50,15 @@ tooltip label {
 }
 
 #workspaces button.focused {
-  color: #89b4fa;
+  color: #8caaee;
 }
 
 #workspaces button.urgent {
-  color: #f38ba8;
+  color: #e78284;
 }
 
 #workspaces button.persistent {
-	color: #a6e3a1;
+	color: #a6d189;
 }
 
 window#waybar.empty #window {
@@ -67,18 +67,18 @@ window#waybar.empty #window {
 
 /** ********** Backlight ********** **/
 #backlight {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 12px 12px 0 0;
-  border-left: 2px solid #b4befe;
-  color: #f9e2af;
+  border-left: 2px solid #ca9ee6;
+  color: #e5c890;
   padding: 5px 0 5px 0;
 }
 #backlight.2 {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 0 0 12px 12px;
-  border-bottom: 2px solid #b4befe;
-  border-left: 2px solid #b4befe;
-  color: #fab387;
+  border-bottom: 2px solid #ca9ee6;
+  border-left: 2px solid #ca9ee6;
+  color: #ef9f76;
   font-size: 10px;
   margin-bottom: 5px;
   padding: 5px 0 5px 0;
@@ -86,42 +86,42 @@ window#waybar.empty #window {
 
 /** ********** Battery ********** **/
 #battery {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 12px 12px 0 0;
-  border-left: 2px solid #b4befe;
-  color: #f38ba8;
+  border-left: 2px solid #ca9ee6;
+  color: #e78284;
   padding: 5px 0 5px 0;
 }
 #battery.charging {
-  color: #a6e3a1;
+  color: #a6d189;
 }
 #battery.plugged {
-  color: #f9e2af;
+  color: #e5c890;
 }
 
 #battery.2 {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 0 0 12px 12px;
-  border-bottom: 2px solid #b4befe;
-  border-left: 2px solid #b4befe;
-  color: #f38ba8;
+  border-bottom: 2px solid #ca9ee6;
+  border-left: 2px solid #ca9ee6;
+  color: #ea999c;
   font-size: 10px;
   margin-bottom: 5px;
   padding: 5px 0 5px 0;
 }
 #battery.2.charging {
-  color: #a6e3a1;
+  color: #81c8be;
 }
 #battery.2.plugged {
-  color: #fab387;
+  color: #ef9f76;
 }
 @keyframes blink {
   to {
-    background-color: #f9e2af;
+    background-color: #e5c890;
   }
 }
 #battery.2.critical:not(.charging) {
-  color: #cdd6f4;
+  color: #c6d0f5;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -131,129 +131,129 @@ window#waybar.empty #window {
 
 /** ********** Clock ********** **/
 #clock {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 12px 12px 0 0;
-  border-left: 2px solid #b4befe;
-  color: #b4befe;
+  border-left: 2px solid #ca9ee6;
+  color: #ca9ee6;
   font-size: 22px;
   font-weight: bold;
   padding: 5px 0 0 0;
 }
 #clock.2 {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 0 0 12px 12px;
-  border-bottom: 2px solid #b4befe;
-  border-left: 2px solid #b4befe;
-  color: #f38ba8;
+  border-bottom: 2px solid #ca9ee6;
+  border-left: 2px solid #ca9ee6;
+  color: #f4b8e4;
   margin-bottom: 5px;
   padding: 0 0 5px 0;
 }
 #clock.3 {
-  color: #f2cdcd;
+  color: #eebebe;
   font-size: 14px;
   margin-bottom: 5px;
 }
 
 /** ********** Tray ********** **/
 #tray {
-  background-color: #313244;
+  background-color: #414559;
   border-radius: 12px;
-  border-bottom: 2px solid #b4befe;
-  border-left: 2px solid #b4befe;
+  border-bottom: 2px solid #ca9ee6;
+  border-left: 2px solid #ca9ee6;
   margin-bottom: 5px;
   padding: 7px 5px 7px 5px;
 }
 
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 12px 12px 0 0;
-  border-left: 2px solid #b4befe;
-  color: #89b4fa;
+  border-left: 2px solid #ca9ee6;
+  color: #8caaee;
   padding: 5px 0 5px 0;
 }
 #pulseaudio.bluetooth {
-  color: #74c7ec;
+  color: #99d1db;
 }
 #pulseaudio.muted {
-  color: #313244;
+  color: #414559;
 }
 
 #pulseaudio.2 {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 0 0 12px 12px;
-  border-bottom: 2px solid #b4befe;
-  border-left: 2px solid #b4befe;
-  color: #89dceb;
+  border-bottom: 2px solid #ca9ee6;
+  border-left: 2px solid #ca9ee6;
+  color: #85c1dc;
   margin-bottom: 5px;
   font-size: 10px;
   padding: 5px 0 5px 0;
 }
 #pulseaudio.2.bluetooth {
-  color: #74c7ec;
+  color: #81c8be;
 }
 #pulseaudio.2.muted {
-  color: #89b4fa;
+  color: #8caaee;
 }
 
 #language {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 12px;
-  border-bottom: 2px solid #b4befe;
-  border-left: 2px solid #b4befe;
-  color: #f5e0dc;
+  border-bottom: 2px solid #ca9ee6;
+  border-left: 2px solid #ca9ee6;
+  color: #f2d5cf;
   font-size: 16px;
   padding: 5px;
 }
 
 #idle_inhibitor {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 12px;
-  border-bottom: 2px solid #b4befe;
-  border-left: 2px solid #b4befe;
-  color: #313244;
+  border-bottom: 2px solid #ca9ee6;
+  border-left: 2px solid #ca9ee6;
+  color: #414559;
   padding: 8px;
   margin-bottom: 5px;
 }
 #idle_inhibitor.activated {
-  color: #f38ba8;
+  color: #e78284;
 }
 
 /** ********** Custom ********** **/
 
 #custom-weather {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 12px 12px 0 0;
-  border-left: 2px solid #b4befe;
+  border-left: 2px solid #ca9ee6;
   padding: 5px 0 5px 0;
   margin-top: 5px;
 }
 #custom-weather.severe {
-  color: #f38ba8;
+  color: #e78284;
 }
 #custom-weather.sunnyDay {
-  color: #f9e2af;
+  color: #e5c890;
 }
 #custom-weather.clearNight {
-  color: #cdd6f4;
+  color: #c6d0f5;
 }
 #custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
-  color: #45475a;
+  color: #51576d;
 }
 #custom-weather.rainyDay, #custom-weather.rainyNight {
-  color: #cba6f7;
+  color: #ca9ee6;
 }
 #custom-weather.snowyIcyDay, #custom-weather.snowyIcyNight {
-  color: #89dceb;
+  color: #99d1db;
 }
 #custom-weather.default {
-  color: #cdd6f4;
+  color: #babbf1;
 }
 #custom-weather2 {
-  background-color: #1e1e2e;
+  background-color: #303446;
   border-radius: 0 0 12px 12px;
-  border-left: 2px solid #b4befe;
-  border-bottom: 2px solid #b4befe;
+  border-left: 2px solid #ca9ee6;
+  border-bottom: 2px solid #ca9ee6;
   font-size: 10px;
   padding: 5px 0 5px 0;
 }
