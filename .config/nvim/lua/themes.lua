@@ -20,7 +20,7 @@ vim.g.tokyonight_colors = { hint = 'orange', error = '#ff0000' }
 -- vim.cmd('colorscheme everforest')
 -- vim.cmd('colorscheme tokyonight')
 -- vim.cmd('colorscheme horizon')
--- vim.cmd('colorscheme rose-pine')
+vim.cmd('colorscheme rose-pine')
 -- vim.cmd('colorscheme hackthebox')
 -- vim.cmd('colorscheme decay')
 -- vim.cmd('colorscheme ayu')

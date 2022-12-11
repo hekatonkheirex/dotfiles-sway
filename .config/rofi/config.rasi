@@ -16,3 +16,4 @@ configuration {
 
 @theme "./catppuccin/mocha.rasi"
 /* @theme "nord.rasi" */
+/* @theme "rosepine.rasi" */
