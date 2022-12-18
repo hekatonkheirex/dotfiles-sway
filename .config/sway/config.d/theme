@@ -14,8 +14,8 @@ corner_radius 12
 
 # Sway Theming
 # Catppuccin Mocha
-# client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
-client.focused          #89b4fa #89b4fa #89b4fa #89b4fa #89b4fa
+client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
+# client.focused          #89b4fa #89b4fa #89b4fa #89b4fa #89b4fa
 client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
 client.focused_inactive #313244 #313244 #313244 #313244 #313244
 
