@@ -11,9 +11,10 @@ button {
 }
 
 window#waybar {
-  background: rgba(30, 30, 46, 0.9);
+  background: rgba(0, 0, 0, 0.0);
 	transition-property: background-color;
   transition-duration: .5s;
+  border-radius: 12px 12px 12px 12px;
 }
 
 window#waybar.hidden {
@@ -32,16 +33,20 @@ tooltip label {
 /* Workspaces */
 #workspaces {
   background-color: #1e1e2e;
+  border-radius: 12px;
+  border-bottom: 2px solid #b4befe;
+  border-left: 2px solid #b4befe;
 }
 
 #workspaces button {
   min-width: 10px;
   color: #f9e2af;
+  border-radius: 12px;
   padding: 10px;
 }
 
 #workspaces button:hover {
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 #workspaces button.focused {
@@ -63,11 +68,16 @@ window#waybar.empty #window {
 /** ********** Backlight ********** **/
 #backlight {
   background-color: #1e1e2e;
+  border-radius: 12px 12px 0 0;
+  border-left: 2px solid #b4befe;
   color: #f9e2af;
   padding: 5px 0 5px 0;
 }
 #backlight.2 {
   background-color: #1e1e2e;
+  border-radius: 0 0 12px 12px;
+  border-bottom: 2px solid #b4befe;
+  border-left: 2px solid #b4befe;
   color: #fab387;
   font-size: 10px;
   margin-bottom: 5px;
@@ -77,6 +87,8 @@ window#waybar.empty #window {
 /** ********** Battery ********** **/
 #battery {
   background-color: #1e1e2e;
+  border-radius: 12px 12px 0 0;
+  border-left: 2px solid #b4befe;
   color: #f38ba8;
   padding: 5px 0 5px 0;
 }
@@ -86,22 +98,12 @@ window#waybar.empty #window {
 #battery.plugged {
   color: #f9e2af;
 }
-@keyframes blink {
-  to {
-    background-color: #f9e2af;
-  }
-}
-#battery.critical:not(.charging) {
-  color: #cdd6f4;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 
 #battery.2 {
   background-color: #1e1e2e;
+  border-radius: 0 0 12px 12px;
+  border-bottom: 2px solid #b4befe;
+  border-left: 2px solid #b4befe;
   color: #f38ba8;
   font-size: 10px;
   margin-bottom: 5px;
@@ -130,6 +132,8 @@ window#waybar.empty #window {
 /** ********** Clock ********** **/
 #clock {
   background-color: #1e1e2e;
+  border-radius: 12px 12px 0 0;
+  border-left: 2px solid #b4befe;
   color: #b4befe;
   font-size: 22px;
   font-weight: bold;
@@ -137,6 +141,9 @@ window#waybar.empty #window {
 }
 #clock.2 {
   background-color: #1e1e2e;
+  border-radius: 0 0 12px 12px;
+  border-bottom: 2px solid #b4befe;
+  border-left: 2px solid #b4befe;
   color: #f38ba8;
   margin-bottom: 5px;
   padding: 0 0 5px 0;
@@ -150,6 +157,9 @@ window#waybar.empty #window {
 /** ********** Tray ********** **/
 #tray {
   background-color: #313244;
+  border-radius: 12px;
+  border-bottom: 2px solid #b4befe;
+  border-left: 2px solid #b4befe;
   margin-bottom: 5px;
   padding: 7px 5px 7px 5px;
 }
@@ -157,6 +167,8 @@ window#waybar.empty #window {
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
   background-color: #1e1e2e;
+  border-radius: 12px 12px 0 0;
+  border-left: 2px solid #b4befe;
   color: #89b4fa;
   padding: 5px 0 5px 0;
 }
@@ -169,6 +181,9 @@ window#waybar.empty #window {
 
 #pulseaudio.2 {
   background-color: #1e1e2e;
+  border-radius: 0 0 12px 12px;
+  border-bottom: 2px solid #b4befe;
+  border-left: 2px solid #b4befe;
   color: #89dceb;
   margin-bottom: 5px;
   font-size: 10px;
@@ -183,6 +198,9 @@ window#waybar.empty #window {
 
 #language {
   background-color: #1e1e2e;
+  border-radius: 12px;
+  border-bottom: 2px solid #b4befe;
+  border-left: 2px solid #b4befe;
   color: #f5e0dc;
   font-size: 16px;
   padding: 5px;
@@ -190,6 +208,9 @@ window#waybar.empty #window {
 
 #idle_inhibitor {
   background-color: #1e1e2e;
+  border-radius: 12px;
+  border-bottom: 2px solid #b4befe;
+  border-left: 2px solid #b4befe;
   color: #313244;
   padding: 8px;
   margin-bottom: 5px;
@@ -202,6 +223,8 @@ window#waybar.empty #window {
 
 #custom-weather {
   background-color: #1e1e2e;
+  border-radius: 12px 12px 0 0;
+  border-left: 2px solid #b4befe;
   padding: 5px 0 5px 0;
   margin-top: 5px;
 }
@@ -228,6 +251,9 @@ window#waybar.empty #window {
 }
 #custom-weather2 {
   background-color: #1e1e2e;
+  border-radius: 0 0 12px 12px;
+  border-left: 2px solid #b4befe;
+  border-bottom: 2px solid #b4befe;
   font-size: 10px;
   padding: 5px 0 5px 0;
 }

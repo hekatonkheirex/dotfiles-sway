@@ -3,6 +3,6 @@ file:///home/mura/Downloads Downloads
 file:///home/mura/Music Music
 file:///home/mura/Pictures Pictures
 file:///home/mura/Videos Videos
-smb://192.168.100.3/apps/ apps on ROG
-smb://192.168.100.3/imgs/ imgs on ROG
-smb://192.168.100.3/vids/ vids on ROG
+smb://192.168.100.3/apps/
+smb://192.168.100.3/imgs/
+smb://192.168.100.3/vids/

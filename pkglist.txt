@@ -3,7 +3,6 @@ acpi_call
 acpid
 adobe-source-han-sans-otc-fonts
 adobe-source-han-serif-otc-fonts
-adobe-source-sans-fonts
 alsa-utils
 amd-ucode
 apparmor
@@ -25,6 +24,7 @@ catppuccin-gtk-theme-frappe
 catppuccin-gtk-theme-latte
 catppuccin-gtk-theme-macchiato
 catppuccin-gtk-theme-mocha
+catppuccin-mocha-grub-theme-git
 cava
 clipman
 cups
@@ -40,7 +40,6 @@ dupeguru
 efibootmgr
 efitools
 egl-wayland
-ethtool
 exa
 fakeroot
 ffmpegthumbnailer
@@ -57,13 +56,12 @@ git
 gnome-keyring
 gnome-mahjongg
 gnome-tweaks
-gnu-netcat
+gnu-free-fonts
 google-chrome
 grim
 groff
 grub
 gst-plugin-pipewire
-gst-plugins-bad
 gtk-layer-shell
 gvfs
 gvfs-mtp
@@ -71,7 +69,6 @@ gvfs-smb
 htop
 inetutils
 inter-font
-iwd
 jq
 kitty
 kvantum
@@ -80,7 +77,6 @@ laptop-mode-tools
 leafpad
 libgnome-keyring
 libgsf
-libopenraw
 libsixel
 libtool
 libva-mesa-driver
@@ -99,6 +95,7 @@ microsoft-edge-stable-bin
 mlocate
 most
 mpv
+mtools
 neofetch
 neovim
 net-tools
@@ -114,7 +111,6 @@ noto-fonts-emoji
 npm
 nss-mdns
 ntfs-3g
-ntp
 nwg-wrapper
 openssh
 openssl-1.1
@@ -123,7 +119,6 @@ pacman-contrib
 pacutils
 pamixer
 papirus-folders-catppuccin-git
-papirus-icon-theme
 paru-bin
 patch
 pavucontrol
@@ -137,7 +132,6 @@ playerctl
 polkit-gnome
 poppler-glib
 powertop
-python-pyqt5
 python-pyqt6
 python-pyquery
 python-pytest
@@ -160,10 +154,11 @@ scrot
 slurp
 sof-firmware
 spicetify-cli
+spotify
 sshfs
 sudo
+sway
 swaybg
-swayfx
 swayidle
 swaylock-effects-git
 system-config-printer
@@ -174,7 +169,7 @@ texinfo
 thunar
 thunar-archive-plugin
 thunar-media-tags-plugin
-thunar-shares-plugin
+thunar-shares-plugin-git
 thunar-volman
 ttf-anonymous-pro
 ttf-bitstream-vera
@@ -220,11 +215,9 @@ wf-recorder
 wget
 which
 whois
-wireplumber
 wl-clipboard
 wlogout-git
 wlsunset
-wofi
 wtype
 xdg-desktop-portal
 xdg-desktop-portal-wlr

@@ -4,13 +4,13 @@ exec_always ~/.config/sway/scripts/gsettings
 default_border pixel 2
 for_window [class=".*"] border pixel 2
 default_floating_border none 
-# smart_gaps on
-# hide_edge_borders smart
+smart_gaps on
+hide_edge_borders smart
 gaps inner 15
 gaps outer 0
 gaps bottom 1
 gaps top 1
-corner_radius 12
+# corner_radius 12
 
 # Sway Theming
 # Catppuccin Mocha
