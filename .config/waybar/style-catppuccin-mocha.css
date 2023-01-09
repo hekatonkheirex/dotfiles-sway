@@ -38,13 +38,13 @@ tooltip label {
   border-radius: 12px;
 }
 #workspaces button.focused {
-  color: #a6e3a1;
+  color: #89b4fa;
 }
 #workspaces button.urgent {
   color: #f38ba8;
 }
 #workspaces button.persistent {
-  color: #7f849c;
+  color: #a6e3a1;
 }
 
 window#waybar.empty #window {
@@ -53,17 +53,17 @@ window#waybar.empty #window {
 
 /* Language */
 #language {
-  color: #7f849c;
+  color: #45475a;
   padding: 0 12px;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-  color: #7f849c;
+  color: #45475a;
   padding: 0 12px;
 }
 #idle_inhibitor.activated {
-  color: #a6e3a1;
+  color: #f38ba8;
 }
 
 /* Backlight */
@@ -113,8 +113,6 @@ window#waybar.empty #window {
 /* Clock */
 #clock {
   color: #cdd6f4;
-  font-family: "Inter Medium";
-  font-size: 18px;
   margin-right: 5px;
   padding: 0 12px;
 }
@@ -156,18 +154,4 @@ window#waybar.empty #window {
 }
 #custom-weather.default {
     color: #b4befe;
-}
-
-/* Logo */
-#custom-logo {
-  font-size: 18px;
-  color: #cba6f7;
-  margin-left: 16px;
-}
-
-/* Power */
-#custom-power {
-  font-size: 18px;
-  color: #f38ba8;
-  margin-right: 16px;
 }

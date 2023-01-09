@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: #1e1e2e;
+  background-color: #282828;
   transition-property: background-color;
   transition-duration: .5s;
   border-radius: 12px 12px 12px 12px;
@@ -22,7 +22,7 @@ tooltip {
   border: 1px solid rgba(49, 50, 68, 0.7);
 }
 tooltip label {
-  color: #89b4fa;
+  color: #458588;
 }
 
 /* Workspaces */
@@ -30,7 +30,7 @@ tooltip label {
 
 #workspaces button {
   min-width: 10px;
-  color: #f9e2af;
+  color: #d79921;
   padding: 0 12px;
 }
 #workspaces button:hover {
@@ -38,13 +38,13 @@ tooltip label {
   border-radius: 12px;
 }
 #workspaces button.focused {
-  color: #a6e3a1;
+  color: #458588;
 }
 #workspaces button.urgent {
-  color: #f38ba8;
+  color: #cc241d;
 }
 #workspaces button.persistent {
-  color: #7f849c;
+  color: #98971a;
 }
 
 window#waybar.empty #window {
@@ -53,50 +53,50 @@ window#waybar.empty #window {
 
 /* Language */
 #language {
-  color: #7f849c;
+  color: #3c3836;
   padding: 0 12px;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-  color: #7f849c;
+  color: #3c3836;
   padding: 0 12px;
 }
 #idle_inhibitor.activated {
-  color: #a6e3a1;
+  color: #cc241d;
 }
 
 /* Backlight */
 #backlight {
-  color: #f9e2af;
+  color: #d79921;
   padding: 0 12px;
 }
 
 /* Volume */
 #pulseaudio {
-  color: #89b4fa;
+  color: #458588;
   padding: 0 12px;
 }
 #pulseaudio.muted {
-  color: #45475a;
+  color: #3c3836;
 }
 
 /* Battery */
 #battery {
-  color: #f38ba8;
+  color: #cc241d;
   padding: 0 12px;
 }
 #battery.charging, #battery.plugged {
-  color: #a6e3a1;
+  color: #98971a;
 }
 @keyframes blink {
   to {
-    background-color: #f9e2af;
+    background-color: #d79921;
   }
 }
 #battery.critical:not(.charging) {
-  background-color: #f38ba8;
-  color: #1e1e2e;
+  background-color: #cc241d;
+  color: #282828;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -106,22 +106,20 @@ window#waybar.empty #window {
 
 /* Tray */
 #tray {
-  background: #313244;
+  background: #504945;
   padding: 0 12px;
 }
 
 /* Clock */
 #clock {
-  color: #cdd6f4;
-  font-family: "Inter Medium";
-  font-size: 18px;
+  color: #ebdbb2;
   margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Spotify */
 #custom-spotify {
-  color: #a6e3a1;
+  color: #98971a;
 }
 
 #custom-media,
@@ -156,18 +154,4 @@ window#waybar.empty #window {
 }
 #custom-weather.default {
     color: #b4befe;
-}
-
-/* Logo */
-#custom-logo {
-  font-size: 18px;
-  color: #cba6f7;
-  margin-left: 16px;
-}
-
-/* Power */
-#custom-power {
-  font-size: 18px;
-  color: #f38ba8;
-  margin-right: 16px;
 }

@@ -11,8 +11,8 @@ for_window [class="Vivaldi-stable"] opacity 1.0
 for_window [app_id="vivaldi-stable"] opacity 1.0
 for_window [class="Microsoft-edge"] opacity 1.0
 for_window [app_id="microsoft-edge"] opacity 1.0
+for_window [title="(?:Opera)"] opacity 1.0
 for_window [class="mpv"] opacity 1.0
-for_window [class="Gimp-2.10"] opacity 1.0
 
 # Assign workspaces
 for_window [app_id="firefox"] move to workspace 1, workspace 1
@@ -21,17 +21,14 @@ for_window [class="Google-chrome"] move to workspace 1, workspace 1
 for_window [app_id="google-chrome"] move to workspace 1, workspace 1
 for_window [class="Microsoft-edge"] move to workspace 1, workspace 1
 for_window [app_id="microsoft-edge"] move to workspace 1, workspace 1
-for_window [app_id="Alacritty"] move to workspace 2, workspace 2
+for_window [class="Vivaldi-stable"] move to workspace 1, workspace 1
+for_window [app_id="vivaldi-stable"] move to workspace 1, workspace 1
+for_window [title="(?:Opera)"] move to workspace 1, workspace 1
 for_window [app_id="org.wezfurlong.wezterm"] move to workspace 2, workspace 2
 for_window [class="org.wezfurlong.wezterm"] move to workspace 2, workspace 2
 for_window [app_id="thunar"] move to workspace 3, workspace 3
-for_window [app_id="libreoffice-writer"] move to workspace 3, workspace 3
-for_window [app_id="libreoffice-calc"] move to workspace 3, workspace 3
-for_window [app_id="libreoffice-impress"] move to workspace 3, workspace 3
 for_window [app_id="qBittorrent"] move to workspace 4, workspace 4
 for_window [app_id="discord"] move to workspace 4, workspace 4
-for_window [app_id="TeamViewer"] move to workspace 4, workspace 4
-for_window [app_id="AnyDesk"] move to workspace 4, workspace 4
 for_window [class="Spotify"] move to workspace 5, workspace 5
 
 # Floating rules
