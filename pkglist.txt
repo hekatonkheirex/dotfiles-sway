@@ -61,7 +61,6 @@ gnome-keyring
 gnome-mahjongg
 gnome-tweaks
 gnu-free-fonts
-google-chrome
 grim
 groff
 grub
@@ -70,8 +69,8 @@ gtk-layer-shell
 gvfs
 gvfs-mtp
 gvfs-smb
-hplip
 htop
+hyprland-bin
 inetutils
 inter-font
 jq
@@ -85,6 +84,7 @@ libgsf
 libsixel
 libtool
 libva-mesa-driver
+libva-utils
 light
 linux
 linux-firmware
@@ -96,7 +96,6 @@ mako
 man-db
 man-pages
 meson
-microsoft-edge-stable-bin
 mlocate
 most
 mpv
@@ -149,6 +148,7 @@ qt5-wayland
 qt5ct
 qt6-wayland
 qt6ct
+radeontop
 raw-thumbnailer
 reflector
 rofi
@@ -158,7 +158,6 @@ rsync
 rustup
 rxfetch
 scrot
-sidekick-browser-stable-bin
 slurp
 sof-firmware
 spicetify-cli
@@ -169,7 +168,6 @@ sway
 swaybg
 swayidle
 swaylock-effects-git
-system-config-printer
 tamsyn-font
 terminus-font
 tex-gyre-fonts
@@ -217,8 +215,9 @@ vdhcoapp-bin
 viewnior
 vivaldi
 vivaldi-ffmpeg-codecs
+vulkan-radeon
 w3m
-waybar
+waybar-hyprland-git
 wev
 wezterm
 wf-recorder
@@ -230,6 +229,7 @@ wlogout-git
 wlsunset
 wtype
 xdg-desktop-portal
+xdg-desktop-portal-hyprland-git
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils

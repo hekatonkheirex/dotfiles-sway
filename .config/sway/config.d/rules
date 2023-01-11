@@ -11,6 +11,8 @@ for_window [class="Vivaldi-stable"] opacity 1.0
 for_window [app_id="vivaldi-stable"] opacity 1.0
 for_window [class="Microsoft-edge"] opacity 1.0
 for_window [app_id="microsoft-edge"] opacity 1.0
+for_window [class="Brave-browser"] opacity 1.0
+for_window [app_id="brave-browser"] opacity 1.0
 for_window [title="(?:Opera)"] opacity 1.0
 for_window [class="mpv"] opacity 1.0
 
@@ -23,6 +25,8 @@ for_window [class="Microsoft-edge"] move to workspace 1, workspace 1
 for_window [app_id="microsoft-edge"] move to workspace 1, workspace 1
 for_window [class="Vivaldi-stable"] move to workspace 1, workspace 1
 for_window [app_id="vivaldi-stable"] move to workspace 1, workspace 1
+for_window [class="Brave-browser"] move to workspace 1, workspace 1
+for_window [app_id="brave-browser"] move to workspace 1, workspace 1
 for_window [title="(?:Opera)"] move to workspace 1, workspace 1
 for_window [app_id="org.wezfurlong.wezterm"] move to workspace 2, workspace 2
 for_window [class="org.wezfurlong.wezterm"] move to workspace 2, workspace 2
