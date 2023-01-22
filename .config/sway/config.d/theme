@@ -2,7 +2,8 @@
 exec_always ~/.config/sway/scripts/gsettings
 
 default_border pixel 2
-for_window [class=".*"] border pixel 2
+# default_border none
+# for_window [class=".*"] border pixel 2
 default_floating_border none 
 # smart_gaps on
 # hide_edge_borders smart
@@ -10,24 +11,39 @@ gaps inner 15
 gaps outer 0
 gaps bottom 1
 gaps top 1
-# corner_radius 12
+
+# SwayFx options
+corner_radius 12
+# smart_corner_radius on
+shadows on
+shadow_blur_radius 10
+shadow_color #1e1e2e
 
 # Sway Theming
 # Catppuccin Mocha
-client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
-# client.focused          #89b4fa #89b4fa #89b4fa #89b4fa #89b4fa
-client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
-client.focused_inactive #313244 #313244 #313244 #313244 #313244
+# client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
+# client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
+# client.focused_inactive #313244 #313244 #313244 #313244 #313244
 
 # Catppuccin Frappe
 # client.focused          #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6
 # client.unfocused        #303446 #303446 #303446 #303446 #303446
 # client.focused_inactive #414559 #414559 #414559 #414559 #414559
 
+# Catppuccin Latte
+# client.focused          #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
+# client.unfocused        #eff1f5 #eff1f5 #eff1f5 #eff1f5 #eff1f5
+# client.focused_inactive #ccd0da #ccd0da #ccd0da #ccd0da #ccd0da
+
 # Rose Pine
 # client.focused          #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
 # client.unfocused        #191724 #191724 #191724 #191724 #191724
 # client.focused_inactive #1f1d2e #1f1d2e #1f1d2e #1f1d2e #1f1d2e
+
+# Rose Pine Dawn
+client.focused          #575279 #575279 #575279 #575279 #575279
+client.unfocused        #797593 #797593 #797593 #797593 #797593
+client.focused_inactive #9893a5 #9893a5 #9893a5 #9893a5 #9893a5
 
 # Nord
 # client.focused          #88c0d0 #88c0d0 #88c0d0 #88c0d0 #88c0d0

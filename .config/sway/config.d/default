@@ -12,12 +12,12 @@ set $menu rofi -show drun
 
 # Idle configuration
 exec swayidle -w \
-        timeout 600 'swaylock -f' \
+        timeout 600 'swaylock -f --screenshot' \
         timeout 1800 'swaymsg "output * dpms off"' \
         timeout 15 'if pgrep -x swaylock; then swaymsg "output * dpms off"; fi' \
         resume 'swaymsg "output * dpms on"' \
         before-sleep 'playerctl pause' \
-        before-sleep 'swaylock -f'
+        before-sleep 'swaylock -f --screenshot'
 
 # Keybindings
 # Start a terminal
@@ -37,7 +37,7 @@ bindsym $mod+Shift+x exec killall "nwg-wrapper"
 bindsym $mod+d exec $menu
 
 # Firefox
-bindsym $mod+b exec firefox
+bindsym $mod+b exec brave
 
 # File manager
 bindsym $mod+i exec thunar

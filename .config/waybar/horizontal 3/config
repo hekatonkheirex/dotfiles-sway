@@ -16,14 +16,13 @@
   "ipc": true,
   "bar_id": "bar-0",
 
-  "modules-left": ["custom/logo", "wlr/workspaces"],
+  "modules-left": ["custom/space", "image/logo", "sway/workspaces"],
   "modules-center": ["custom/spotify"],
   "modules-right": ["sway/language", "idle_inhibitor", "backlight", "pulseaudio", "battery", "tray", "custom/weather", "clock", "custom/power"],
   
-  "wlr/workspaces": {
+  "sway/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,
-    "on-click": "activate",
     "persistent_workspaces": {
       "1": [],
       "2": [],
@@ -148,6 +147,13 @@
     "on-click": "pavucontrol"
     },
 
+  "image/logo": {
+    "path": "/home/mura/.config/sway/swaywm.png",
+    "size": 18,
+    "interval": 5,
+    "on-click": "rofi -show drun",
+    },
+
   "custom/spotify": {
     "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/spotsway.py --player spotify",
     "format": " {}",
@@ -172,12 +178,12 @@
     "return-type": "json"
     },
 
-    "custom/logo": {
-      "format": "",
-      },
+  "custom/power": {
+    "format": "",
+    "on-click": "/home/mura/.config/sway/scripts/wlogout",
+    },
 
-    "custom/power": {
-        "format": "",
-        "on-click": "/home/mura/.config/sway/scripts/wlogout",
-      },
+  "custom/space": {
+      "format": " ",
+    },
   }

@@ -34,4 +34,4 @@ exec_always --no-startup-id autotiling
 # exec_always --no-startup-id flashfocus &
 
 # Night light
-# exec wlsunset -l 25.27 -L -57.64 &
+exec wlsunset -l 25.27 -L -57.64  -s 20:00 &
