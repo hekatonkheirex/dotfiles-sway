@@ -68,6 +68,7 @@ gnome-mahjongg
 gnome-tweaks
 gnu-free-fonts
 gradience
+graphite-grub-theme-nord-1080p
 grim
 groff
 grub
@@ -115,6 +116,8 @@ networkmanager
 nfs-utils
 nitch
 nmap
+nordic-darker-theme-git
+nordic-theme-git
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -131,6 +134,7 @@ pacman-contrib
 pacutils
 pamixer
 papirus-folders-catppuccin-git
+papirus-folders-nordic
 paru-bin
 patch
 pavucontrol
@@ -232,6 +236,7 @@ wl-clipboard
 wlogout-git
 wlsunset
 wtype
+xcursor-simp1e-nord-dark
 xdg-desktop-portal
 xdg-desktop-portal-wlr
 xdg-user-dirs
@@ -240,5 +245,7 @@ xf86-video-amdgpu
 yad
 yadm
 youtube-dl
+zorin-desktop-themes
+zorin-icon-themes
 zramd
 zsh
