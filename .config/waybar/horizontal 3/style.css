@@ -1,13 +1,13 @@
 /* General configuration */
 * {
   border: none;
-  font-family: "SF Pro Display","Font Awesome 6 Free Regular","Font Awesome 6 Free Solid","Font Awesome 6 Pro Regular","Font Awesome 6 Pro Thin","Font Awesome 6 Pro Solid","Font Awesome 6 Pro Light","Font Awesome 6 Brands Regular";
+  font-family: "Inter","Font Awesome 6 Free","Font Awesome 6 Pro","Font Awesome 6 Brands";
   font-size: 14px;
   font-weight: normal;
 }
 
 window#waybar {
-  background-color: #eff1f5;
+  background: rgba(0, 0, 0, 0.0);
   transition-property: background-color;
   transition-duration: .5s;
   border-radius: 12px 12px 12px 12px;
@@ -18,19 +18,23 @@ window#waybar.hidden {
 }
 
 tooltip {
-  background: rgba(30, 30, 46, 0.7);
-  border: 1px solid rgba(49, 50, 68, 0.7);
+  background: rgba(36, 39, 58, 0.7);
+  border: 1px solid rgba(138, 189, 248, 0.7);
 }
 tooltip label {
-  color: #1e66f5;
+  color: #b7bdf8;
 }
 
 /* Workspaces */
-#workspaces,
+#workspaces {
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
+}
 
 #workspaces button {
   min-width: 10px;
-  color: #df8e1d;
+  color: #eed49f;
   padding: 0 12px;
 }
 #workspaces button:hover {
@@ -38,13 +42,13 @@ tooltip label {
   border-radius: 12px;
 }
 #workspaces button.focused {
-  color: #40a02b;
+  color: #a6da95;
 }
 #workspaces button.urgent {
-  color: #d20f39;
+  color: #ed8796;
 }
 #workspaces button.persistent {
-  color: #acb0be;
+  color: #494d64;
 }
 
 window#waybar.empty #window {
@@ -58,50 +62,70 @@ window#waybar.empty #window {
 
 /* Language */
 #language {
-  color: #acb0be;
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
+  color: #cad3f5;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-  color: #acb0be;
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
+  color: #494d64;
+  margin-right: 5px;
   padding: 0 12px;
 }
 #idle_inhibitor.activated {
-  color: #40a02b;
+  color: #a6da95;
 }
 
 /* Backlight */
 #backlight {
-  color: #df8e1d;
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
+  color: #eed49f;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Volume */
 #pulseaudio {
-  color: #1e66f5;
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
+  color: #a6da95;
+  margin-right: 5px;
   padding: 0 12px;
 }
 #pulseaudio.muted {
-  color: #acb0be;
+  color: #494d64;
 }
 
 /* Battery */
 #battery {
-  color: #d20f39;
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
+  color: #ed8796;
+  margin-right: 5px;
   padding: 0 12px;
 }
 #battery.charging, #battery.plugged {
-  color: #40a02b;
+  color: #a6da95;
 }
 @keyframes blink {
   to {
-    background-color: #df8e1d;
+    background-color: #eed49f;
   }
 }
 #battery.critical:not(.charging) {
-  background-color: #d20f39;
-  color: #eff1f5;
+  background-color: #ed8796;
+  color: #24273a;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -111,23 +135,32 @@ window#waybar.empty #window {
 
 /* Tray */
 #tray {
-  background: #9ca0b0;
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Clock */
 #clock {
-  color: #4c4f69;
-  font-family: "Inter Medium";
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
+  color: #cad3f5;
+  font-family: "Inter Black";
   font-size: 18px;
-  margin-right: 5px;
   padding: 0 12px;
 }
 
-
 /* Spotify */
 #custom-spotify {
-  color: #40a02b;
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
+  color: #a6da95;
+  margin-left: 5px;
+  padding: 0 12px;
 }
 
 #custom-media,
@@ -144,10 +177,10 @@ window#waybar.empty #window {
   padding: 0 12px;
 }
 #custom-weather.severe {
-    color: #f38ba8;
+    color: #b4637a;
 }
 #custom-weather.sunnyDay {
-    color: #f9e2af;
+    color: #ea9d34;
 }
 #custom-weather.clearNight {
     color: #cdd6f4;
@@ -167,7 +200,11 @@ window#waybar.empty #window {
 
 /* Power */
 #custom-power {
+  background-color: #24273a;
+  border-radius: 12px;
+  border: 2px solid #b7bdf8;
   font-size: 18px;
-  color: #e64553;
+  color: #b4637a;
   margin-right: 16px;
+  padding: 0 12px;
 }

@@ -14,7 +14,8 @@ configuration {
     font: "SF Pro Display 14";
 }
 
-/* @theme "./catppuccin/latte.rasi" */
+@theme "./catppuccin/macchiato.rasi"
 /* @theme "nord.rasi" */
 /* @theme "rosepine.rasi" */
-@theme "rosepine-dawn.rasi"
+/* @theme "rosepine-dawn.rasi" */
+/* @theme "nord-light" */

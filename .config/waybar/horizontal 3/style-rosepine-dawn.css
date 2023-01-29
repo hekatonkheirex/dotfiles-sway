@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background-color: #282828;
+  background: rgba(0, 0, 0, 0.0);
   transition-property: background-color;
   transition-duration: .5s;
   border-radius: 12px 12px 12px 12px;
@@ -18,85 +18,114 @@ window#waybar.hidden {
 }
 
 tooltip {
-  background: rgba(30, 30, 46, 0.7);
-  border: 1px solid rgba(49, 50, 68, 0.7);
+  background: rgba(250, 244, 237, 0.7);
+  border: 1px solid rgba(87, 82, 121, 0.7);
 }
 tooltip label {
-  color: #458588;
+  color: #31748f;
 }
 
 /* Workspaces */
-#workspaces,
+#workspaces {
+  background-color: #faf4ed;
+  border-radius: 12px;
+  border: 2px solid #575279;
+}
 
 #workspaces button {
   min-width: 10px;
-  color: #d79921;
+  color: #ea9d34;
   padding: 0 12px;
 }
 #workspaces button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
 }
 #workspaces button.focused {
-  color: #458588;
+  color: #286983;
 }
 #workspaces button.urgent {
-  color: #cc241d;
+  color: #b4637a;
 }
 #workspaces button.persistent {
-  color: #98971a;
+  color: #9893a5;
 }
 
 window#waybar.empty #window {
   background-color: transparent;
 }
 
+/* Logo */
+#image-logo {
+  margin-left: 100px;
+}
+
 /* Language */
 #language {
-  color: #3c3836;
+  background-color: #faf4ed;
+  border-radius: 12px;
+  border: 2px solid #575279;
+  color: #575279;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-  color: #3c3836;
+  background-color: #faf4ed;
+  border-radius: 12px;
+  border: 2px solid #575279;
+  color: #9893a5;
+  margin-right: 5px;
   padding: 0 12px;
 }
 #idle_inhibitor.activated {
-  color: #cc241d;
+  color: #286983;
 }
 
 /* Backlight */
 #backlight {
-  color: #d79921;
+  background-color: #faf4ed;
+  border-radius: 12px;
+  border: 2px solid #575279;
+  color: #ea9d34;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Volume */
 #pulseaudio {
-  color: #458588;
+  background-color: #faf4ed;
+  border-radius: 12px;
+  border: 2px solid #575279;
+  color: #31748f;
+  margin-right: 5px;
   padding: 0 12px;
 }
 #pulseaudio.muted {
-  color: #3c3836;
+  color: #9893a5;
 }
 
 /* Battery */
 #battery {
-  color: #cc241d;
+  background-color: #faf4ed;
+  border-radius: 12px;
+  border: 2px solid #575279;
+  color: #b4637a;
+  margin-right: 5px;
   padding: 0 12px;
 }
 #battery.charging, #battery.plugged {
-  color: #98971a;
+  color: #286983;
 }
 @keyframes blink {
   to {
-    background-color: #d79921;
+    background-color: #ea9d34;
   }
 }
 #battery.critical:not(.charging) {
-  background-color: #cc241d;
-  color: #282828;
+  background-color: #b4637a;
+  color: #faf4ed;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -106,20 +135,32 @@ window#waybar.empty #window {
 
 /* Tray */
 #tray {
-  background: #504945;
+  background-color: #f2e9e1;
+  border-radius: 12px;
+  border: 2px solid #575279;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Clock */
 #clock {
-  color: #ebdbb2;
-  margin-right: 5px;
+  background-color: #faf4ed;
+  border-radius: 12px;
+  border: 2px solid #575279;
+  color: #575279;
+  font-family: "Inter Black";
+  font-size: 18px;
   padding: 0 12px;
 }
 
 /* Spotify */
 #custom-spotify {
-  color: #98971a;
+  background-color: #faf4ed;
+  border-radius: 12px;
+  border: 2px solid #575279;
+  color: #286983;
+  margin-left: 5px;
+  padding: 0 12px;
 }
 
 #custom-media,
@@ -129,16 +170,17 @@ window#waybar.empty #window {
 #cpu,
 #memory,
 #disk,
+#custom-space,
 
 /* Weather */
 #custom-weather {
   padding: 0 12px;
 }
 #custom-weather.severe {
-    color: #f38ba8;
+    color: #b4637a;
 }
 #custom-weather.sunnyDay {
-    color: #f9e2af;
+    color: #ea9d34;
 }
 #custom-weather.clearNight {
     color: #cdd6f4;
@@ -154,4 +196,15 @@ window#waybar.empty #window {
 }
 #custom-weather.default {
     color: #b4befe;
+}
+
+/* Power */
+#custom-power {
+  background-color: #faf4ed;
+  border-radius: 12px;
+  border: 2px solid #575279;
+  font-size: 18px;
+  color: #b4637a;
+  margin-right: 16px;
+  padding: 0 12px;
 }

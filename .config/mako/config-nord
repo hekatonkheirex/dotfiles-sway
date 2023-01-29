@@ -17,7 +17,7 @@ height=175
 margin=20
 padding=15
 border-size=2
-border-color=#b7bdf8
+border-color=#88C0D0
 border-radius=8
 icons=1
 max-icon-size=96
@@ -27,22 +27,22 @@ ignore-timeout=0
 max-visible=5
 layer=overlay
 
-background-color=#24273a
-text-color=#cad3f5
-border-color=#b7bdf8
-progress-color=#b7bdf8
+background-color=#2E3440
+text-color=#ECEFF4
+border-color=#88C0D0
+progress-color=#88C0D0
 
 [urgency=low]
-border-color=#b7bdf8
+border-color=#ECEFF4
 
 [urgency=normal]
-border-color=#a6da95
+border-color=#4C566A
 
 [urgency=high]
-border-color=#ed8796
+border-color=#BF616A
 default-timeout=0
 
 [category=spotify]
-border-color=#a6da95
+border-color=#A3BE8C
 default-timeout=2000
 group-by=category

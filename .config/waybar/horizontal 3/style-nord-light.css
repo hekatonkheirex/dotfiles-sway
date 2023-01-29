@@ -1,13 +1,13 @@
 /* General configuration */
 * {
   border: none;
-  font-family: "SF Pro Display","Font Awesome 6 Free Regular","Font Awesome 6 Free Solid","Font Awesome 6 Pro Regular","Font Awesome 6 Pro Thin","Font Awesome 6 Pro Solid","Font Awesome 6 Pro Light","Font Awesome 6 Brands Regular";
+  font-family: "SF Pro Display","Font Awesome 6 Free","Font Awesome 6 Pro","Font Awesome 6 Brands";
   font-size: 14px;
   font-weight: normal;
 }
 
 window#waybar {
-  background-color: #1e1e2e;
+  background: rgba(0, 0, 0, 0.0);
   transition-property: background-color;
   transition-duration: .5s;
   border-radius: 12px 12px 12px 12px;
@@ -18,85 +18,114 @@ window#waybar.hidden {
 }
 
 tooltip {
-  background: rgba(30, 30, 46, 0.7);
-  border: 1px solid rgba(49, 50, 68, 0.7);
+  background: rgba(236, 239, 244, 0.7);
+  border: 1px solid rgba(46, 52, 64, 0.7);
 }
 tooltip label {
-  color: #89b4fa;
+  color: #5E81AC;
 }
 
 /* Workspaces */
-#workspaces,
+#workspaces {
+  background-color: #ECEFF4;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
+}
 
 #workspaces button {
   min-width: 10px;
-  color: #f9e2af;
+  color: #EBCB8B;
   padding: 0 12px;
 }
 #workspaces button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
 }
 #workspaces button.focused {
-  color: #a6e3a1;
+  color: #A3BE8C;
 }
 #workspaces button.urgent {
-  color: #f38ba8;
+  color: #BF616A;
 }
 #workspaces button.persistent {
-  color: #7f849c;
+  color: #D8DEE9;
 }
 
 window#waybar.empty #window {
   background-color: transparent;
 }
 
+/* Logo */
+#image-logo {
+  margin-left: 100px;
+}
+
 /* Language */
 #language {
-  color: #7f849c;
+  background-color: #ECEFF4;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
+  color: #2E3440;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-  color: #7f849c;
+  background-color: #ECEFF4;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
+  color: #D8DEE9;
+  margin-right: 5px;
   padding: 0 12px;
 }
 #idle_inhibitor.activated {
-  color: #a6e3a1;
+  color: #A3BE8C;
 }
 
 /* Backlight */
 #backlight {
-  color: #f9e2af;
+  background-color: #ECEFF4;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
+  color: #EBCB8B;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Volume */
 #pulseaudio {
-  color: #89b4fa;
+  background-color: #ECEFF4;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
+  color: #A3BE8C;
+  margin-right: 5px;
   padding: 0 12px;
 }
 #pulseaudio.muted {
-  color: #45475a;
+  color: #D8DEE9;
 }
 
 /* Battery */
 #battery {
-  color: #f38ba8;
+  background-color: #ECEFF4;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
+  color: #BF616A;
+  margin-right: 5px;
   padding: 0 12px;
 }
 #battery.charging, #battery.plugged {
-  color: #a6e3a1;
+  color: #A3BE8C;
 }
 @keyframes blink {
   to {
-    background-color: #f9e2af;
+    background-color: #EBCB8B;
   }
 }
 #battery.critical:not(.charging) {
-  background-color: #f38ba8;
-  color: #1e1e2e;
+  background-color: #BF616A;
+  color: #ECEFF4;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -106,22 +135,32 @@ window#waybar.empty #window {
 
 /* Tray */
 #tray {
-  background: #313244;
+  background-color: #D8DEE9;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Clock */
 #clock {
-  color: #cdd6f4;
-  font-family: "Inter Medium";
+  background-color: #ECEFF4;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
+  color: #2E3440;
+  font-family: "Inter Black";
   font-size: 18px;
-  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Spotify */
 #custom-spotify {
-  color: #a6e3a1;
+  background-color: #ECEFF4;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
+  color: #A3BE8C;
+  margin-left: 5px;
+  padding: 0 12px;
 }
 
 #custom-media,
@@ -131,16 +170,17 @@ window#waybar.empty #window {
 #cpu,
 #memory,
 #disk,
+#custom-space,
 
 /* Weather */
 #custom-weather {
   padding: 0 12px;
 }
 #custom-weather.severe {
-    color: #f38ba8;
+    color: #b4637a;
 }
 #custom-weather.sunnyDay {
-    color: #f9e2af;
+    color: #ea9d34;
 }
 #custom-weather.clearNight {
     color: #cdd6f4;
@@ -158,16 +198,13 @@ window#waybar.empty #window {
     color: #b4befe;
 }
 
-/* Logo */
-#custom-logo {
-  font-size: 18px;
-  color: #cba6f7;
-  margin-left: 16px;
-}
-
 /* Power */
 #custom-power {
+  background-color: #ECEFF4;
+  border-radius: 12px;
+  border: 2px solid #2E3440;
   font-size: 18px;
-  color: #f38ba8;
+  color: #BF616A;
   margin-right: 16px;
+  padding: 0 12px;
 }

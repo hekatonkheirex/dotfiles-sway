@@ -17,13 +17,18 @@ corner_radius 12
 # smart_corner_radius on
 shadows on
 shadow_blur_radius 10
-shadow_color #1e1e2e
+shadow_color #24273a
 
 # Sway Theming
 # Catppuccin Mocha
 # client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7 #cba6f7
 # client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
 # client.focused_inactive #313244 #313244 #313244 #313244 #313244
+
+# Catppuccin Mocha
+client.focused          #b7bdf8 #b7bdf8 #b7bdf8 #b7bdf8 #b7bdf8
+client.unfocused        #24273a #24273a #24273a #24273a #24273a
+client.focused_inactive #363a4f #363a4f #363a4f #363a4f #363a4f
 
 # Catppuccin Frappe
 # client.focused          #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6
@@ -41,14 +46,19 @@ shadow_color #1e1e2e
 # client.focused_inactive #1f1d2e #1f1d2e #1f1d2e #1f1d2e #1f1d2e
 
 # Rose Pine Dawn
-client.focused          #575279 #575279 #575279 #575279 #575279
-client.unfocused        #797593 #797593 #797593 #797593 #797593
-client.focused_inactive #9893a5 #9893a5 #9893a5 #9893a5 #9893a5
+# client.focused          #575279 #575279 #575279 #575279 #575279
+# client.unfocused        #797593 #797593 #797593 #797593 #797593
+# client.focused_inactive #9893a5 #9893a5 #9893a5 #9893a5 #9893a5
 
 # Nord
 # client.focused          #88c0d0 #88c0d0 #88c0d0 #88c0d0 #88c0d0
 # client.unfocused        #2e3440 #2e3440 #2e3440 #2e3440 #2e3440
 # client.focused_inactive #3b4252 #3b4252 #3b4252 #3b4252 #3b4252
+
+# Nord Light
+# client.focused          #2E3440 #2E3440 #2E3440 #2E3440 #2E3440
+# client.unfocused        #ECEFF4 #ECEFF4 #ECEFF4 #ECEFF4 #ECEFF4
+# client.focused_inactive #D8DEE9 #D8DEE9 #D8DEE9 #D8DEE9 #D8DEE9
 
 # Title format for windows
 for_window [shell="xdg_shell"] title_format "%title (%app_id)"
