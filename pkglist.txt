@@ -78,6 +78,7 @@ gvfs
 gvfs-mtp
 gvfs-smb
 htop
+hyprland-bin
 inetutils
 inter-font
 jq
@@ -85,7 +86,6 @@ kitty
 kvantum
 kvantum-theme-catppuccin-git
 laptop-mode-tools
-leafpad
 libgnome-keyring
 libgsf
 libsixel
@@ -225,7 +225,7 @@ viewnior
 visual-studio-code-bin
 vulkan-radeon
 w3m
-waybar
+waybar-hyprland-git
 wev
 wezterm
 wf-recorder
@@ -238,6 +238,7 @@ wlsunset
 wtype
 xcursor-simp1e-nord-dark
 xdg-desktop-portal
+xdg-desktop-portal-hyprland-git
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils

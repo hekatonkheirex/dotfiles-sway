@@ -17,13 +17,13 @@
   "bar_id": "bar-0",
   
   // Choose the order of the modules
-  "modules-left": ["sway/workspaces", "custom/wttr#1", "custom/wttr#2"],
+  "modules-left": ["wlr/workspaces", "custom/wttr#1", "custom/wttr#2"],
   "modules-center": ["cpu#1", "cpu#2", "memory#1", "memory#2", "temperature#1", "temperature#2"],
-  "modules-right": ["idle_inhibitor", "pulseaudio", "pulseaudio#2", "backlight", "backlight#2", "battery", "battery#2", "tray", "clock", "clock#2", "sway/language"],
+  "modules-right": ["idle_inhibitor", "pulseaudio", "pulseaudio#2", "backlight", "backlight#2", "battery", "battery#2", "tray", "clock", "clock#2", "custom/language"],
 
-  "sway/workspaces": {
+  "wlr/workspaces": {
     "disable-scroll": false,
-    "disable-click": false,
+    "on-click": "activate",
     "all-outputs": true,
     "persistent_workspaces": {
       "1": [],
@@ -170,12 +170,12 @@
     "spacing": 8,
   },
 
-  "sway/language": {
-      "format": "{}",
-      "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
-      "tooltip": "true",
-      "tooltip-format": "{long}"
-    },
+  "custom/language": {
+    "exec": "cat /tmp/kb_layout",
+    "interval": 3,
+    "format": "{}",
+    "tooltip": "false",
+  },
   
   "cpu#1": {
     "format": "",

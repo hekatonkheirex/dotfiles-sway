@@ -17,47 +17,47 @@ local function font_with_fallback(name, params)
 	return wezterm.font_with_fallback(names, params)
 end
 
-local font_name = "Cartograph CF"
+local font_name = "JetBrains Mono"
 
 local colors = {
 	-- special
-	foreground = "#cad3f5",
-	darker_background = "#1e2030",
-	background = "#24273a",
-	lighter_background = "#363a4f",
-	one_background = "#181926",
+	foreground = "#cdd6f4",
+	darker_background = "#181825",
+	background = "#1e1e2e",
+	lighter_background = "#313244",
+	one_background = "#11111b",
 
 	-- black
-	color0 = "#363a4f",
-	color8 = "#494d64",
+	color0 = "#313244",
+	color8 = "#45475a",
 
 	-- red
-	color1 = "#ed8796",
-	color9 = "#ed8796",
+	color1 = "#f38ba8",
+	color9 = "#f38ba8",
 
 	-- green
-	color2 = "#a6da95",
-	color10 = "#a6da95",
+	color2 = "#a6e3a1",
+	color10 = "#a6e3a1",
 
 	-- yellow
-	color3 = "#eed49f",
-	color11 = "#eed49f",
+	color3 = "#f9e2af",
+	color11 = "#f9e2af",
 
 	-- blue
-	color4 = "#8aadf4",
-	color12 = "#8aadf4",
+	color4 = "#89b4fa",
+	color12 = "#89b4fa",
 
 	-- magenta
-	color5 = "#f5bde6",
-	color13 = "#f5bde6",
+	color5 = "#f5c2e7",
+	color13 = "#f5c2e7",
 
 	-- cyan
-	color6 = "#91d7e3",
-	color14 = "#91d7e3",
+	color6 = "#89dceb",
+	color14 = "#89dceb",
 
 	-- white
-	color7 = "#a5adcb",
-	color15 = "#b8c0e0",
+	color7 = "#a6adc8",
+	color15 = "#bac2de",
 }
 
 return {
@@ -85,7 +85,7 @@ return {
 			font = font_with_fallback(font_name, { weight = "Light" }),
 		},
 	},
-	font_size = 11,
+	font_size = 12,
 	line_height = 1.0,
 
 	-- Cursor style

@@ -50,7 +50,7 @@ tooltip label {
   background-color: rgba(255, 255, 255, 0.0);
 }
 
-#workspaces button.focused {
+#workspaces button.active {
   color: #a6e3a1;
 }
 

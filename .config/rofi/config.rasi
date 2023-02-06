@@ -11,10 +11,10 @@ configuration {
     display-power: "Power menu";
     display-emoji: "💀 Emoji";
     sidebar-mode: true;
-    font: "SF Pro Display 14";
+    font: "Inter 14";
 }
 
-@theme "./catppuccin/macchiato.rasi"
+@theme "./catppuccin/mocha.rasi"
 /* @theme "nord.rasi" */
 /* @theme "rosepine.rasi" */
 /* @theme "rosepine-dawn.rasi" */

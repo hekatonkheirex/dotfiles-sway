@@ -8,21 +8,22 @@
   "width": "",
   "spacing": 0,
   "margin": 0,
-  "margin-top": 0,
+  "margin-top": 5,
   "margin-bottom": 0,
-  "margin-left": 0,
-  "margin-right": 0,
+  "margin-left": 5,
+  "margin-right": 5,
   "fixed-center": true,
   "ipc": true,
   "bar_id": "bar-0",
 
-  "modules-left": ["image/logo", "sway/workspaces", "custom/spotify"],
-  "modules-center": ["clock"],
-  "modules-right": ["sway/language", "idle_inhibitor", "backlight", "pulseaudio", "battery", "tray", "custom/power"],
+  "modules-left": ["custom/logo", "wlr/workspaces"],
+  "modules-center": ["custom/spotify"],
+  "modules-right": ["sway/language", "idle_inhibitor", "backlight", "pulseaudio", "battery", "tray", "custom/weather", "clock", "custom/power"],
   
-  "sway/workspaces": {
+  "wlr/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,
+    "on-click": "activate",
     "persistent_workspaces": {
       "1": [],
       "2": [],
@@ -92,7 +93,7 @@
   "backlight": {
     "device": "amdgpu_bl0",
     "format": "{icon} {percent}%",
-    "format-icons": [""],
+    "format-icons": [""],
     "on-scroll-up": "brightnessctl set +5%",
     "on-scroll-down": "brightnessctl set 5%-",
     },
@@ -105,10 +106,10 @@
       },
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
     // "format-good": "", // An empty format will hide the module
-    "format-full": " 100%",
+    "format-full": "100%",
     "format-icons": ["", "", "", "", ""]
     },
 
@@ -147,13 +148,6 @@
     "on-click": "pavucontrol"
     },
 
-  "image/logo": {
-    "path": "/home/mura/.config/sway/swaywm.png",
-    "size": 18,
-    "interval": 5,
-    "on-click": "rofi -show drun",
-    },
-
   "custom/spotify": {
     "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/spotsway.py --player spotify",
     "format": " {}",
@@ -161,6 +155,13 @@
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous"
+    },
+
+  "custom/weather": {
+      "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/weather.py",
+      "restart-interval": 300,
+      "return-type": "json",
+      "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"
     },
 
   "custom/wttr": {
@@ -171,12 +172,12 @@
     "return-type": "json"
     },
 
-  "custom/power": {
-    "format": "",
-    "on-click": "/home/mura/.config/sway/scripts/wlogout",
-    },
+    "custom/logo": {
+      "format": "",
+      },
 
-  "custom/space": {
-      "format": " ",
-    },
+    "custom/power": {
+        "format": "",
+        "on-click": "/home/mura/.config/sway/scripts/wlogout",
+      },
   }

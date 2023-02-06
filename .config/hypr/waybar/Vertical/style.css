@@ -1,16 +1,16 @@
 /* General configuration */
 * {
   border: none;
-  font-family: "Inter","Font Awesome 6 Free","Font Awesome 6 Pro","Font Awesome 6 Brands";
+  font-family: "SF Pro Display","Font Awesome 6 Free Regular","Font Awesome 6 Free Solid","Font Awesome 6 Pro Regular","Font Awesome 6 Pro Thin","Font Awesome 6 Pro Solid","Font Awesome 6 Pro Light","Font Awesome 6 Brands Regular";
   font-size: 14px;
   font-weight: normal;
 }
 
 window#waybar {
-  background: rgba(30, 30, 46, 1.0);
+  background-color: #1e1e2e;
   transition-property: background-color;
   transition-duration: .5s;
-  border-radius: 0px 0px 0px 0px;
+  border-radius: 12px 12px 12px 12px;
 }
 
 window#waybar.hidden {
@@ -19,15 +19,14 @@ window#waybar.hidden {
 
 tooltip {
   background: rgba(30, 30, 46, 0.7);
-  border: 1px solid rgba(180, 190, 254, 0.7);
+  border: 1px solid rgba(49, 50, 68, 0.7);
 }
 tooltip label {
-  color: #b4befe;
+  color: #89b4fa;
 }
 
 /* Workspaces */
-#workspaces {
-}
+#workspaces,
 
 #workspaces button {
   min-width: 10px;
@@ -35,39 +34,32 @@ tooltip label {
   padding: 0 12px;
 }
 #workspaces button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
-#workspaces button.focused {
+#workspaces button.active {
   color: #a6e3a1;
 }
 #workspaces button.urgent {
   color: #f38ba8;
 }
 #workspaces button.persistent {
-  color: #45475a;
+  color: #7f849c;
 }
 
 window#waybar.empty #window {
   background-color: transparent;
 }
 
-/* Logo */
-#image-logo {
-  margin-left: 100px;
-}
-
 /* Language */
 #language {
-  color: #f5e0dc;
-  margin-right: 5px;
+  color: #7f849c;
   padding: 0 12px;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-  color: #45475a;
-  margin-right: 5px;
+  color: #7f849c;
   padding: 0 12px;
 }
 #idle_inhibitor.activated {
@@ -77,14 +69,12 @@ window#waybar.empty #window {
 /* Backlight */
 #backlight {
   color: #f9e2af;
-  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Volume */
 #pulseaudio {
-  color: #a6e3a1;
-  margin-right: 5px;
+  color: #89b4fa;
   padding: 0 12px;
 }
 #pulseaudio.muted {
@@ -94,7 +84,6 @@ window#waybar.empty #window {
 /* Battery */
 #battery {
   color: #f38ba8;
-  margin-right: 5px;
   padding: 0 12px;
 }
 #battery.charging, #battery.plugged {
@@ -117,24 +106,22 @@ window#waybar.empty #window {
 
 /* Tray */
 #tray {
-  background-color: #45475a;
-  margin-right: 5px;
+  background: #313244;
   padding: 0 12px;
 }
 
 /* Clock */
 #clock {
   color: #cdd6f4;
-  font-family: "Inter Black";
+  font-family: "Inter Medium";
   font-size: 18px;
+  margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Spotify */
 #custom-spotify {
   color: #a6e3a1;
-  margin-left: 5px;
-  padding: 0 12px;
 }
 
 #custom-media,
@@ -144,16 +131,43 @@ window#waybar.empty #window {
 #cpu,
 #memory,
 #disk,
-#custom-space,
 
 /* Weather */
-#custom-wttr {
+#custom-weather {
   padding: 0 12px;
+}
+#custom-weather.severe {
+    color: #f38ba8;
+}
+#custom-weather.sunnyDay {
+    color: #f9e2af;
+}
+#custom-weather.clearNight {
+    color: #cdd6f4;
+}
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: #585b70;
+}
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: #cba6f7;
+}
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: #89dceb;
+}
+#custom-weather.default {
+    color: #b4befe;
+}
+
+/* Logo */
+#custom-logo {
+  font-size: 18px;
+  color: #cba6f7;
+  margin-left: 16px;
 }
 
 /* Power */
 #custom-power {
   font-size: 18px;
   color: #f38ba8;
-  padding: 0 12px;
+  margin-right: 16px;
 }
