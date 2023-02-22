@@ -7,7 +7,7 @@
 }
 
 window#waybar {
-  background: rgba(48, 52, 70, 1.0);
+  background: rgba(30, 30, 46, 1.0);
   transition-property: background-color;
   transition-duration: .5s;
   border-radius: 0px 0px 0px 0px;
@@ -18,11 +18,11 @@ window#waybar.hidden {
 }
 
 tooltip {
-  background: rgba(48, 52, 70, 0.7);
-  border: 1px solid rgba(186, 187, 241, 0.7);
+  background: rgba(30, 30, 46, 0.7);
+  border: 1px solid rgba(180, 190, 254, 0.7);
 }
 tooltip label {
-  color: #babbf1;
+  color: #b4befe;
 }
 
 /* Workspaces */
@@ -31,7 +31,7 @@ tooltip label {
 
 #workspaces button {
   min-width: 10px;
-  color: #e5c890;
+  color: #f9e2af;
   padding: 0 12px;
 }
 #workspaces button:hover {
@@ -39,13 +39,13 @@ tooltip label {
   border-radius: 12px;
 }
 #workspaces button.focused {
-  color: #a6d189;
+  color: #a6e3a1;
 }
 #workspaces button.urgent {
-  color: #e78284;
+  color: #f38ba8;
 }
 #workspaces button.persistent {
-  color: #51576d;
+  color: #45475a;
 }
 
 window#waybar.empty #window {
@@ -59,55 +59,55 @@ window#waybar.empty #window {
 
 /* Language */
 #language {
-  color: #f2d5cf;
+  color: #f5e0dc;
   margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Idle inhibitor */
 #idle_inhibitor {
-  color: #51576d;
+  color: #45475a;
   margin-right: 5px;
   padding: 0 12px;
 }
 #idle_inhibitor.activated {
-  color: #a6d189;
+  color: #a6e3a1;
 }
 
 /* Backlight */
 #backlight {
-  color: #e5c890;
+  color: #f9e2af;
   margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Volume */
 #pulseaudio {
-  color: #a6d189;
+  color: #a6e3a1;
   margin-right: 5px;
   padding: 0 12px;
 }
 #pulseaudio.muted {
-  color: #51576d;
+  color: #45475a;
 }
 
 /* Battery */
 #battery {
-  color: #e78284;
+  color: #f38ba8;
   margin-right: 5px;
   padding: 0 12px;
 }
 #battery.charging, #battery.plugged {
-  color: #a6d189;
+  color: #a6e3a1;
 }
 @keyframes blink {
   to {
-    background-color: #e5c890;
+    background-color: #f9e2af;
   }
 }
 #battery.critical:not(.charging) {
-  background-color: #e78284;
-  color: #303446;
+  background-color: #f38ba8;
+  color: #1e1e2e;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -117,14 +117,14 @@ window#waybar.empty #window {
 
 /* Tray */
 #tray {
-  background-color: #51576d;
+  background-color: #45475a;
   margin-right: 5px;
   padding: 0 12px;
 }
 
 /* Clock */
 #clock {
-  color: #c6d0f5;
+  color: #cdd6f4;
   font-family: "Inter Black";
   font-size: 18px;
   padding: 0 12px;
@@ -132,7 +132,7 @@ window#waybar.empty #window {
 
 /* Spotify */
 #custom-spotify {
-  color: #a6d189;
+  color: #a6e3a1;
   margin-left: 5px;
   padding: 0 12px;
 }
@@ -154,6 +154,6 @@ window#waybar.empty #window {
 /* Power */
 #custom-power {
   font-size: 18px;
-  color: #e78284;
+  color: #f38ba8;
   padding: 0 12px;
 }

@@ -17,13 +17,13 @@ corner_radius 12
 # smart_corner_radius on
 shadows on
 shadow_blur_radius 10
-shadow_color #1e1e2e
+shadow_color #303446
 
 # Sway Theming
 # Catppuccin Mocha
-client.focused          #b4befe #b4befe #b4befe #b4befe #b4befe
-client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
-client.focused_inactive #313244 #313244 #313244 #313244 #313244
+# client.focused          #b4befe #b4befe #b4befe #b4befe #b4befe
+# client.unfocused        #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
+# client.focused_inactive #313244 #313244 #313244 #313244 #313244
 
 # Catppuccin Macchiato
 # client.focused          #b7bdf8 #b7bdf8 #b7bdf8 #b7bdf8 #b7bdf8
@@ -31,9 +31,9 @@ client.focused_inactive #313244 #313244 #313244 #313244 #313244
 # client.focused_inactive #363a4f #363a4f #363a4f #363a4f #363a4f
 
 # Catppuccin Frappe
-# client.focused          #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6 #ca9ee6
-# client.unfocused        #303446 #303446 #303446 #303446 #303446
-# client.focused_inactive #414559 #414559 #414559 #414559 #414559
+client.focused          #babbf1 #babbf1 #babbf1 #babbf1 #babbf1
+client.unfocused        #303446 #303446 #303446 #303446 #303446
+client.focused_inactive #414559 #414559 #414559 #414559 #414559
 
 # Catppuccin Latte
 # client.focused          #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
