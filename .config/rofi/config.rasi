@@ -14,8 +14,8 @@ configuration {
     font: "Inter 14";
 }
 
-@theme "./catppuccin/frappe.rasi"
+/* @theme "./catppuccin/mocha.rasi" */
 /* @theme "nord.rasi" */
-/* @theme "rosepine.rasi" */
+@theme "rosepine.rasi"
 /* @theme "rosepine-dawn.rasi" */
 /* @theme "nord-light" */

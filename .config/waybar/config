@@ -1,5 +1,5 @@
 {
-  "layer": "top ",
+  "layer": "top",
   "mode": "dock",
   "exclusive": true,
   "passthrough": false,
@@ -16,7 +16,7 @@
   "ipc": true,
   "bar_id": "bar-0",
 
-  "modules-left": ["image/logo", "sway/workspaces", "custom/spotify"],
+  "modules-left": ["custom/space", "image/logo", "sway/workspaces", "custom/spotify"],
   "modules-center": ["clock"],
   "modules-right": ["sway/language", "idle_inhibitor", "backlight", "pulseaudio", "battery", "tray", "custom/power"],
   
@@ -157,7 +157,10 @@
       "car": "",
       "default": ["", "", "", ""]
       },
-    "on-click": "pavucontrol"
+    "scroll-step": 5.0,
+    "on-click": "amixer set Master toggle",
+    "on-click-right": "pavucontrol",
+    "smooth-scrolling-threshold": 1,
     },
 
   "image/logo": {

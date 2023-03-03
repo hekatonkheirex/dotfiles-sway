@@ -77,16 +77,16 @@ return require('packer').startup({
     }
     end
   }
-  use 'glepnir/dashboard-nvim'
+  -- use 'glepnir/dashboard-nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'terrortylor/nvim-comment'
-  use 'elkowar/yuck.vim'
-  use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
-    })
-  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
-
+  use {
+    'goolord/alpha-nvim',
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.config)
+    end
+}
+   
   -- Themes
   use 'shaunsingh/nord.nvim'
   use 'navarasu/onedark.nvim'

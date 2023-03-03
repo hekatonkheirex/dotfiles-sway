@@ -1,5 +1,4 @@
-/* General configuration */
-* {
+/* General configuration */ * {
   border: none;
   font-family: "Inter","Font Awesome 6 Free","Font Awesome 6 Pro","Font Awesome 6 Brands";
   font-size: 14px;
@@ -27,6 +26,7 @@ tooltip label {
 
 /* Workspaces */
 #workspaces {
+  padding: 0 12px;
 }
 
 #workspaces button {
@@ -54,7 +54,7 @@ window#waybar.empty #window {
 
 /* Logo */
 #image-logo {
-  margin-left: 100px;
+ padding: 0 12px;
 }
 
 /* Language */
@@ -144,7 +144,9 @@ window#waybar.empty #window {
 #cpu,
 #memory,
 #disk,
-#custom-space,
+#custom-space {
+  margin-left: 5px;
+}
 
 /* Weather */
 #custom-wttr {

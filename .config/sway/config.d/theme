@@ -13,7 +13,7 @@ gaps bottom 1
 gaps top 1
 
 # SwayFx options
-corner_radius 12
+corner_radius 4
 # smart_corner_radius on
 shadows on
 shadow_blur_radius 10
@@ -31,9 +31,9 @@ shadow_color #303446
 # client.focused_inactive #363a4f #363a4f #363a4f #363a4f #363a4f
 
 # Catppuccin Frappe
-client.focused          #babbf1 #babbf1 #babbf1 #babbf1 #babbf1
-client.unfocused        #303446 #303446 #303446 #303446 #303446
-client.focused_inactive #414559 #414559 #414559 #414559 #414559
+# client.focused          #babbf1 #babbf1 #babbf1 #babbf1 #babbf1
+# client.unfocused        #303446 #303446 #303446 #303446 #303446
+# client.focused_inactive #414559 #414559 #414559 #414559 #414559
 
 # Catppuccin Latte
 # client.focused          #1e1e2e #1e1e2e #1e1e2e #1e1e2e #1e1e2e
@@ -41,9 +41,9 @@ client.focused_inactive #414559 #414559 #414559 #414559 #414559
 # client.focused_inactive #ccd0da #ccd0da #ccd0da #ccd0da #ccd0da
 
 # Rose Pine
-# client.focused          #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
-# client.unfocused        #191724 #191724 #191724 #191724 #191724
-# client.focused_inactive #1f1d2e #1f1d2e #1f1d2e #1f1d2e #1f1d2e
+client.focused          #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7 #c4a7e7
+client.unfocused        #191724 #191724 #191724 #191724 #191724
+client.focused_inactive #1f1d2e #1f1d2e #1f1d2e #1f1d2e #1f1d2e
 
 # Rose Pine Dawn
 # client.focused          #575279 #575279 #575279 #575279 #575279

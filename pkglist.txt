@@ -9,6 +9,7 @@ alsa-utils
 amd-ucode
 apparmor
 apple-fonts
+atomicparsley
 auto-cpufreq
 autoconf
 automake
@@ -78,7 +79,6 @@ gvfs
 gvfs-mtp
 gvfs-smb
 htop
-hyprland-bin
 inetutils
 inter-font
 jq
@@ -103,6 +103,7 @@ mako
 man-db
 man-pages
 meson
+microsoft-edge-stable-bin
 mlocate
 most
 mpv
@@ -127,8 +128,6 @@ ntfs-3g
 nwg-wrapper
 openssh
 openssl-1.1
-opera
-opera-ffmpeg-codecs
 otf-font-awesome
 pacman-contrib
 pacutils
@@ -225,7 +224,7 @@ viewnior
 visual-studio-code-bin
 vulkan-radeon
 w3m
-waybar-hyprland-git
+waybar
 wev
 wezterm
 wf-recorder
@@ -238,14 +237,13 @@ wlsunset
 wtype
 xcursor-simp1e-nord-dark
 xdg-desktop-portal
-xdg-desktop-portal-hyprland-git
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xf86-video-amdgpu
 yad
 yadm
-youtube-dl
+yt-dlp
 zorin-desktop-themes
 zorin-icon-themes
 zramd
