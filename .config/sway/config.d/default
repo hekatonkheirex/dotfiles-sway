@@ -12,7 +12,7 @@ set $menu rofi -show drun
 
 # Idle configuration
 exec swayidle -w \
-        timeout 600 'swaylock -f \
+        timeout 600 'swaylock -f' \
         timeout 1800 'swaymsg "output * dpms off"' \
         timeout 15 'if pgrep -x swaylock; then swaymsg "output * dpms off"; fi' \
         resume 'swaymsg "output * dpms on"' \
@@ -63,6 +63,9 @@ bindsym Print+Shift exec /home/mura/.config/sway/scripts/screenshot_slurp.sh
 
 # Screenshot area to clipboard
 bindsym Print+Shift+Ctrl exec grim -g "$(slurp)" - | wl-copy
+
+# wl-color-piker
+bindsym $mod+Shift+p exec wl-color-picker
 
 # Drag floating windows by holding down $mod and left mouse button.
 floating_modifier $mod normal
@@ -142,9 +145,6 @@ bindsym $mod+Shift+minus move scratchpad
 
 # Show the next scratchpad window or hide the focused scratchpad window.
 bindsym $mod+minus scratchpad show
-
-# clipman
-bindsym Mod1+h exec clipman pick -t wofi
 
 # Resizing containers:
 mode "resize" {

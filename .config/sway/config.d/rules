@@ -46,16 +46,24 @@ for_window [app_id="firefox" title="Pushbullet – Mozilla Firefox"] floating en
 for_window [app_id="firefox" title="About Mozilla Firefox"] floating enable
 for_window [app_id="firefox" title="— Firefox"] floating enable
 for_window [app_id="firefox" title="^Firefox"] floating enable
-for_window [window_role = "pop-up"] floating enable
-for_window [window_role = "bubble"] floating enable
-for_window [window_role = "dialog"] floating enable
-for_window [window_type = "dialog"] floating enable
 for_window [app_id="galculator"] floating enable
-for_window [title="(?:Open|Save) (?:File|Folder|As)"] floating enable, resize set width 1030 height 710
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
 for_window [app_id="thunar" title="^Copying.*"] floating enable
 for_window [app_id="thunar" title="^File.*"] floating enable
-for_window [app_id= "nm-connection-editor"] floating enable
-for_window [app_id= "file-roller"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable
+for_window [app_id="file-roller"] floating enable
+for_window [title="(?:Open|Save) (?:File|Folder|As)"] floating enable, resize set width 1030 height 710
+for_window [title="File Operation Progress"] floating enable, border pixel 1, sticky enable, resize set width 40 ppt height 30 ppt
+
 
 # Inhibit idle
 for_window [app_id="firefox"] inhibit_idle
+for_window [app_id="brave-browser"] inhibit_idle
+for_window [class="Brave-browser"] inhibit_idle
+for_window [app_id="mpv"] inhibit_idle

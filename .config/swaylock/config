@@ -1,6 +1,6 @@
 ignore-empty-password
 disable-caps-lock-text
-image=/home/mura/Pictures/Walls/wallhaven-0w82qp.jpg
+image=/home/mura/Pictures/Walls/AUDA1X8.png
 font=Bungee
 
 text-ver-color=00000000
@@ -33,4 +33,4 @@ indicator-x-position=550
 indicator-y-position=875
 indicator-radius=450
 font-size=180
-text-color=191724
+text-color=b4befe

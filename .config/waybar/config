@@ -16,9 +16,9 @@
   "ipc": true,
   "bar_id": "bar-0",
 
-  "modules-left": ["custom/space", "image/logo", "sway/workspaces", "custom/spotify"],
+  "modules-left": ["custom/space", "image/logo", "sway/workspaces", "sway/window"],
   "modules-center": ["clock"],
-  "modules-right": ["sway/language", "idle_inhibitor", "backlight", "pulseaudio", "battery", "tray", "custom/power"],
+  "modules-right": ["custom/spotify", "sway/language", "idle_inhibitor", "backlight", "pulseaudio", "battery", "tray", "custom/power"],
   
   "sway/workspaces": {
     "disable-scroll": false,
@@ -41,7 +41,7 @@
     },
     
   "sway/window": {
-    "max-length": 50,
+    "max-length": 100,
     },
 
   "sway/language": {

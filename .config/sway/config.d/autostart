@@ -20,6 +20,7 @@ exec_always --no-startup-id nwg-wrapper &
 # Applets
 exec_always blueman-applet &
 exec "sleep 8; firewall-applet"
+exec nm-applet --indicator
 
 # Daemons
 exec_always thunar --daemon &
@@ -32,6 +33,17 @@ exec ~/.azotebg
 # Bling
 exec_always --no-startup-id autotiling
 # exec_always --no-startup-id flashfocus &
+# exec python3 ~/.config/sway/scripts/swayfader.py
+
+# Kanshi
+exec_always kanshi &
+
+# Clipman
+# exec clipman restore
+# exec wl-paste -t text --watch clipman store
+
+# Touchpad
+exec libinput-gestures-setup start
 
 # Night light
-exec wlsunset -l 25.27 -L -57.64  -s 20:00 &
+# exec ~/.config/sway/scripts/light.sh
