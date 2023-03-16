@@ -1,0 +1,166 @@
+/* General configuration */ * {
+  border: none;
+  font-family: "Inter","Font Awesome 6 Free","Font Awesome 6 Pro","Font Awesome 6 Brands";
+  font-size: 14px;
+  font-weight: normal;
+}
+
+window#waybar {
+  background: rgba(30, 30, 46, 1.0);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border-radius: 0px 0px 0px 0px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+tooltip {
+  background: rgba(30, 30, 46, 0.7);
+  border: 1px solid rgba(180, 190, 254, 0.7);
+}
+tooltip label {
+  color: #b4befe;
+}
+
+/* Workspaces */
+#workspaces {
+  padding: 0 12px;
+}
+
+#workspaces button {
+  min-width: 10px;
+  color: #f9e2af;
+  padding: 0 12px;
+}
+#workspaces button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+#workspaces button.focused {
+  color: #a6e3a1;
+}
+#workspaces button.urgent {
+  color: #f38ba8;
+}
+#workspaces button.persistent {
+  color: #45475a;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+/* Logo */
+#image-logo {
+ padding: 0 12px;
+}
+
+#window {
+  color: #b4befe;
+  padding: 0 12px;
+}
+
+/* Language */
+#language {
+  color: #f5e0dc;
+  margin-right: 5px;
+  padding: 0 12px;
+}
+
+/* Idle inhibitor */
+#idle_inhibitor {
+  color: #45475a;
+  margin-right: 5px;
+  padding: 0 12px;
+}
+#idle_inhibitor.activated {
+  color: #a6e3a1;
+}
+
+/* Backlight */
+#backlight {
+  color: #f9e2af;
+  margin-right: 5px;
+  padding: 0 12px;
+}
+
+/* Volume */
+#pulseaudio {
+  color: #a6e3a1;
+  margin-right: 5px;
+  padding: 0 12px;
+}
+#pulseaudio.muted {
+  color: #45475a;
+}
+
+/* Battery */
+#battery {
+  color: #f38ba8;
+  margin-right: 5px;
+  padding: 0 12px;
+}
+#battery.charging, #battery.plugged {
+  color: #a6e3a1;
+}
+@keyframes blink {
+  to {
+    background-color: #f9e2af;
+  }
+}
+#battery.critical:not(.charging) {
+  background-color: #f38ba8;
+  color: #1e1e2e;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Tray */
+#tray {
+  background-color: #45475a;
+  margin-right: 5px;
+  padding: 0 12px;
+}
+
+/* Clock */
+#clock {
+  color: #cdd6f4;
+  font-family: "Inter Black";
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+/* Spotify */
+#custom-spotify {
+  color: #a6e3a1;
+  margin-left: 5px;
+  padding: 0 12px;
+}
+
+#custom-media,
+#network,
+#temperature,
+#window,
+#cpu,
+#memory,
+#disk,
+#custom-space {
+  margin-left: 5px;
+}
+
+/* Weather */
+#custom-wttr {
+  padding: 0 12px;
+}
+
+/* Power */
+#custom-power {
+  font-size: 18px;
+  color: #f38ba8;
+  padding: 0 12px;
+}

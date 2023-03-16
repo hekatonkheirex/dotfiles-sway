@@ -92,7 +92,7 @@ plugins=(
 	systemd
 	themes
 	zsh-interactive-cd
-  z
+    z
 	)
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src

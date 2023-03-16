@@ -152,6 +152,7 @@ raw-thumbnailer
 reflector
 rofi
 rofi-emoji
+rofi-power-menu
 rofimoji
 rsync
 rustup
@@ -163,8 +164,8 @@ sof-firmware
 spicetify-cli
 spotify
 sshfs
-sway
 swaybg
+swayfx-git
 swayidle
 swaylock-effects-git
 tamsyn-font
@@ -197,6 +198,7 @@ ttf-junicode
 ttf-liberation
 ttf-linux-libertine
 ttf-monofur
+ttf-ms-fonts
 ttf-opensans
 ttf-roboto
 ttf-ubuntu-font-family

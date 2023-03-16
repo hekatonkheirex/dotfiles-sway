@@ -1,0 +1,198 @@
+{
+  "layer": "top",
+  "mode": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "top",
+  "height": 34,
+  "width": "",
+  "spacing": 0,
+  "margin": 0,
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "fixed-center": true,
+  "ipc": true,
+  "bar_id": "bar-0",
+
+  "modules-left": ["custom/space", "image/logo", "sway/workspaces", "sway/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/spotify", "sway/language", "idle_inhibitor", "backlight", "pulseaudio", "battery", "tray", "custom/power"],
+  
+  "sway/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+    },
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": ""
+      },
+    },
+    
+  "sway/window": {
+    "max-length": 100,
+    },
+
+  "sway/language": {
+      "format": "{}",
+      "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+      "tooltip": "true",
+      "tooltip-format": "{long}"
+    },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+      }
+    },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 8
+    },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode"          : "year",
+      "mode-mon-col"  : 3,
+      "on-scroll"     : 1,
+      "on-click-right": "mode",
+      "format": {
+        "months":     "<span color='#f2d5cf'><b>{}</b></span>",
+        "days":       "<span color='#c6d0f5'><b>{}</b></span>",
+        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays":   "<span color='#e5c890'><b>{}</b></span>",
+        "today":      "<span color='#e78284'><b><u>{}</u></b></span>"
+      }
+    },
+    "format-alt": "{:%Y-%m-%d}"
+    },
+
+  "cpu": {
+    "format": "{usage}% 󰻠",
+    "tooltip": false
+    },
+
+  "memory": {
+    "format": "{}% 󰍛"
+    },
+
+  "temperature": {
+    "thermal-zone": 2,
+    "interval": 3,
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    "format-critical": "{temperatureC}°C {icon}",
+    "format": "{temperatureC}°C {icon}",
+    "format-icons": ["󰔏"]
+    },
+
+  "backlight": {
+    "device": "amdgpu_bl0",
+    "format": "{icon} {percent}%",
+    "format-icons": [""],
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-",
+    },
+
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+      },
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-alt": "{time} {icon}",
+    // "format-good": "", // An empty format will hide the module
+    "format-full": " 100%",
+    "format-icons": ["", "", "", "", ""]
+    },
+
+  "battery#bat2": {
+    "bat": "BAT0"
+    },
+
+  "network": {
+    "format": " {ifname} ",
+    "format-ethernet": "{ifname}",
+    "format-wifi": " {essid}",
+    "format-linked": " {ifname} (No IP)",
+    "format-disconnected": " Disconnected",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+  "pulseaudio": {
+    "disable-scroll": true,
+    // "format": "{icon} {volume}% {format_source}",
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{volume}% {icon}    {format_source}",
+    "format-bluetooth-muted": "  {icon}    {format_source}",
+    // "format-muted": " {format_source}",
+    "format-muted": " ",
+    "format-source": " {volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", "", ""]
+      },
+    "scroll-step": 5.0,
+    "on-click": "amixer set Master toggle",
+    "on-click-right": "pavucontrol",
+    "smooth-scrolling-threshold": 1,
+    },
+
+  "image/logo": {
+    "path": "/home/mura/.config/sway/swaywm.png",
+    "size": 18,
+    "interval": 5,
+    "on-click": "rofi -show drun",
+    },
+
+  "custom/spotify": {
+    "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/spotsway.py --player spotify",
+    "format": " {}",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+    },
+
+  "custom/wttr": {
+    "format": "{}",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "/usr/bin/python3 /home/mura/.config/waybar/scripts/wttr.py",
+    "return-type": "json"
+    },
+
+  "custom/power": {
+    "format": "",
+    "on-click": "/home/mura/.config/sway/scripts/wlogout",
+    },
+
+  "custom/space": {
+      "format": " ",
+    },
+  }
